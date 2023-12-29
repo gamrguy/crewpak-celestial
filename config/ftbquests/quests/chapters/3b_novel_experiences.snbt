@@ -1,0 +1,33 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3b_novel_experiences"
+	group: "3EE71F41A53B1812"
+	id: "3CF4E3097408781D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"Welcome to &5Ars Nouveau&r! Ars Nouveau is a spellcrafting mod made to facilitate player creativity with a plug-and-play runecraft system!"
+			""
+			""
+			"You'll start with a few basic runes, but your first action should be to press [&bC&r] with the book in hand. That will open your Spell Menu! Documentation for the mod can be found with the brown book button on the left."
+			""
+			"To start, select the &bTouch&r and &bBreak&r glyphs, then confirm the spell you've written. Right click with the book and watch in awe as you break blocks with no tool... until you run out of mana."
+			""
+			"This is your journey of figuring out how to stop worrying about that."
+			"{image:ars_nouveau:textures/gui/worn_book_bookmark.png width:100 height:100 align:1}"
+		]
+		id: "341CBBB8D30724A2"
+		subtitle: "Craft the Novice Spellbook, and hit the books- there's a lot to read."
+		tasks: [{
+			id: "067B8AB1E6E86C53"
+			item: "ars_nouveau:novice_spell_book"
+			type: "item"
+		}]
+		title: "will pay gold 4 runecraft 99"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&53b: Novel Experiences"
+}

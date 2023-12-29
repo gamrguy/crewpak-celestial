@@ -1,0 +1,588 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "analog_circuits"
+	group: "1CAB2E4826660B31"
+	icon: "minecraft:redstone"
+	id: "3458D7961363F8E3"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5F5CC9ED2C77ACAC"]
+			description: [
+				"Redstone is used to make circuitry and machines! Only the most basic sort though. It's not a bad idea to sit down and learn what some of the basic components do so you can learn how to control things around your base."
+				""
+				"To use Redstone as a wire, simply place it on the ground. It can be broken instantly to get it back, so don't worry about getting messy and experimenting!"
+			]
+			id: "57BFCFBE63CCE9E4"
+			rewards: [{
+				count: 8
+				id: "687B91059EE0E286"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			subtitle: "Acquire a stack of Redstone Dust."
+			tasks: [{
+				count: 64L
+				id: "2612791A854B5687"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			title: "Reddy For Action"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D1C2462DEB21B18"]
+			description: [
+				"Redstone Repeaters are used to slow down and extend signals. If you want to make something on a delay, a chain of repeaters is the ages-old method for doing just that. "
+				""
+				"Enough delayed repeaters in a loop can make a \"Redstone Clock\" in its most basic form, letting things happen on a pre-set timer."
+				""
+				"Repeaters can also be \"Locked\" by powering its side, either on or off. A Locked repeater will constantly give a signal or block them entirely based on its state when locked. This can be used as a sort of rudimentary memory circuit."
+				""
+				"These have to be made of \"Cave Stone\", the smooth sort of rock you see in a normal cave. You can get it by smelting cobblestone in a furnace."
+			]
+			id: "725CD602E2806C52"
+			rewards: [{
+				count: 16
+				id: "4E52C650A40FF2D6"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			subtitle: "Craft some Redstone Repeaters."
+			tasks: [{
+				count: 8L
+				id: "6541C9EFC2CB1CCA"
+				item: "minecraft:repeater"
+				type: "item"
+			}]
+			title: "At Risk of Repeating Myself"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["57BFCFBE63CCE9E4"]
+			description: [
+				"Redstone Torches constantly output a signal for Redstone to power. When Redstone is powered, it causes many things to activate- like pistons, repeaters, dispensers and more. But you'll learn more about those later."
+				""
+				"When powering the block the torch is attached to, however, the torch turns off. This makes it a 0/1 state tracker- which, if you're familiar with electronics, suddenly opens up the world to you."
+				""
+				"Redstone Torches also emit enough light to keep mobs from spawning in a very small radius without melting ice."
+			]
+			id: "2D1C2462DEB21B18"
+			rewards: [{
+				count: 32
+				id: "2F8DE524D866B039"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "Craft 16 Redstone Torches."
+			tasks: [{
+				count: 16L
+				id: "6BCE5D46BC228214"
+				item: "minecraft:redstone_torch"
+				type: "item"
+			}]
+			title: "Not So Bright"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2D1C2462DEB21B18"]
+			description: [
+				"Buttons emit a redstone signal when pressed, but also power the block they're attached to, letting it emit a signal as well."
+				""
+				"Buttons come in all shapes and sizes, with the biggest real difference coming in how long they're depressed for. Me too, little button."
+				""
+				"Wooden buttons are usually fairly quick, while stone buttons take longer, but also emit a longer signal. Gold buttons are nearly instantaneous, emitting a signal for an incredibly short amount of time, while iron buttons take whole seconds to end their cycle."
+				""
+				"Buttons are really useful when you want to just press a button to do a thing, like open a door. "
+			]
+			id: "7908181C5700CC49"
+			rewards: [{
+				count: 16
+				id: "0483E2509FF3F9AE"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "Craft a Button of any kind."
+			tasks: [{
+				icon: "minecraft:stone_button"
+				id: "1036B0B7D6033438"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:buttons"
+					}
+				}
+				title: "A Button"
+				type: "item"
+			}]
+			title: "Don't Sit On It"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"725CD602E2806C52"
+				"19FA92D65EA5AFE5"
+			]
+			description: [
+				"That's not to say the Comparator is useless; on the contrary, it's one of the most useful redstone blocks. But it's for certain the most weird and complicated."
+				""
+				"The Comparator produces an output signal whenever it reads information from another block. This can be anything- chests, lecterns, beehives, even more complicated machines you may find later. Primarily, it just gives a signal for when something is potentially occupied- like a chest having items- but it can be set to stop outputting when its side input recieves a stronger input than it's reading from its back (The torch off), or set to subtract its side's input from its output (The torch on). You can change this state by right-clicking it."
+				""
+				"Comparators are incredibly interesting circuits with a ton of advanced applications, but you likely won't be using those for now."
+				""
+				"It can also get these signals through another block, if you want to do something like hide a trap with it."
+			]
+			id: "1FB983EC1219BB0D"
+			rewards: [{
+				count: 16
+				id: "113BBCFD9E15313A"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			subtitle: "Craft a couple of Comparators, and probably ignore them from there."
+			tasks: [{
+				count: 2L
+				id: "442B0B508E63BE2C"
+				item: "minecraft:comparator"
+				type: "item"
+			}]
+			title: "Nothing Compares!"
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["725CD602E2806C52"]
+			description: ["While not a vanilla block, the Pulse Repeater fills out a very vanilla function: A configurable delay and output on a repeater. This one can be configured much more precisely, allowing for fractions of a second, whole seconds, or even minutes to pass before it activates."]
+			id: "70522DAE30500C2A"
+			rewards: [{
+				count: 8
+				id: "3D241FE3C49DEBFE"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			subtitle: "Craft a Pulse Repeater."
+			tasks: [{
+				id: "77F9D8BD8E2D98E2"
+				item: "create:pulse_repeater"
+				type: "item"
+			}]
+			title: "Hey, This Isn't Vanilla!"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2D1C2462DEB21B18"]
+			description: [
+				"Redstone Lamps are a bit like their parent block, Glowstone. Unlike Glowstone, it can be toggled on or off with a corresponding Redstone Signal. "
+				""
+				"While not mechanically useful, they are quite pretty, and can be used to make displays for feedback about conditions of your machines."
+			]
+			id: "3964D631BC9020DB"
+			rewards: [
+				{
+					count: 16
+					id: "253C974291353E92"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "5C9F8787524F45EA"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+			]
+			subtitle: "Craft a Redstone Lamp."
+			tasks: [{
+				id: "5D564945F159A7ED"
+				item: "minecraft:redstone_lamp"
+				type: "item"
+			}]
+			title: "A Bright Idea"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["725CD602E2806C52"]
+			description: [
+				"Droppers drop items without activating them. Not incredibly useful on its own, but a nice utility to have if something needs an item on the floor on a regular basis."
+				""
+				"The Botania Mod loves these, so keep it in your back pocket."
+			]
+			id: "77865D91C9E02900"
+			rewards: [{
+				id: "6B9A0D342D126784"
+				item: {
+					Count: 1b
+					id: "minecraft:bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Craft a Dropper."
+			tasks: [{
+				id: "6845793B53DC4946"
+				item: "minecraft:dropper"
+				type: "item"
+			}]
+			title: "Drop it Like it's Hot"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["77865D91C9E02900"]
+			description: [
+				"Dispensers provide you with the ability to use items at the press of a button, instead of (mostly) uselessly dropping them. It can even automatically fire bombs, arrows, and fire charges without any other input from you."
+				""
+				"These work fairly well in a home defense system, but can also be used in farms, around your base, and more. If it can be used, the dispenser probably uses it... except melee weapons, and tools, which still fail it."
+			]
+			id: "478EF8FC767C3229"
+			rewards: [{
+				count: 16
+				id: "2A7B15C4210CF132"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			subtitle: "Craft a Dispenser."
+			tasks: [{
+				id: "579E8F0458F42861"
+				item: "minecraft:dispenser"
+				type: "item"
+			}]
+			title: "Indispensible"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["77865D91C9E02900"]
+			description: [
+				"...And try not to push it away."
+				""
+				"Pistons move the block in front of it away from it. That's what it does. And that's about it."
+				""
+				"Still, while a single piston on its own sounds underwhelming, it can push up to 16 blocks as long as it has something to push off of. Very useful for farms you might want to extrude away from anything too spicy or dangerous."
+			]
+			id: "26FF0DE5CE085BDD"
+			rewards: [{
+				count: 8
+				id: "75CBC1F83E83CBFF"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "Craft a Piston."
+			tasks: [{
+				id: "7BE801C55A47B0D9"
+				item: "minecraft:piston"
+				type: "item"
+			}]
+			title: "Push"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["26FF0DE5CE085BDD"]
+			description: [
+				"...And find a new standard to adhere to."
+				""
+				"The Sticky Piston, unlike our old friend the Piston, happily keeps the block on its face! This can be used for very creative doors, like the classic \"Jeb Door\", or some more simple sliding variants. It can also be used for a number of things in the factory! "
+				""
+				"Unfortunately, while it can push up to 16 blocks, it'll only take back the first. Maybe it gets too attached?"
+				""
+				"Something else you might find is they really like sticking to Slime Blocks, and take the &oentire&r network of slime blocks with them. It can move 16 blocks this way, and even takes them right back when unpowered."
+			]
+			id: "2B17937C8AE19F3F"
+			rewards: [{
+				count: 8
+				id: "0EC639F77662412C"
+				item: "minecraft:slime_block"
+				type: "item"
+			}]
+			subtitle: "Craft a Sticky Piston."
+			tasks: [{
+				id: "6CD5AA9546C052F7"
+				item: "minecraft:sticky_piston"
+				type: "item"
+			}]
+			title: "And Pull"
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["77865D91C9E02900"]
+			description: [
+				"Tripwires can be set by leaving two hooks on a wall then attaching them by placing String on the ground. When someone trips it, each hook gives off a redstone signal! Besides the obvious application of being useful for traps, it can be a neat way to activate a door in your base. "
+				""
+				"Aside from that, Tripwires themselves are hardly visible, requiring a keen eye to spot them. Even if someone sees it, unless they have a pair of Shears handy, then they're out of luck- trying to disarm it with your bare hands sets it right off!"
+			]
+			icon: "minecraft:tripwire_hook"
+			id: "64F3C3A0F3FF0C57"
+			subtitle: "Craft a Tripwire."
+			tasks: [
+				{
+					count: 2L
+					id: "6DC64F55ED1FB902"
+					item: "minecraft:tripwire_hook"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "44922443EFFAA929"
+					item: "minecraft:string"
+					type: "item"
+				}
+			]
+			title: "See You Next Fall"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7908181C5700CC49"]
+			description: [
+				"Pressure plates send a signal through the block it's on when stepped on. "
+				""
+				"This signal can then be read by a line of redstone dust and moved elsewhere, like a door or a trap. Or a trapdoor! Many possibilities."
+			]
+			icon: "minecraft:stone_pressure_plate"
+			id: "547E3BAA96988132"
+			subtitle: "Craft a Stone Pressure Plate."
+			tasks: [{
+				id: "720CE3CA512312D8"
+				item: "minecraft:stone_pressure_plate"
+				type: "item"
+			}]
+			title: "Sit On This One, Instead"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["547E3BAA96988132"]
+			description: [
+				"Heavyplates (or Iron Pressure Plates) will activate when you stand on them, sure enough, but they activate when any Item is thrown on the ground on top of them!"
+				""
+				"The uses for this are relatively limited, but it's a neat niche you might find helpful."
+			]
+			id: "630AA72B9AB5770C"
+			subtitle: "Craft a Heavy Weighted Pressure Plate."
+			tasks: [{
+				id: "1567A536E4925800"
+				item: "minecraft:heavy_weighted_pressure_plate"
+				type: "item"
+			}]
+			title: "Heavyweight Plate"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["547E3BAA96988132"]
+			description: [
+				"Lightweight Plates (Or Gold Pressure Plates) work similarly to Heavyweight Plates, but increase their signal strength based on how many things are on it. If you're looking to make a plate with 10 items and check for that, the Lightweight Plate is your friend. "
+				""
+				"It also reacts faster to players stepping off of it, cutting off the signal sooner. Another niche use, but we're full of those, here."
+			]
+			id: "2D7C2D13527D078A"
+			subtitle: "Craft a Light Weighted Pressure Plate. Out of an arguably heavier material."
+			tasks: [{
+				id: "2BC4E64A64DC9B23"
+				item: "minecraft:light_weighted_pressure_plate"
+				type: "item"
+			}]
+			title: "Featherweight Plate"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["478EF8FC767C3229"]
+			description: [
+				"Target Blocks allow you to turn a redstone signal, letting it fork into the block and flow to new places. Moving one with a piston makes for very useful 'settings' to read from, like a multi-button panel. "
+				""
+				"It's a bit more of an advanced use, but it checks out. "
+				""
+				"Oh, and of course, when a Target is shot by a projectile, it emits a signal based on how close to the center it was. 15 is a perfect shot!"
+			]
+			id: "140CDA49400E86BA"
+			rewards: [{
+				count: 16
+				id: "20BB355D7102C899"
+				item: "minecraft:hay_block"
+				type: "item"
+			}]
+			subtitle: "Craft a Target."
+			tasks: [{
+				id: "2744D2BBEBDE598B"
+				item: "minecraft:target"
+				type: "item"
+			}]
+			title: "Yep, Redstone"
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["478EF8FC767C3229"]
+			description: [
+				"Glass can be used to move redstone straight upwards without getting in the way of things. "
+				""
+				"Redstone on top of a transparent block like glass also won't power the other things under or beside the glass- making glass a wonderful insulator!"
+			]
+			id: "5D1C484117C0B17D"
+			rewards: [{
+				count: 64
+				id: "40CC2C27921FBDE6"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			subtitle: "Yep, it's Glass again."
+			tasks: [{
+				count: 16L
+				id: "4072337F92DB8B7B"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			title: "An Absolute Gl... Wait."
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["478EF8FC767C3229"]
+			description: [
+				"Observers can be used to check the state of a block and whether it's changed- emitting a frighteningly quick pulse whenever it does."
+				""
+				"Observers are able to tell you when something's turned on, opened, turned off, closed, walked past, growing, suddenly appeared... the list goes on."
+				""
+				"The first and most practical use is in a sugarcane farm, however; by putting it three blocks up, and a piston beneath, you can connect it by a redstone line behind it and automatically harvest the fully grown sugarcane! Just make sure you have a way of collecting it, and the FACE is pointed towards what it's watching."
+			]
+			id: "76D1B353764C01D4"
+			rewards: [{
+				count: 8
+				id: "4DCD09203A424AA6"
+				item: "minecraft:observer"
+				type: "item"
+			}]
+			subtitle: "Craft an Observer. It's judging you, you know it."
+			tasks: [{
+				id: "16AFE6714491AF35"
+				item: "minecraft:observer"
+				type: "item"
+			}]
+			title: "Now... Observe."
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["77865D91C9E02900"]
+			description: [
+				"Aside from being the simplest way to move items from one place to another, Hoppers have another strength- picking up items off the floor automatically! They just fall right in and get moving."
+				""
+				"To connect a Hopper to something, just place it against the block while Sneaking. The hopper will be connected, and the items will move in the block's direction."
+			]
+			id: "3CB0BEA80746106D"
+			rewards: [{
+				count: 16
+				id: "330CB79C93B406EA"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "Craft a Hopper."
+			tasks: [{
+				id: "623BE4A41983CB09"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			title: "Hop To It!"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"2D7C2D13527D078A"
+				"630AA72B9AB5770C"
+			]
+			description: [
+				"The Obsidian Pressure Plate only has eyes for the Player. It doesn't have eyes. This joke doesn't work."
+				""
+				"When a Player steps on it, it emits a pulse of 15 Strength. And that's only players- wanton mobs can't activate it, even by accident. It's great for putting outside the door to your house, or other sensitive work spaces!"
+			]
+			id: "107C8154D428222E"
+			subtitle: "Craft an Obsidian Pressure Plate. And hope it doesn't get jealous."
+			tasks: [{
+				id: "210567DF33DBE72A"
+				item: "quark:obsidian_pressure_plate"
+				type: "item"
+			}]
+			title: "Only For You"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7908181C5700CC49"]
+			description: [
+				"Why do we even have that lever?"
+				""
+				"Levers let you change a block's state from on to off, emitting a signal with 15 Strength. Both the lever and the block emit the signal, which can be quite useful."
+			]
+			id: "2A37FC7FFE9CD650"
+			subtitle: "Pull the Lever."
+			tasks: [{
+				id: "60225DFA22E9CA5E"
+				item: "minecraft:lever"
+				type: "item"
+			}]
+			title: "WRONG LEVER!"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["70522DAE30500C2A"]
+			description: ["Unlike the repeater before it, which waits before giving a signal, the Pulse Extender makes a signal last for longer. It's very helpful for things like keeping doors open for longer and having a brief cycle of a machine before it turns itself off again."]
+			id: "1B41066793D9BA7E"
+			rewards: [{
+				count: 8
+				id: "748188EF6BA10C7C"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			subtitle: "Craft a Pulse Extender."
+			tasks: [{
+				icon: "create:pulse_extender"
+				id: "131A1B7900578E20"
+				item: "create:pulse_extender"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			description: ["The Framed Pressure Plate will inherit any block you use on it and use its texture. While good for decoration, it'll always have the effects of a Stone Pressure Plate, so don't expect to use Obsidian on it and have it work like an Obsidian Pressure Plate."]
+			id: "2857008DCBF22373"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 32
+				id: "6D1D9969702C2EF9"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Craft a Framed Pressure Plate. That was more complicated than it had to be."
+			tasks: [{
+				id: "5F648FD03F82B8E1"
+				item: "framedblocks:framed_pressure_plate"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Shadow Quest: Oops"
+			x: 3.357142857142854d
+			y: 1.4642857142857153d
+		}
+	]
+	subtitle: ["Even veteran players get surprised and spooked by vanilla mechanics!"]
+	title: "&c0x: Analog Circuits"
+}

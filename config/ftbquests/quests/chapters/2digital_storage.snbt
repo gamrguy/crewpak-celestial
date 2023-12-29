@@ -1,0 +1,861 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2digital_storage"
+	group: "57B4864330183BF8"
+	hide_quest_until_deps_visible: true
+	icon: "refinedstorage:creative_controller"
+	id: "77A1E3B7B72F5103"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["12B365D31DDD100C"]
+			description: [
+				"Now that you have a Controller, you'll have to power this thing. If you've started on the &bMekanism&r Quest Tree, you should have a power solution ready to go- even the basic Heat Generator is more than enough to get started!"
+				""
+				"You'll want to be careful as you start progressing, as each block and cable you hook onto your system will consume &cprogressively more RF&r based on their distance and tier."
+			]
+			id: "08ADCC4F3EC225F4"
+			rewards: [{
+				count: 16
+				id: "69D3360F858CCEEB"
+				item: "refinedstorage:quartz_enriched_iron"
+				type: "item"
+			}]
+			subtitle: "Craft a Controller, and finally begin."
+			tasks: [{
+				id: "3BE2BD133BF3B55E"
+				item: "refinedstorage:controller"
+				type: "item"
+			}]
+			title: "Everything Is Under Control...ler."
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["19FA92D65EA5AFE5"]
+			description: [
+				"Welcome to &bRefined Storage!&r"
+				""
+				"Refined Storage is a mod dedicated to storing thousands- no, hundreds of thousands- no... &o&l&cMILLIONS&r of items in a single location."
+				""
+				"This is accomplished by reducing your physical items to simulated data. Don't worry- with the power of technology, you can get that data right back and use it in the real world!"
+			]
+			id: "0B14A36075DE54C2"
+			rewards: [{
+				count: 16
+				id: "1AB7DC27250BF9D5"
+				item: "refinedstorage:quartz_enriched_iron"
+				type: "item"
+			}]
+			subtitle: "Craft just enough Quartz Enriched Iron to begin."
+			tasks: [{
+				count: 32L
+				id: "6AD6E652F5CEE483"
+				item: "refinedstorage:quartz_enriched_iron"
+				type: "item"
+			}]
+			title: "Isn't that Enriched?"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B14A36075DE54C2"]
+			description: [
+				"For the moment, you may be hard gated by &bSlime Balls&r, which are needed for processor binding. Don't worry about it too much, this quest tree can probably wait a while. In the meantime, there &ois&r a quest that would make this easier on you, somewhere..."
+				"{image:minecraft:item/slime_ball width:16 height:16 align:1}"
+			]
+			id: "05981B6B383A6724"
+			rewards: [{
+				count: 8
+				id: "26C25A80D9D115E6"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			subtitle: "Craft some Processors. This is... pretty hard, actually."
+			tasks: [
+				{
+					count: 64L
+					id: "72DC523C31D0BFBF"
+					item: "refinedstorage:basic_processor"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "2D1D05D9DD7ECB1F"
+					item: "refinedstorage:improved_processor"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "65B4C602CC43F421"
+					item: "refinedstorage:advanced_processor"
+					type: "item"
+				}
+			]
+			title: "This Was Never Going To Be Easy."
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["05981B6B383A6724"]
+			description: [
+				"Welcome back! It's probably been a while. You might have come back because you're starting to feel the pressure of your ever-growing chest monster, or maybe you just got lucky and found a &aSlime Chunk.&r "
+				""
+				"Slime Chunks are small regions of the world that Slimes are allowed to spawn in. Each one is 16x16 blocks, and stretch from the bottom to the top of the world- you'll want to look deep underground, if you find one. "
+				""
+				"Take &athis little guy&r, who gets very excited when you find one! He'll start &bjumping in his bucket&r if you're standing in a Slime Chunk."
+				""
+				"Where were we? Right, forward and onward- it's time to get digital!"
+			]
+			id: "12B365D31DDD100C"
+			rewards: [{
+				id: "5BA8C8AB3F68F4D1"
+				item: "quark:slime_in_a_bucket"
+				type: "item"
+			}]
+			subtitle: "Craft a few Machine Casings. "
+			tasks: [{
+				count: 4L
+				id: "3A8DA15A36044476"
+				item: "refinedstorage:machine_casing"
+				type: "item"
+			}]
+			title: "Digital Dawn"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["08ADCC4F3EC225F4"]
+			description: [
+				"&c&lIt begins.&r"
+				""
+				"It all starts from here. After you've finished this Storage Part, you'll want to put it in a Disk- but we'll give you a free &bHousing&r, just to make the start a bit easier on you."
+			]
+			icon: "refinedstorage:4k_storage_disk"
+			id: "6C7649847620CFDD"
+			rewards: [{
+				id: "6801B0A70A6E9C7B"
+				item: "refinedstorage:storage_housing"
+				type: "item"
+			}]
+			subtitle: "Make a basic Storage Part."
+			tasks: [
+				{
+					id: "2E76C1DF7A7567E1"
+					item: "refinedstorage:4k_storage_part"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "57DC956139AE8A04"
+					item: "refinedstorage:1k_storage_part"
+					type: "item"
+				}
+			]
+			title: "Part By Part"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2C4CB2B4C6D537CB"]
+			description: [
+				"This is how you actually access the items in that Disk Drive- and complete your basic Digital Storage System! Your DSS will be the beating heart of your base, moving forward- you'll want to put it somewhere easily accessible and close to your machines. Considering the whole thing (generator included) is only 5-6 blocks, having &o4000&r items to store in it is very useful. "
+				""
+				"But... 4000? &cJust 4000?&r That's not going to be anywhere near enough!"
+				""
+				"&oThis is also a good time to tell you that, now that you've completed this quest, the rules of the quests have changed! Items MUST be in your inventory for at least 2 seconds for a quest to be registerred as complete. You can, of course, do what you want with the items afterward- but just making the items and tossing them into storage nonchalantly won't be enough."
+			]
+			id: "59B3C75972CD4A8E"
+			subtitle: "Craft a Crafting Grid. You won't be missing your dinky old Crafting Table."
+			tasks: [{
+				id: "75963530F6BD91EB"
+				item: "refinedstorage:crafting_grid"
+				type: "item"
+			}]
+			title: "Crafting Table 2.0"
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			description: [
+				"While there are legitimate reasons to craft a Crafting Monitor, if you're seeing this, it's because you've done so &o&ctoo soon&r and probably meant to make a Crafting Grid. "
+				""
+				"But don't worry, we'll be fair to you. Just chuck that Monitor in a bin for now and take this."
+				""
+				"If you actually &omeant&r to do that, you can basically just treat this as your quest. You even get a not-totally-useless reward for the tier!"
+			]
+			id: "096AE54883635468"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					id: "6D88B2057D33C4FE"
+					item: "refinedstorage:grid"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7BA17E6A595204D1"
+					item: "refinedstorage:pattern"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "That was a Crafting Monitor. I hope you meant to do that."
+			tasks: [{
+				id: "59782AAA79488938"
+				item: "refinedstorage:crafting_monitor"
+				type: "item"
+			}]
+			title: "Shadow Quest: Oops?"
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["6C7649847620CFDD"]
+			description: [
+				"Disk Drives store Disks, Disks store Items. Hence, Disk Drives store items. Isn't the &bTransitive Property&r great? You'll want to remember it. "
+				""
+				""
+				""
+				""
+				"A=B"
+				"B=C"
+				""
+				"Hence, "
+				""
+				"A=C"
+				""
+				""
+				"Easy enough, right? "
+				""
+				"Each of these can store 8 disks. Two or three of these should have you set for life, but just one will be enough for a long, long time. "
+				""
+				"You'll want to put this next to your &bController&r for now. "
+				"{image:refinedstorage:block/controller/cutouts/light_blue width:100 height:100 align:1}"
+			]
+			id: "2C4CB2B4C6D537CB"
+			subtitle: "Well, sort of. Craft a Disk Drive."
+			tasks: [{
+				id: "2DBF51E05B86E4C9"
+				item: "refinedstorage:disk_drive"
+				type: "item"
+			}]
+			title: "Your New Chests"
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"59B3C75972CD4A8E"
+				"6C7649847620CFDD"
+			]
+			description: ["From 4K to 64K! If you've done the math you might've noticed something- you used 3 &216k storage parts&r making this, and &216&r*3 sure isn't 64... And that's because every rank up of storage part gives a &o&b25% bonus&r to the amount it can store! This is true right the way up to the top, so don't be afraid to get upgrading!"]
+			id: "4A7D3F09D793BDBA"
+			rewards: [{
+				count: 256
+				id: "5705CD6CE4C5E222"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			subtitle: "Craft a 64k Storage part."
+			tasks: [{
+				id: "3ED1E866353E14C2"
+				item: "refinedstorage:64k_storage_part"
+				type: "item"
+			}]
+			title: "Two Steps At A Time"
+			x: 1.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["59B3C75972CD4A8E"]
+			description: ["The Pattern Grid lets you Encode &bPatterns&r with Crafting Recipes. Encoded Patterns can be put in machines called &cCrafters&r to make a Crafting Command. Crafting Commands can be seen from your terminals when an item runs out in your storage, or you set the grid to \"Craftable Only\". The number quantifying the items will be replaced with &lCraft&r, and you will be shown a menu to input your quantity. But that's just the beginning..."]
+			id: "7FFE74128C631615"
+			subtitle: "Craft a Pattern Grid. The phrase 'It Begins' has been said many times, at this point. Now- it ends."
+			tasks: [{
+				id: "7FDB51AB5909F467"
+				item: "refinedstorage:pattern_grid"
+				type: "item"
+			}]
+			title: "Automatorium Awakens"
+			x: -4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7FFE74128C631615"]
+			description: [
+				"Crafters accept Patterns made in the Pattern Grid. After a Pattern is added, you'll be able to call upon the power of your DSS to automatically craft large numbers of items! "
+				""
+				"As a bonus, you can automatically craft entire &bCrafting Trees&r at once. &bCrafting Trees&r range from simple to complex. The simplest example is the humble &cChest&r. Each &cChest&r is made of 8 &2Planks&r, which you can craft out of 2 &4Logs&r. After setting up a recipe for both &cChests&r and &2Planks&r, you can make those &cChests&r straight out of &4Logs&r, skipping a whole step as your system handles it for you."
+				""
+				"As you can imagine, this adds up quickly. I can't imagine what you'd want to craft that's so deeply nested, though..."
+				""
+				"And geez, it's pretty slow. I almost craft things faster myself."
+			]
+			id: "3EA2FA350C04E04D"
+			subtitle: "Craft a Crafter."
+			tasks: [{
+				id: "60076FDD7DA68359"
+				item: "refinedstorage:crafter"
+				type: "item"
+			}]
+			title: "You'll Be Wanting These."
+			x: -3.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2C4CB2B4C6D537CB"]
+			description: [
+				"Cables are used to connect devices over long distances- you'll be shackled by adjacency no longer! "
+				""
+				"They seem mundane for now, but they become increasingly useful as your base grows."
+			]
+			id: "3D2211143D89B086"
+			subtitle: "Craft some Cables. These Cables are used to connect Refined Storage devices."
+			tasks: [{
+				id: "0CA993483B2521DA"
+				item: "refinedstorage:cable"
+				type: "item"
+			}]
+			title: "Cable TV"
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3D2211143D89B086"]
+			description: [
+				"Covers are attachments to Cables that can hide them in walls and floors for you. "
+				""
+				"You can make these out of any solid material- that means most building blocks work, but things like Glass, Leaves, and Slabs won't."
+				""
+				"Craft a Cover with itself alone to make a version that lets cables go through its face- great for patching up walls!"
+			]
+			id: "7690593B52B0A139"
+			subtitle: "Craft a Cover made of Stone Bricks."
+			tasks: [{
+				id: "53BB1F22885CA8E6"
+				item: {
+					Count: 1b
+					id: "refinedstorage:cover"
+					tag: {
+						Item: {
+							Count: 1b
+							id: "minecraft:stone_bricks"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Cover Me!"
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"4A7D3F09D793BDBA"
+				"3EA2FA350C04E04D"
+			]
+			description: ["As these get bigger, the cost only exponentially increases. And we're not even halfway done, yet."]
+			id: "631E8FF22A43B973"
+			subtitle: "Craft a 256k Storage Part. These are starting to get big."
+			tasks: [{
+				id: "4735C2BD9FBC0700"
+				item: "extrastorage:storagepart_256k"
+				type: "item"
+			}]
+			title: "Oh no."
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3EA2FA350C04E04D"]
+			description: [
+				"Each crafter tier after this will increase the capacity and speed of the crafting process! "
+				""
+				"Putting a Crafter on a machine such that the &lGrid Face&r is facing a machine lets you change it from Crafting to Processing! When a Crafter is used for Processing, it'll take Processing Patterns (togglable in your Pattern Grid) and let you define how something is to be crafted. For instance, you could tell it that the machine it's facing- say, an &bEnrichment Chamber&r- can turn Coal into Enriched Coal. It'll put its utmost faith in you, handing the machine your coal and hoping you Import an Enriched Coal soon to fulfill your promise."
+			]
+			id: "26782D04FF72EE8B"
+			subtitle: "Use your Crafter to Craft an Iron Crafter."
+			tasks: [{
+				id: "7C4144E28387E15C"
+				item: "extrastorage:iron_crafter"
+				type: "item"
+			}]
+			title: "Getting Crafty"
+			x: -2.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["311781D78C912591"]
+			id: "33C5033C2088CB6D"
+			subtitle: "Use your Crafters to Craft a Gold Crafter, to Craft the next Crafter."
+			tasks: [{
+				id: "7BF98CDBD7344F68"
+				item: "extrastorage:gold_crafter"
+				type: "item"
+			}]
+			title: "Arts and Crafts"
+			x: -1.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["7FFE74128C631615"]
+			id: "30A14A03E5BC300A"
+			subtitle: "Ask nicely to craft a Requester."
+			tasks: [{
+				id: "39A902D6F4070D04"
+				item: "rsrequestify:requester"
+				type: "item"
+			}]
+			title: "Can I?"
+			x: -4.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["30A14A03E5BC300A"]
+			id: "0A440E6E53AF1BB0"
+			subtitle: "Ask correctly to craft an Elite Requester."
+			tasks: [{
+				id: "219BA8C69F9B3708"
+				item: "cabletiers:elite_requester"
+				type: "item"
+			}]
+			title: "May I?"
+			x: -4.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0A440E6E53AF1BB0"]
+			id: "67378CB6BED65B9D"
+			subtitle: "Ask properly to craft an Ultra Requester."
+			tasks: [{
+				id: "1A0AA6B55E9FBF03"
+				item: "cabletiers:ultra_requester"
+				type: "item"
+			}]
+			title: "Please?"
+			x: -4.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["67378CB6BED65B9D"]
+			description: [
+				"Many slots, lots of requests. What more is there to say?"
+				""
+				"It, uh, might be a while before you get here. A long while- come back when you reach the &5End&rgame."
+			]
+			id: "7179A03D1BD87671"
+			shape: "diamond"
+			subtitle: "Ask very politely to craft the Creative Requester."
+			tasks: [{
+				id: "19C02B8462F65422"
+				item: "cabletiers:creative_requester"
+				type: "item"
+			}]
+			title: "Pretty Please?"
+			x: -4.0d
+			y: -15.0d
+		}
+		{
+			description: [
+				"That's your perogative, I'm not your mother."
+				""
+				"These can be made into disks uniquely suited to storing liquids. Importers and Exporters can be configured on the left hand side of their GUI to take Liquids instead of Items."
+				""
+				"Interestingly, these fluids aren't actually visible from your normal grid- that's why we're giving you this Fluid Grid. As long as your system has Buckets, you can click on the liquids in this grid and simply pull them out as you would an item. You can also use Buckets full of liquid and just dump them in no problem."
+				""
+				"If a Crafter requires a bucket of liquid- for instance, lava- but finds you have some digital lava stored already, it'll just go ahead and use that instead of bothering you about those pesky, unstackable buckets."
+			]
+			id: "59EB6FFA93F2F381"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "5EA8260FDBD3EB0C"
+				item: "refinedstorage:fluid_grid"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You crafted a Fluid Storage Part. I mean, maybe you wanted to store liquids."
+			tasks: [{
+				id: "38D25F8CC5DF7448"
+				item: "refinedstorage:64k_fluid_storage_part"
+				type: "item"
+			}]
+			title: "Shadow Quest: Digital Liquids"
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"3D2211143D89B086"
+				"59B3C75972CD4A8E"
+			]
+			description: [
+				"The Importer and Exporter are used to move items in and out of your storage system automatically!"
+				""
+				"The fastest and most apparent use of this is to move Raw Ores into your furnaces and take the ingots out automatically, storing them in your system on their own!"
+				""
+				"To tell an Exporter to Export an item, right click it, then put that item in its filter."
+				""
+				"This filter- and, in fact, &l99% of filters across &oall mods&r- can also be set by clicking and dragging an item from the JEI menu into the block's interface. You'll know you've done this correctly with a compatible filter if the item slots turn green. This can be useful if you plan to use items you simply don't have yet, or can't reasonably hold in your inventory."
+			]
+			id: "7E669B16D8989713"
+			rewards: [{
+				count: 64
+				id: "15F0081464BF9D56"
+				item: "refinedstorage:cable"
+				type: "item"
+			}]
+			subtitle: "Craft an Importer and an Exporter."
+			tasks: [
+				{
+					id: "250A02D4BC2EB6C2"
+					item: "refinedstorage:exporter"
+					type: "item"
+				}
+				{
+					id: "200B5F91968EC06E"
+					item: "refinedstorage:importer"
+					type: "item"
+				}
+			]
+			title: "In and Out in a Flash!"
+			x: -6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["33C5033C2088CB6D"]
+			description: [
+				"Up to this point, you've been doing a lot of mining! It's about time you took crafting seriously, too."
+				""
+				"This crafter has a HUGE amount of storage, and makes 125 items each cycle- which can be boosted all the way up to every tick (that's 20 ticks a second) with speed upgrades. "
+				""
+				"Nothing compares!"
+			]
+			id: "541E91B4B983E725"
+			subtitle: "Use your Crafters you Crafted to Craft the Netherite Crafter, the ultimate Crafter among the Crafters you've Crafted so far."
+			tasks: [{
+				id: "6B7193A5EB82F1B1"
+				item: "extrastorage:netherite_crafter"
+				type: "item"
+			}]
+			title: "Master of its Craft"
+			x: -2.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["3EA2FA350C04E04D"]
+			description: ["Speed Upgrades, as the name suggests, increase the operation speed of the machines they're inserted into. The clear use is crafters, but they're very effective in all tiers of Importer and Exporter, as well as many other machines."]
+			id: "0BC7549457DC8E95"
+			subtitle: "Craft a Speed Upgrade."
+			tasks: [{
+				id: "514C5F33A76C44D6"
+				item: "refinedstorage:speed_upgrade"
+				type: "item"
+			}]
+			title: "Productive and Upgradeable"
+			x: -1.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["7E669B16D8989713"]
+			description: ["As these blocks increase in tier, they stop being able to take Stack Upgrades. They have their own built-in Stack values now."]
+			id: "276C04CAE5D4474D"
+			subtitle: "Craft an Elite Exporter"
+			tasks: [{
+				id: "56D0CF35F81EA68A"
+				item: "cabletiers:elite_exporter"
+				type: "item"
+			}]
+			title: "Breathe Out"
+			x: -7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7E669B16D8989713"]
+			description: ["As these blocks increase in tier, so too do they increase in &cpower consumption.&r Think twice before you go slapping high-tier parts everywhere- do you really NEED them?"]
+			id: "01B4B3CBC373BAD7"
+			subtitle: "Craft an Elite Importer."
+			tasks: [{
+				id: "37438820E71B3552"
+				item: "cabletiers:elite_importer"
+				type: "item"
+			}]
+			title: "Breathe In"
+			x: -7.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["01B4B3CBC373BAD7"]
+			id: "6A476C1707DC0B80"
+			subtitle: "Craft an Ultra Importer"
+			tasks: [{
+				id: "344EAB57382693AB"
+				item: "cabletiers:ultra_importer"
+				type: "item"
+			}]
+			title: "Let Me In"
+			x: -8.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["276C04CAE5D4474D"]
+			id: "4AF539FE36D791B2"
+			subtitle: "Craft an Ultra Exporter"
+			tasks: [{
+				id: "0E3324CAC4BA06D3"
+				item: "cabletiers:elite_exporter"
+				type: "item"
+			}]
+			title: "Let Me Out"
+			x: -8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6A476C1707DC0B80"]
+			description: ["It, uh, might be a while before you get here. A long while- come back when you reach the &5End&rgame."]
+			id: "78E223E64FFE1805"
+			subtitle: "Craft a Creative Importer"
+			tasks: [{
+				id: "0DADB3A29DEE7A23"
+				item: "cabletiers:creative_importer"
+				type: "item"
+			}]
+			title: "Get In!"
+			x: -10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4AF539FE36D791B2"]
+			description: ["It, uh, might be a while before you get here. A long while- come back when you reach the &5End&rgame."]
+			id: "72D600CB3604B328"
+			subtitle: "Craft a Creative Exporter"
+			tasks: [{
+				id: "3C5B276E465416FA"
+				item: "cabletiers:creative_exporter"
+				type: "item"
+			}]
+			title: "Get Out!"
+			x: -10.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["26782D04FF72EE8B"]
+			description: ["These Crafters are getting advanced enough that you might need to craft some Neural Processors- they're uniquely suited to learning and executing crafting recipes."]
+			id: "311781D78C912591"
+			subtitle: "Craft some Neural Processors."
+			tasks: [{
+				count: 2L
+				id: "34F80668E01561B0"
+				item: "extrastorage:neural_processor"
+				type: "item"
+			}]
+			title: "Big Brain Time"
+			x: -2.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["3D2211143D89B086"]
+			description: [
+				"So easily does your hand demolish as it does build- destroy, as it does create."
+				""
+				"But why even bother when a machine can do that for you?"
+				""
+				"The Constructor places blocks (or drops items similarly to a Dropper- check out chapter 0x.) automatically when configured- just add the block you want to slap down to its filter by right clicking it."
+				""
+				"The Destructor, on the other hand, breaks blocks automatically. It'll do this to just about any block by default, but can be filtered if you're waiting for an in-world process. Come back to that when you've started Botania."
+				""
+				"Oh, and the Destructor can pick up items, too, at a rather &balarming speed&r. The highest tier can pick up a theoretically infinite number instantly!"
+			]
+			id: "3753A8DDC048BE83"
+			rewards: [{
+				count: 16
+				id: "7B3E545921F4E5CF"
+				item: "refinedstorage:advanced_processor"
+				type: "item"
+			}]
+			subtitle: "Craft a Constructor and a Destructor."
+			tasks: [
+				{
+					id: "160C3CEB26AB05D8"
+					item: "refinedstorage:constructor"
+					type: "item"
+				}
+				{
+					id: "6AAFD0CE91A33E13"
+					item: "refinedstorage:destructor"
+					type: "item"
+				}
+			]
+			title: "The Powers of Creation"
+			x: -5.5d
+			y: -5.0d
+		}
+		{
+			description: ["Storage Monitors, when connected to your DSS, can display the quantity of a set item in nice, big text for you to look at as you walk by. Just right click the monitor with the item you want to watch."]
+			id: "2B9D7A31BD29C1D5"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 64
+				id: "54B9B9C7519BEF4D"
+				item: "refinedstorage:quartz_enriched_iron"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You made a Storage Monitor. Just to keep track."
+			tasks: [{
+				id: "747E87773A488208"
+				item: "refinedstorage:storage_monitor"
+				type: "item"
+			}]
+			title: "Shadow Quest: Close Monitoring"
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3753A8DDC048BE83"]
+			id: "6C22A19D5925E00C"
+			subtitle: "Make an elite Constructor. For some reason."
+			tasks: [{
+				id: "788BB7E7FF0CB507"
+				item: "cabletiers:elite_constructor"
+				type: "item"
+			}]
+			title: "You don't need these."
+			x: -6.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6C22A19D5925E00C"]
+			description: [
+				"I mean, you have to be here for completionism's sake, at this rate. There's really no reason I can think of to make these."
+				"\"Ooh, let me place a block QUICKER!\""
+				"What're you going to do, break it quicker, too? Then you're back at square- er, block- one!"
+			]
+			id: "3D086839871F9DB2"
+			rewards: [{
+				count: 64
+				id: "75950EAE073DC0AB"
+				item: "refinedstorage:advanced_processor"
+				type: "item"
+			}]
+			subtitle: "Make an Ultra Constructor."
+			tasks: [{
+				id: "4E13F9B6C5300CC7"
+				item: "cabletiers:ultra_constructor"
+				type: "item"
+			}]
+			title: "Why are you still here?"
+			x: -7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3D086839871F9DB2"]
+			description: [
+				"I mean, this is my fault, really."
+				""
+				"But I'll be nice, and give you a nice bonus for making it this far."
+			]
+			id: "4FAA3D960E8A6D92"
+			rewards: [
+				{
+					count: 4
+					id: "04CA384B7E2CAD01"
+					item: "minecraft:dragon_head"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1C4820667ED5ED59"
+					item: "minecraft:netherite_block"
+					type: "item"
+				}
+			]
+			subtitle: "Craft the Creative Constructor."
+			tasks: [{
+				id: "713BB809034080E4"
+				item: "cabletiers:creative_constructor"
+				type: "item"
+			}]
+			title: "Just to Suffer"
+			x: -8.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3753A8DDC048BE83"]
+			description: ["There actually are reasons for making these... but most of them are fairly advanced, and esoteric. And none of them really involve &bRefined Storage&r directly, anyway."]
+			id: "5DE6E7F45FBC3002"
+			rewards: [{
+				count: 4
+				id: "7539B03F08442820"
+				item: "chipped:polished_iron_block"
+				title: "Some shiny new iron blocks!"
+				type: "item"
+			}]
+			subtitle: "Make an Elite Destructor."
+			tasks: [{
+				id: "170C8062E79C5E08"
+				item: "cabletiers:elite_destructor"
+				type: "item"
+			}]
+			title: "Mass Destruction"
+			x: -6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5DE6E7F45FBC3002"]
+			description: [
+				"About that reason to make destructors- here, have a hint."
+				""
+				"It's just one of many, of course. Get creative!"
+			]
+			id: "2A1F6956243B3095"
+			rewards: [{
+				id: "059FB0D5E34E6E90"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			subtitle: "Craft an Ultra Destructor."
+			tasks: [{
+				id: "754EBAE8690BAB5B"
+				item: "cabletiers:ultra_destructor"
+				type: "item"
+			}]
+			title: "Destructive Tendencies"
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2A1F6956243B3095"]
+			description: [
+				"Yeah, no, this is overkill now. What will you do with this?"
+				""
+				"Actually send it to me over Discord. If you're determined and know where to look, you can find me- and if you can think of something in this pack that this block can do, and the Ultra can't, I'll give you a secret about the pack. I'm serious."
+				""
+				"And do feel free to lab out your ideas in creative mode rather than figure it out here. I won't be a stickler and demand you craft this thing in your actual run first."
+			]
+			id: "32C49958BC6539B8"
+			rewards: [{
+				count: 2
+				id: "659C8EA55A6E496E"
+				item: "minecraft:netherite_block"
+				type: "item"
+			}]
+			subtitle: "Make a Creative Destructor"
+			tasks: [{
+				id: "3BDD43F9283EF1D2"
+				item: "cabletiers:creative_destructor"
+				type: "item"
+			}]
+			title: "A Real Creative"
+			x: -8.5d
+			y: -4.5d
+		}
+	]
+	subtitle: ["That storage system of yours is getting mighty cumbersome. Time for some upgrades!"]
+	title: "&b2a:Digital Storage"
+}

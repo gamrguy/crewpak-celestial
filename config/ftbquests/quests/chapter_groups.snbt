@@ -1,0 +1,10 @@
+{
+	chapter_groups: [
+		{ id: "1CAB2E4826660B31", title: "&bChapter 0: The Beginning" }
+		{ id: "5F3E2B4FBD216107", title: "&2Chapter 1: Clockwork Dawn" }
+		{ id: "57B4864330183BF8", title: "&cChapter 2: Digital Deva" }
+		{ id: "3EE71F41A53B1812", title: "&6Chapter 3: Arcane Ascendancy" }
+		{ id: "059EF3766917A2F1", title: "&4Chapter 4: Lunacy" }
+		{ id: "5621BE7BAC482CD1", title: "&1Chapter 5: Apex Arts" }
+	]
+}

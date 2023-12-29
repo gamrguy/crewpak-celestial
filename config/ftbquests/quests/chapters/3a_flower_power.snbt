@@ -1,0 +1,76 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3a_flower_power"
+	group: "3EE71F41A53B1812"
+	icon: "botania:life_essence"
+	id: "71842AE24D95EC9E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "18286E9F767E99B5"
+			subtitle: "Obtain a Pure Daisy."
+			tasks: [{
+				id: "2AF796B3A0319614"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			title: "Pure Gardens"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"Why is this in the magic section!? This is a tech mod! I'm leaving a negative review of your modpack on Modrinth.com!"
+				""
+				"&ocough, cough"
+				""
+				"&rNow that I've gotten that out of your system for you, let's welcome you properly to Botania, the best magic-themed tech mod! Using the magic of &3Mana&r harvested from your blooms, you'll learn to harness the powers of magic in ways you never could have imagined. But for now, you'll have to stop and smell the roses..."
+			]
+			id: "32D68DB6D251CD6E"
+			rewards: [{
+				id: "4C225696F54BD518"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			subtitle: "Welcome to Botania! Find 4 Mystical White Flowers to start your journey."
+			tasks: [{
+				count: 4L
+				id: "60F6CFFBC5F22401"
+				item: "botania:white_mystical_flower"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"If you're down on your luck and can't find the flowers you're looking for by just walking around, using this on some dirt will do the trick nicely. Alternatively, you can just give us the fertilizer, and we'll let you just take a flower."
+				""
+				"If you can't get any dyes from your flowers, Lapis Lazuli and Bones work exceptionally well for this."
+			]
+			id: "45D6E6EB1405F39F"
+			optional: true
+			rewards: [{
+				id: "23C79820571DD2EB"
+				item: "botania:white_mystical_flower"
+				type: "item"
+			}]
+			shape: "heart"
+			subtitle: "Make some Floral Fertilizer."
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "02B2E5DE19380EAB"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			title: "Smells Like Patchouli"
+			x: 0.0d
+			y: 1.0d
+		}
+	]
+	title: "3a: Flower Power"
+}

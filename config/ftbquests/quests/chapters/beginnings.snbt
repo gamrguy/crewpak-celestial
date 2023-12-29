@@ -1,0 +1,1619 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "beginnings"
+	group: "1CAB2E4826660B31"
+	hide_quest_until_deps_visible: true
+	icon: "minecraft:crafting_table"
+	id: "5FECB309086BA2FF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Punch a tree. And then accept this wooden axe, so you don't have to punch trees anymore."]
+			id: "725966E4E8F7AE97"
+			rewards: [{
+				id: "2539D28374891F7A"
+				item: {
+					Count: 1b
+					id: "minecraft:wooden_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Punch a tree."
+			tasks: [{
+				icon: "minecraft:oak_log"
+				id: "5596CB80F02B407E"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "byg:all/logs"
+					}
+				}
+				title: "Any Log"
+				type: "item"
+			}]
+			title: "To the Punch"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["725966E4E8F7AE97"]
+			description: ["Crafting Tables let you make items. You can figure out how to make something by looking it up in JEI, then pressing \"R\" to see its Recipe."]
+			id: "72CBB738790C3127"
+			rewards: [{
+				count: 16
+				id: "74BF4E642E3DEAC5"
+				item: "minecraft:apple"
+				type: "item"
+			}]
+			subtitle: "Craft some wood into a Crafting Table."
+			tasks: [{
+				id: "0751609A47C2A049"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:workbenches"
+					}
+				}
+				title: "Any #forge:workbenches"
+				type: "item"
+			}]
+			title: "Benched"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["72CBB738790C3127"]
+			description: ["Pickaxes of varying tier mine at different speeds. It's important to always be looking for a way to upgrade your equipment."]
+			id: "300494A4868C6303"
+			rewards: [{
+				count: 32
+				id: "7B91D0B84F477518"
+				item: "minecraft:dark_oak_log"
+				type: "item"
+			}]
+			subtitle: "Craft a Wooden Pickaxe to acquire Cobblestone."
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "3D41358D43C37ADE"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:pickaxes"
+					}
+				}
+				title: "Wooden Pickaxe"
+				type: "item"
+			}]
+			title: "Easy Pickin's"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["300494A4868C6303"]
+			description: ["You'll need Cobblestone to make a great many things- but most of all, a furnace!"]
+			icon: "minecraft:cobblestone"
+			id: "322119F67E8A9546"
+			rewards: [{
+				count: 16
+				id: "7CDA0D06F6E1E2E2"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			subtitle: "Acquire 16 cobblestone. Of any kind."
+			tasks: [{
+				count: 16L
+				id: "52E49922BB953EB0"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:cobblestone"
+					}
+				}
+				title: "Any #forge:cobblestone"
+				type: "item"
+			}]
+			title: "Cobbled Together"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["322119F67E8A9546"]
+			description: ["Furnaces can be used to cook things into other things. Food, ores, plants, and more can all be cooked down into a furnace! Power it with Coal, or other burnable materials!"]
+			id: "109CF76E74654183"
+			rewards: [{
+				count: 2
+				id: "20649061B039B75F"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			subtitle: "Make a Furnace."
+			tasks: [{
+				id: "488609A214F97B28"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "Let Them Cook"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["109CF76E74654183"]
+			description: ["Smokers sacrifice the general-use robustness of a Furnace to specialize in cooking food twice as fast! Fuel efficiency is doubled, too!"]
+			id: "7A63300ADF63E1A2"
+			rewards: [{
+				count: 16
+				id: "24B287CF6DC3196A"
+				item: "minecraft:beef"
+				type: "item"
+			}]
+			subtitle: "Upgrade a Furnace into a Smoker."
+			tasks: [{
+				id: "1F81DCBE1C0A6D30"
+				item: "minecraft:smoker"
+				type: "item"
+			}]
+			title: "Smoke Them Out"
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["109CF76E74654183"]
+			description: ["Blast Furnaces sacrifice the general-use robustness of the Furnace to smelt ores at twice the speed! As a result, fuel used for Blasting is twice as efficient, as well."]
+			id: "6D94403B77853E8E"
+			rewards: [{
+				count: 16
+				id: "01E50BC17FCDDF84"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			subtitle: "Upgrade a Furnace into a Blast Furnace."
+			tasks: [{
+				id: "639218EC7036DA4A"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			title: "Blast! Not again!"
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["109CF76E74654183"]
+			description: ["Campfires work much more slowly than even a furnace, but don't expend fuel to cook your food. It's handy if you're wanting to save on coal."]
+			icon: "minecraft:campfire"
+			id: "0A5FB2517E119E5D"
+			subtitle: "Create a Campfire."
+			tasks: [{
+				id: "45188B9520C08AC4"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:campfires"
+					}
+				}
+				title: "Any #forge:campfires"
+				type: "item"
+			}]
+			title: "C-A-M-P-F-I-R-E, S-O-N-G SONG"
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"109CF76E74654183"
+				"24BFC4CB433280A0"
+			]
+			description: [
+				"Iron Furnaces and their successors increase the speed at which a Furnace can operate significantly. "
+				""
+				"When using an Iron Furnace, however, more fuel is consumed to gain more speed, meaning no fuel is ever really"
+				"saved in the process."
+			]
+			id: "36C8254050146169"
+			rewards: [{
+				id: "188AABA6CB9096BC"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			subtitle: "Craft an Iron Furnace out of a Furnace."
+			tasks: [{
+				id: "5EC698240AFA0C61"
+				item: "ironfurnaces:iron_furnace"
+				type: "item"
+			}]
+			title: "Metalloid Furnaces"
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["36C8254050146169"]
+			description: [
+				"The Gold Furnace is about 50% faster than its predecessor. "
+				""
+				"These Metalloid Furnaces can be configured to automatically import and export items without the use of hoppers."
+				"This can be helpful so you can just attach a couple of barrels to each side and smelt many items automatically."
+			]
+			id: "37629B078E208457"
+			rewards: [{
+				count: 3
+				id: "508730D0267C9D11"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			subtitle: "Craft an Iron Furnace into a Gold Furnace."
+			tasks: [{
+				id: "7302558F23316B3A"
+				item: "ironfurnaces:gold_furnace"
+				type: "item"
+			}]
+			title: "Good as Gold"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["37629B078E208457"]
+			description: [
+				"While expensive, the Diamond Furnace works 50% faster than its predecessor. "
+				"You might notice that these speed upgrades are starting to stack significantly."
+			]
+			hide: false
+			id: "135C9D51E797A860"
+			rewards: [{
+				id: "1E849E5C8861638C"
+				item: {
+					Count: 1b
+					id: "minecraft:diamond_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Craft a Golden Furnace into a Diamond Furnace."
+			tasks: [{
+				id: "09E390D5546C4E6E"
+				item: "ironfurnaces:diamond_furnace"
+				type: "item"
+			}]
+			title: "Industrial Strength"
+			x: 0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["135C9D51E797A860"]
+			description: [
+				"The Emerald Furnace is 50% faster than its predecessor."
+				""
+				"Emeralds are very, very hard to come by in the wild. Trading with Villagers might give you what you're looking for."
+			]
+			hide: false
+			id: "3310228CFE98A6D4"
+			rewards: [{
+				count: 32
+				id: "37420E1DA14F02B3"
+				item: "minecraft:coal_block"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Craft a Diamond Furnace into an Emerald Furnace."
+			tasks: [{
+				id: "11BA2CFFF8A66F94"
+				item: "ironfurnaces:emerald_furnace"
+				type: "item"
+			}]
+			title: "Fornax Smaragdina"
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"3310228CFE98A6D4"
+				"4E4449210530D866"
+			]
+			description: [
+				"The Obsidian Furnace is TWICE as fast as its predecessor."
+				""
+				"The common ancestor of all furnaces all trace back to the furnace. "
+				"Look at this furnace, and ponder a while about how far you've come."
+				"Then take a deep breath, because there's one more step."
+			]
+			hide: false
+			id: "6E2715A3199B495B"
+			rewards: [{
+				count: 16
+				id: "09B25580C68F1612"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			shape: "pentagon"
+			subtitle: "Craft an Obsidian Furnace."
+			tasks: [{
+				id: "2F4B89B8B97D2C06"
+				item: "ironfurnaces:obsidian_furnace"
+				type: "item"
+			}]
+			title: "Hellfire's Growl"
+			x: 0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6E2715A3199B495B"]
+			description: [
+				"The Netherite furnace is FOUR TIMES as fast as its predecessor, the Obsidian Furnace, and last of its lineage."
+				""
+				"This is as far as the technology of normal furnacery can take you. This tree is finally done."
+				""
+				"Now go, and take the leap into the world of electric furnaces."
+			]
+			hide: false
+			id: "16EA928AEFD4902D"
+			rewards: [{
+				id: "6FEEB998048449E4"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Craft the ultimate Furnace."
+			tasks: [{
+				id: "6F88D6E4705442F0"
+				item: "ironfurnaces:netherite_furnace"
+				type: "item"
+			}]
+			title: "Final Furnacing"
+			x: 0.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["109CF76E74654183"]
+			description: [
+				"But I decided not to add it. Isn't that ironic? "
+				""
+				"Get iron by mining underground! Don't get discouraged if you don't find some at first, there's plenty of other materials to collect, too!"
+			]
+			id: "24BFC4CB433280A0"
+			shape: "pentagon"
+			subtitle: "Smelt 16 Raw Iron into Iron Ingots."
+			tasks: [{
+				count: 16L
+				id: "3B4A067F795AC1DB"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "There's a pun in here."
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["24BFC4CB433280A0"]
+			description: [
+				"This is the last tool we'll tell you to make directly. You should be settling comfortably into the gameplay loop by now."
+				""
+				"As a helpful bonus, there are pickaxes that can be made of many other materials, like Osmium and Copper! Each one has their"
+				"benefits and downsides, so experiment around. We'll even give you some Osmium to get started."
+			]
+			id: "5F5CC9ED2C77ACAC"
+			rewards: [{
+				count: 3
+				id: "10E692591D95B3D7"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			subtitle: "Make an Iron Pickaxe."
+			tasks: [{
+				id: "505305E496A58D1E"
+				item: {
+					Count: 1b
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				only_from_crafting: true
+				type: "item"
+			}]
+			title: "It is Iron Pick."
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["322119F67E8A9546"]
+			description: [
+				"The Mason Table, like the Carpentry Table, can be used to make large varieties of &bstone &fblocks to build with."
+				""
+				"As for the chisel you'll be earning, it lets you carve chunks out of blocks and do sculpting the way the old masters do. You can also keep the bits in a bag to build things out of later."
+			]
+			id: "347BAB9B69CA23F1"
+			rewards: [
+				{
+					id: "04F5A0C35D0EB980"
+					item: {
+						Count: 1b
+						id: "chiselsandbits:chisel_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "44147D0B17CDD1E4"
+					item: {
+						Count: 1b
+						id: "chiselsandbits:bit_bag"
+						tag: {
+							Inventory: { }
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Make a Mason Table. And try not to encase your friends in brickwork."
+			tasks: [{
+				id: "6F791D6A555F3B92"
+				item: "chipped:mason_table"
+				type: "item"
+			}]
+			title: "The Freemasons"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["72CBB738790C3127"]
+			description: [
+				"In the &bChipped &fmod, you can use a wide variety of tables to make unique blocks with different textures and patterns!"
+				""
+				"This table can turn logs, planks, and other wooden objects like fences or trapdoors, into new variants for decoration."
+			]
+			id: "6C486253BA598B66"
+			rewards: [{
+				count: 32
+				id: "4F5F3D825A5BE834"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			subtitle: "Craft a Carpenters Table."
+			tasks: [{
+				id: "6F0B79A09B1D3D9D"
+				item: "chipped:carpenters_table"
+				type: "item"
+			}]
+			title: "Woodcutting to the Chase"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["109CF76E74654183"]
+			description: ["Glass is a great building material for windows. As I'm sure you'd imagine."]
+			id: "65C0F3A59DC6B909"
+			rewards: [{
+				count: 16
+				id: "008931F444B8B4F5"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			subtitle: "Smelt some Sand into Glass."
+			tasks: [{
+				count: 16L
+				id: "180DB80322B176F7"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			title: "A Glassic, Really"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["65C0F3A59DC6B909"]
+			description: ["This &bChipped &fbench turns glass things into other decorative glass things. Even stained glass windows look prettier with this table!"]
+			id: "29B002B5B0C361CB"
+			subtitle: "Craft a Glassblower."
+			tasks: [{
+				id: "0C55AD51F9CEF21D"
+				item: "chipped:glassblower"
+				type: "item"
+			}]
+			title: "Glassblower? Hardly Knew 'Er!"
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5F5CC9ED2C77ACAC"]
+			description: [
+				"Dig a diamond out of rough earth with your own two hands."
+				""
+				"Be careful you don't use a pickaxe that's worse than Iron for this- it'll destroy them!"
+				""
+				"Then take a bonus diamond- you've earned it."
+			]
+			icon: "minecraft:diamond"
+			id: "096E49E9F0C0B328"
+			rewards: [{
+				id: "68B7828B6BABECE4"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "pentagon"
+			subtitle: "Mine a Diamond. Finding one in a Dungeon will not be enough."
+			tasks: [
+				{
+					id: "013D66E69276F8FB"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					icon: "minecraft:deepslate_diamond_ore"
+					id: "571E2DE603BD10F8"
+					observe_type: 0
+					timer: 0L
+					title: "Find a Diamond Ore."
+					to_observe: "minecraft:deepslate_diamond_ore"
+					type: "observation"
+				}
+			]
+			title: "Ooh, Shiny!"
+			x: 3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["096E49E9F0C0B328"]
+			description: [
+				"You'll need a total of 14 Obsidian blocks to make a portal to the Nether, and complete the Beginnings chapter."
+				""
+				"You'll want to arrange the portal in a rectangle. The preferred orientation is vertical, but it's not required."
+				""
+				"Once all the blocks are together in a contiguous shape, spark a Flint and Steel on the inside, and watch the magic happen."
+			]
+			hide: false
+			icon: "minecraft:obsidian"
+			id: "19FA92D65EA5AFE5"
+			shape: "hexagon"
+			subtitle: "Acquire 14 Obsidian to make a full Nether Portal."
+			tasks: [
+				{
+					count: 14L
+					id: "708B57BF477EF6B1"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "290A4EE9002AD776"
+					item: {
+						Count: 1b
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "No Corner-Cutting"
+			x: 3.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["72CBB738790C3127"]
+			description: [
+				"Hoes are necessary to till dirt with. Tilled dirt is able to be used to plant seed and grow crops."
+				""
+				"You'll want to make sure your Farmland is Irrigated. Having a Water Source Block near them is enough to irrigate Farmland up to 5 blocks away."
+			]
+			id: "76264C90830E66B7"
+			rewards: [{
+				id: "33FAF23756F523B0"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			subtitle: "Craft any Hoe."
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:iron_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "6B9CA67D481A5EF6"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:hoes"
+					}
+				}
+				title: "Any Hoe- not just iron!"
+				type: "item"
+			}]
+			title: "Hoe you holding up?"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["76264C90830E66B7"]
+			description: [
+				"You'll need to let some Organic Compost age in a damp, dark area to let it decompose quickly. "
+				""
+				"It'll smell when you get back, but after about 5 minutes, you'll have farmland that grows crops more than twice as fast!"
+			]
+			icon: "farmersdelight:organic_compost"
+			id: "7764DD55E17E0C7C"
+			rewards: [{
+				count: 32
+				id: "58F8E708E948AEF2"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			subtitle: "Make some Rich Soil."
+			tasks: [
+				{
+					id: "73E514A596143070"
+					item: "farmersdelight:rich_soil"
+					type: "item"
+				}
+				{
+					id: "780BA835FB4FE2F9"
+					item: "farmersdelight:organic_compost"
+					type: "item"
+				}
+			]
+			title: "Isn't that rich?"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["76264C90830E66B7"]
+			description: [
+				"Markets let you trade your hard-earned Emerald for seeds of plants you may have never seen before."
+				""
+				"They can be vital in completing your collection in a timely manner, or maybe getting those tomato seeds for the burgers you'll be wanting."
+			]
+			id: "4EC2D47D4C4D0007"
+			rewards: [{
+				count: 6
+				id: "5459877C917B2A3A"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "Craft a Market."
+			tasks: [{
+				id: "6DFE0374D9F378A3"
+				item: "farmingforblockheads:market"
+				type: "item"
+			}]
+			title: "Write it, Market Down"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"109CF76E74654183"
+				"76264C90830E66B7"
+			]
+			description: [
+				"Kitchens are vital for keeping large numbers of foods and drinks neat and organized. "
+				""
+				"Cooking Stations will look at any other Cooking for Blockheads blocks- Fridges, Cabinets, Sinks, and more- "
+				"and let you cook directly from their inventories with no fuss. Sinks will even add water to your recipes for free,"
+				"and fridges get upgrades that let you make ice and snow!"
+			]
+			icon: "cookingforblockheads:fridge"
+			id: "5DE7891B523BFBAC"
+			rewards: [{
+				id: "4EDAE9401651034C"
+				type: "item"
+			}]
+			subtitle: "Make a Kitchen."
+			tasks: [
+				{
+					id: "171ECE679B9FA5E8"
+					item: "cookingforblockheads:cooking_table"
+					type: "item"
+				}
+				{
+					id: "0462407A0D94391D"
+					item: "cookingforblockheads:sink"
+					type: "item"
+				}
+				{
+					id: "3966DE0F418D7FEA"
+					item: "cookingforblockheads:fridge"
+					type: "item"
+				}
+				{
+					id: "5F1A832133F5BF45"
+					item: "cookingforblockheads:oven"
+					type: "item"
+				}
+			]
+			title: "Let Them Cook!"
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["76264C90830E66B7"]
+			description: [
+				"Cutting Boards, when used with other tools like knives, let you break down items into other items. "
+				""
+				"Chop pork into bacon, steak into burger patties, and much more!"
+				""
+				"Cutting boards also operate with other tools, like axes and pickaxes- but they have different recipes. Try them out!"
+			]
+			icon: "farmersdelight:cutting_board"
+			id: "741937B424050AAB"
+			rewards: [{
+				count: 16
+				id: "65E54589ACC467BE"
+				item: "farmersdelight:beef_patty"
+				type: "item"
+			}]
+			subtitle: "Craft a Cutting Board and a Knife."
+			tasks: [
+				{
+					id: "3E645E9EE6F62F74"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "farmersdelight:iron_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "3D78AC25CB861445"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/knives"
+						}
+					}
+					title: "Any Knife"
+					type: "item"
+				}
+			]
+			title: "Getting Board?"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0A5FB2517E119E5D"
+				"741937B424050AAB"
+			]
+			description: [
+				"Skillets can be put on top of Campfires and Stoves to cook more items quickly at no cost!"
+				""
+				"You'll want to check on them pretty regularly though- The finished items will despawn if you don't return to get them."
+			]
+			id: "18EF76F7B0D889D3"
+			rewards: [{
+				id: "10D3DCF59A9CC7A4"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			subtitle: "Craft a Skillet"
+			tasks: [{
+				id: "736F74A3BC40BBF5"
+				item: {
+					Count: 1b
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Skillet Issue"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18EF76F7B0D889D3"]
+			description: [
+				"Cooking Pots are complicated crafting stations that let you make stews and soups! Basically any food you'd put in a bowl goes in here."
+				""
+				"You'll want to put these on top of a Stove. If you're trying to manage one of these and a Skillet at the same time, your kitchen might get a little cramped."
+				""
+				"It might be time for a remodel..."
+			]
+			id: "7BBAD0896B3FD9DB"
+			subtitle: "Craft a Cooking Pot."
+			tasks: [{
+				id: "271120BCFC0E631B"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			title: "Stick 'em in a Stew"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["741937B424050AAB"]
+			description: [
+				"Feeding Troughs will automatically feed nearby mobs with the food you put in the trough."
+				""
+				"It'll be careful not to overpopulate them, too."
+				""
+				"Sticking one in your mob pen and leaving it a while should do nicely, but you can use Hoppers to automate them further."
+			]
+			id: "35BBA9715D813632"
+			subtitle: "Craft a (Farming for Blockheads) Feeding Trough."
+			tasks: [{
+				id: "6BBCFC062EF41FF7"
+				item: "farmingforblockheads:feeding_trough"
+				type: "item"
+			}]
+			title: "War Crime Pits"
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["35BBA9715D813632"]
+			description: [
+				"Botany Pots will take a seed or crop and let them slowly grow on their own. Right click them to harvest!"
+				""
+				"Their upgrades, Hopper Botany Pots, will let you put them on top of an inventory, letting you automatically collect their output."
+				"They'll continue growing all on their own."
+				""
+				"Botany Pots can also take special soil types, like Rich Soil!"
+			]
+			id: "08A7B6C5376CCFD3"
+			rewards: [{
+				id: "7EF95B7B9AF136CA"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			subtitle: "Craft a (Basic) Botany Pot."
+			tasks: [{
+				id: "0BF11FFF85B42A03"
+				item: "botanypots:terracotta_botany_pot"
+				type: "item"
+			}]
+			title: "Hairy Pottery"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["72CBB738790C3127"]
+			description: [
+				"Chests are the most basic form of storage, and let you store a large number of items in a single block."
+				""
+				"Chests can also be paired together to make \"Double-Chests\", which are twice as wide, and store with both chests' inventories in one place."
+			]
+			id: "62030B0177C3C30A"
+			rewards: [{
+				count: 16
+				id: "7894D560DEC7FEF2"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			subtitle: "Craft a Chest."
+			tasks: [{
+				icon: "minecraft:chest"
+				id: "693AE508F3E61AE3"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:chests"
+					}
+				}
+				title: "Any Chest"
+				type: "item"
+			}]
+			title: "Amazing Chest Ahead"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["62030B0177C3C30A"]
+			description: [
+				"Barrels are slightly cheaper than Chests, but can't be merged into something like Double-Barrels."
+				""
+				"They're quite useful both as storage for items and decorational pieces. Who doesn't like a good barrel?"
+			]
+			id: "3FB51DC82A50E750"
+			subtitle: "Craft a Barrel."
+			tasks: [{
+				id: "7B4AA37737EB8EC4"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:barrels"
+					}
+				}
+				title: "Any #forge:barrels"
+				type: "item"
+			}]
+			title: "Barrels of Fun"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"24BFC4CB433280A0"
+				"3FB51DC82A50E750"
+			]
+			description: [
+				"Barrels (And chests!) can be upgraded into their \"Smart\" variants with a Redstone Torch."
+				""
+				"These Sophisticated Storage options can accept upgrades to let the store EVEN MORE items!"
+				""
+				"There are even other functions, like building a furnace directly into your barrel, or voiding excess items."
+			]
+			id: "4CD1559E1C4784C4"
+			rewards: [{
+				id: "605905ACFD7BD605"
+				item: "sophisticatedstorage:stack_upgrade_tier_1"
+				type: "item"
+			}]
+			subtitle: "Upgrade a Barrel or Chest into... a Barrel or Chest?"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "sophisticatedstorage:barrel"
+					tag: {
+						woodType: "spruce"
+					}
+				}
+				id: "2D5005546BFB982A"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "sophisticatedstorage:base_tier_wooden_storage"
+					}
+				}
+				title: "Any Upgraded Barrel or Chest"
+				type: "item"
+			}]
+			title: "Barrel Roll"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["24BFC4CB433280A0"]
+			description: [
+				"The Ultimine key is '~' be default, found just the left of your 1 on the number row."
+				""
+				"Ultimine is very helpful for mining large quantities of blocks! Just a single stroke of a tool is enough to break 64 blocks!"
+				""
+				"It comes with a few caveats though- first of all, doing so still drains your tool's durability. Secondly, using it consumes a"
+				"&omassive&r amount of &bhunger&f. It's fast, but be sure you're willing to eat more often and gather more food if you're going to use it."
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3CB13CA5914E0A82"
+			rewards: [{
+				id: "42B217BDE212DD84"
+				item: "pamhc2foodextended:paradiseburgeritem"
+				type: "item"
+			}]
+			subtitle: "Craft an Iron Axe (And learn how to use Ultimine.)"
+			tasks: [
+				{
+					id: "25053D4D95586B94"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "42035D0282C64A18"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "byg:all/logs"
+						}
+					}
+					title: "Any #byg:all/logs"
+					type: "item"
+				}
+			]
+			title: "I'll Only Axe You Once"
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7BBAD0896B3FD9DB"]
+			description: [
+				"Pam's Harvestcraft has a variety of tools that have some overlap with Farmer's Delight."
+				""
+				"But don't worry- these tools won't take up space on your countertops. Instead, you can simply let these sit in your cabinets"
+				"until you have need of them. You'll be able to use them automatically from your Cooking Station!"
+				""
+				"We'll give you a small collection of commonly used cooking tools here, but check out Pam's Food Core for more!"
+			]
+			id: "4276B315519389B3"
+			rewards: [
+				{
+					id: "6F2F87264B33D9CA"
+					item: "pamhc2foodcore:bakewareitem"
+					type: "item"
+				}
+				{
+					id: "4388AC0ACED00AAB"
+					item: "pamhc2foodcore:saucepanitem"
+					type: "item"
+				}
+				{
+					id: "313D4400C55F1CF9"
+					item: "pamhc2foodcore:mixingbowlitem"
+					type: "item"
+				}
+				{
+					id: "49C215858DCCA196"
+					item: "pamhc2foodcore:potitem"
+					type: "item"
+				}
+			]
+			subtitle: "Craft a (Pam's Harvestcraft) Skillet."
+			tasks: [{
+				id: "5972E2BE82C10DD5"
+				item: "pamhc2foodcore:skilletitem"
+				type: "item"
+			}]
+			title: "Wham, Pam"
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["24BFC4CB433280A0"]
+			description: [
+				"C'mon. "
+				""
+				"You know you want to."
+			]
+			icon: "mcwlights:lava_lamp"
+			id: "25C04EDF72C13594"
+			subtitle: "Craft a Lava Lamp and stare into it a while."
+			tasks: [
+				{
+					id: "5D2A80E2F1596BA7"
+					item: "mcwlights:lava_lamp"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "endrem:nether_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "3ABE476034DA7252"
+					observe_type: 0
+					timer: 0L
+					title: "Gaze into its glow..."
+					to_observe: "mcwlights:lava_lamp"
+					type: "observation"
+				}
+			]
+			title: "oooOooooo"
+			x: 1.5d
+			y: -8.0d
+		}
+		{
+			description: [
+				"You'll need to acquire your items by sheer luck, all without touching a single wooden plank, &ceven by accident."
+				""
+				"&fThe best method of doing this is to start off by raiding villages for resources. If you're lucky, a random house or blacksmith will have"
+				"a crafting bench for you to get started. From there, it's mostly business as usual, but you'll have to get your sticks"
+				"from trees and wood from other options."
+				""
+				"You'll have to complete every quest up to '&bNo Corner-Cutting&f', and all others are optional for the purposes of the challenge."
+			]
+			icon: "minecraft:oak_planks"
+			id: "605CF8C46B1BEE4F"
+			shape: "gear"
+			subtitle: "Complete Chapter 1 Without &cever touching any kind of plank."
+			tasks: [{
+				id: "0AF4BD90C8C54BD0"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+				title: "Any #minecraft:planks"
+				type: "item"
+			}]
+			title: "Challenge 0: Beginnings Plankless"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["76264C90830E66B7"]
+			description: ["Aside from plants, this Chipped table lets you choose more textures for ice, dirt, gravel, and more!"]
+			id: "310B891ACBB39CF4"
+			subtitle: "Make a Botanist's Workbench."
+			tasks: [{
+				id: "3ADAA96F13F47031"
+				item: "chipped:botanist_workbench"
+				type: "item"
+			}]
+			title: "Late Bloomer"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35BBA9715D813632"]
+			description: ["The Loom Table lets you take wools, carpets, and more and turn them into new textures for your decoration pleasure!"]
+			id: "47D3DFA76A9059B1"
+			subtitle: "Make a Loom Table  (And try not to let it intimidate you.)"
+			tasks: [{
+				id: "65B65905B43E9E00"
+				item: "chipped:loom_table"
+				type: "item"
+			}]
+			title: "Looming Presence"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4CD1559E1C4784C4"]
+			description: [
+				"Limited Barrels behave in a manner very similar to the &bStorage Drawers&r of old. "
+				""
+				"Each Limited Barrel I can store one type of item, II can store 2, III can store 3... so on. "
+				""
+				"They share the same &cUpgrades&r as their parents. Upgrades? That's right, &cUpgrades.&r"
+			]
+			id: "669BE5A8C31BDD83"
+			subtitle: "Make a Limited Barrel, and store a lot of a thing."
+			tasks: [{
+				id: "664645B2BB45574A"
+				item: {
+					Count: 1b
+					id: "sophisticatedstorage:limited_barrel_1"
+					tag: {
+						woodType: "spruce"
+					}
+				}
+				match_nbt: false
+				title: "Any Basic Limited Barrel I"
+				type: "item"
+			}]
+			title: "Sophisticated Drawers"
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["669BE5A8C31BDD83"]
+			description: [
+				"These &bUpgrade Bases&r can be crafted into a wide array of useful and powerful improvements to your storage and automation!"
+				""
+				"There's a &cBackpack&r counterpart to each of these, but those are made of Leather. Don't get them confused!"
+			]
+			id: "0DC278411EF201B3"
+			rewards: [{
+				count: 3
+				id: "1EC25196538626DF"
+				item: "sophisticatedstorage:upgrade_base"
+				type: "item"
+			}]
+			subtitle: "Make an Upgrade Base for a Barrel or Chest."
+			tasks: [{
+				id: "756E08CB89147BBA"
+				item: "sophisticatedstorage:upgrade_base"
+				type: "item"
+			}]
+			title: "Upgrades, people, Upgrades!"
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0DC278411EF201B3"]
+			description: ["This upgrade lets you move items in and out of the barrel, automatically, without pipes! As an added bonus, each side can be configured independently, and can even push and pull items at the same time! It even gets filters! There's nothing this barrel can't do!"]
+			id: "5A6FE382A327B9BF"
+			subtitle: "Make an Advanced Hopper Upgrade."
+			tasks: [{
+				id: "34DBD1090B920DDD"
+				item: "sophisticatedstorage:advanced_hopper_upgrade"
+				type: "item"
+			}]
+			title: "Hop To It!"
+			x: -6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0DC278411EF201B3"]
+			description: [
+				"The Stacking Upgrade lets the Barrel store items over x64! "
+				""
+				"It'll also multiply how many items a Limited Barrel can store."
+				""
+				"These upgrades stack &bmultiplicatively.&r That means two of these increase the multiplier to x4. Two of the max tier ones would be &cx256!"
+			]
+			id: "2E327A46026D1644"
+			rewards: [{
+				count: 7
+				id: "0AB0BAF0A31659C1"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			subtitle: "Craft a Stacking Upgrade (And witness some really cursed numbers in an itemStack.)"
+			tasks: [{
+				id: "4E7F58A2AA7E65CE"
+				item: "sophisticatedstorage:stack_upgrade_tier_1"
+				type: "item"
+			}]
+			title: "Stacking Up!"
+			x: -5.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0DC278411EF201B3"]
+			description: [
+				"Adding one of these to a barrel adds an integrated furnace- and on top of that, it can even be configured to automatically smelt items within itself! Never have raw ore lying around again!"
+				""
+				"Oh, and as with any other upgrade, &cmultiple of these&r can be put in a single barrel. Just two is enough to outpace an iron furnace! Though the furnaces win the war, eventually..."
+			]
+			id: "1DC99AB036A15C22"
+			rewards: [{
+				id: "40C6883CAD3AE94B"
+				item: "sophisticatedstorage:auto_smelting_upgrade"
+				type: "item"
+			}]
+			subtitle: "Make an Advanced Smelting Upgrade."
+			tasks: [{
+				id: "5C1BB38DAC0FFB80"
+				item: "sophisticatedstorage:auto_smelting_upgrade"
+				type: "item"
+			}]
+			title: "Who Needs Iron Furnaces, Anyway?"
+			x: -3.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["1DC99AB036A15C22"]
+			description: ["Like their blocky counterparts, these specialize in smelting metals. Otherwise, it's mostly the same as a furnace."]
+			id: "3375FCB0EFDC9DCC"
+			rewards: [{
+				id: "423DC9719E978A15"
+				item: "sophisticatedstorage:auto_smelting_upgrade"
+				type: "item"
+			}]
+			subtitle: "Make an Advanced Blasting Upgrade."
+			tasks: [{
+				id: "374BA10AF29845B9"
+				item: "sophisticatedstorage:auto_blasting_upgrade"
+				type: "item"
+			}]
+			title: "Barrel Blast!"
+			x: -3.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["0DC278411EF201B3"]
+			description: [
+				"With the Magnet Upgrade, the barrel will start picking up items lying around on the floor all on its own, in quite a prodigious range!"
+				""
+				"It even works &cthrough walls and floors&r, making it a very favorable addition to any of your messier farms."
+			]
+			id: "24BFD19496FC54FC"
+			rewards: [{
+				id: "0189A0917BC71113"
+				item: "pickletweaks:magnet"
+				type: "item"
+			}]
+			subtitle: "Make an Advanced Magnet Upgrade."
+			tasks: [{
+				id: "7EA84FD18D5B9DC5"
+				item: "sophisticatedstorage:advanced_magnet_upgrade"
+				type: "item"
+			}]
+			title: "Unbelievably Attractive"
+			x: -2.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["0DC278411EF201B3"]
+			description: [
+				"These upgrades are very useful if there's an item you &creally&r don't want in your barrel. With a powerful filter, you can tell it to never let certain items in, destroying them &cinstantly!&r It can also be configured to handle overflow, which really helps to prevent systems from backing up by voiding any excess it recieves. Limited Barrels &creally&r benefit from this, especially in factories!"
+				""
+				"&cDo not forget about this upgrade. It may just save your server."
+			]
+			id: "64EAEA8947AA2DC3"
+			subtitle: "Make an Advanced Void Upgrade!"
+			tasks: [{
+				id: "7E69C7C82953D530"
+				item: "sophisticatedstorage:advanced_void_upgrade"
+				type: "item"
+			}]
+			title: "&c0"
+			x: -6.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0DC278411EF201B3"]
+			description: ["The Crafting Upgrade adds a tab to the right side of your Barrel that lets you craft in the same menu as your storage. Handy!"]
+			id: "23C240B26FDF6EB1"
+			rewards: [{
+				count: 32
+				id: "3DF754A3D1C41BEF"
+				item: "minecraft:stripped_oak_wood"
+				type: "item"
+			}]
+			subtitle: "Add an integrated Crafting Table to your Barrel!"
+			tasks: [{
+				id: "4FAE3070B79B4A8A"
+				item: "sophisticatedstorage:crafting_upgrade"
+				type: "item"
+			}]
+			title: "Craftable!"
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2E327A46026D1644"]
+			id: "7917AC46872AFA06"
+			rewards: [{
+				count: 16
+				id: "6F3FA6BD2B8447DC"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			subtitle: "Craft an even bigger stacking upgrade!"
+			tasks: [{
+				id: "08A6CA72A275B352"
+				item: "sophisticatedstorage:stack_upgrade_tier_2"
+				type: "item"
+			}]
+			title: "SuperStacker!"
+			x: -6.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["7917AC46872AFA06"]
+			id: "4A918C086242C446"
+			rewards: [{
+				count: 3
+				id: "6730E00C270BB2B6"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "Craft an even BIGGER stacking upgrade!"
+			tasks: [{
+				id: "25C4E60EDF5294AD"
+				item: "sophisticatedstorage:stack_upgrade_tier_3"
+				type: "item"
+			}]
+			title: "UltraStacker!"
+			x: -7.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["4A918C086242C446"]
+			id: "1A07EBA5E124EB9C"
+			rewards: [{
+				id: "26AC3C124B149753"
+				item: "sophisticatedstorage:stack_upgrade_tier_4"
+				type: "item"
+			}]
+			subtitle: "Craft the BIGGEST stacking upgrade!"
+			tasks: [{
+				id: "46F4DC1ECB2B60CF"
+				item: "sophisticatedstorage:stack_upgrade_tier_4"
+				type: "item"
+			}]
+			title: "S-S-S-Stack Combo!"
+			x: -8.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["37629B078E208457"]
+			description: ["Furnace Augments can be used to increase your furnace's efficiency, speed, or size. Others can turn it into a &cBlast Furnace&r, granting all its benefits and downsides, or even a &cFactory&r, multiplying its processing speed but forcing it to run on electricity!"]
+			id: "0290C9D81A3924FA"
+			rewards: [{
+				id: "468A91D3649137BC"
+				item: "ironfurnaces:augment_blasting"
+				type: "item"
+			}]
+			subtitle: "Craft the Speed Furnace Augment."
+			tasks: [{
+				id: "31D8F9221A7655EC"
+				item: "ironfurnaces:augment_speed"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.0d
+		}
+		{
+			description: [
+				"Spawners are generated in dungeons and at Quest Locations found in the Adventure chapter. While useful on their own, their usefulness doesn't end there- by using many materials on the spawner, like Clocks and Sugar, the spawner can be improved further. After a while, it'll generate more mobs than you can handle!"
+				""
+				"Press 'U' on the Spawner to find out more."
+			]
+			id: "0A291DAA95D74053"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "130198498D25D9CF"
+					item: "minecraft:clock"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "55843FCC8B48878E"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "You've mined a Spawner with an enchanted Pickaxe. Good work!"
+			tasks: [{
+				id: "23CA47C265CBE74D"
+				item: "minecraft:spawner"
+				type: "item"
+			}]
+			title: "Shadow Quest: Apotheotic!"
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			description: [
+				"This is a Shadow Quest. That means it doesn't show up until after you've completed its requirements."
+				""
+				"These exist either to reward you for going out on your own and doing difficult things, or finding items with strange uses that need explained."
+				""
+				"These trees can't be found in the world! "
+				""
+				"Keep them around- you'll want them later."
+			]
+			id: "41253EB300E5D962"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "292926B4318DD0CB"
+				item: "silentgear:golden_nether_banana"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Get a Netherwood Sapling out of a chest."
+			tasks: [{
+				id: "4525ABEC13382304"
+				item: "silentgear:netherwood_sapling"
+				type: "item"
+			}]
+			title: "Shadow Quest: Going Bananas!"
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			description: ["No, no, no, this is all wrong! Go back!"]
+			id: "2091954FE9D6E6F8"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "076DE9CBA8755352"
+				item: "ironfurnaces:diamond_furnace"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "That wasn't the furnace we asked you to make at all! Ugh."
+			tasks: [{
+				id: "44B9EA12667C7850"
+				item: "ironfurnaces:crystal_furnace"
+				type: "item"
+			}]
+			title: "Shadow Quest: Huh?"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			description: ["These things are more useful than you might think- combined with some Redstone mechanics, they can be used to string together many, many furnaces without the need for pipes. You'll need Rails and Hoppers though- so good luck with that."]
+			id: "0484A9C57FCFFE9C"
+			invisible: true
+			optional: true
+			shape: "rsquare"
+			subtitle: "You crafted a Minecart with Chest. Uh... Why?"
+			tasks: [{
+				id: "4762E90C7B7B2E53"
+				item: "minecraft:chest_minecart"
+				type: "item"
+			}]
+			title: "Shadow Quest: On the Go!"
+			x: 1.2142857142857224d
+			y: -3.107142857142854d
+		}
+		{
+			description: [
+				"The machines won't cut it!"
+				""
+				"This was planned to be a Challenge, but was considered too difficult and time-consuming to be reasonably accomplished."
+			]
+			id: "17AB62BB8C22DECB"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "480EDA421AB822FD"
+				item: {
+					Count: 1b
+					id: "ends_delight:dragon_tooth_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Farm every single crop with your bare hands."
+			tasks: [{
+				advancement: "farmersdelight:main/plant_all_crops"
+				criterion: ""
+				icon: "pamhc2crops:lettuceitem"
+				id: "0984C5F7D1F5A03B"
+				type: "advancement"
+			}]
+			title: "Shadow Quest: Farmer's Completionist"
+			x: 4.41836734693878d
+			y: -3.515306122448976d
+		}
+		{
+			dependencies: ["0290C9D81A3924FA"]
+			description: [
+				"This augment will change your machine from running on Coal to running on electricity! And as an added bonus, it even gains a couple of slots!"
+				"How do you make electricity? &cYou might not have unlocked that Quest yet.&r Try the main questline."
+			]
+			id: "4E4449210530D866"
+			subtitle: "Craft a Factory Augment. I'm not sorry for these puns."
+			tasks: [{
+				id: "5EB5B6C7B3BB76EF"
+				item: "ironfurnaces:augment_factory"
+				type: "item"
+			}]
+			title: "Matter of Factory"
+			x: -1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["096E49E9F0C0B328"]
+			description: ["The Alchemy Bench takes valuable blocks like Iron and Gold and gives them new textures! This works on a large number of shinies, including Glowstone."]
+			id: "39D37ECFF44BFE73"
+			subtitle: "Craft an Alchemy Bench."
+			tasks: [{
+				id: "66C6781254CBD418"
+				item: "chipped:alchemy_bench"
+				type: "item"
+			}]
+			title: "536,329 Souls"
+			x: 4.0d
+			y: -10.0d
+		}
+	]
+	subtitle: ["We all have to start somewhere. And you have to start by punching wood."]
+	title: "&b0: Beginnings"
+}

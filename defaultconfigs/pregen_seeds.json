@@ -1,0 +1,126 @@
+{
+	"level_seeds": [
+		{
+			"dim": "ad_astra:glacio_orbit",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "minecraft:the_end",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:mars",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "minecraft:overworld",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:earth_orbit",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:moon_orbit",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:moon",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:venus",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:venus_orbit",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "minecraft:the_nether",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:glacio",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "mythicbotany:alfheim",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:mercury_orbit",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:mars_orbit",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:mercury",
+			"seed": -9138752963780655994
+		}
+	],
+	"structure_seeds": [
+		{
+			"dim": "ad_astra:glacio_orbit",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "minecraft:the_end",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:mars",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "minecraft:overworld",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:earth_orbit",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:moon_orbit",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:moon",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:venus",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:venus_orbit",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "minecraft:the_nether",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:glacio",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "mythicbotany:alfheim",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:mercury_orbit",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:mars_orbit",
+			"seed": -9138752963780655994
+		},
+		{
+			"dim": "ad_astra:mercury",
+			"seed": -9138752963780655994
+		}
+	]
+}

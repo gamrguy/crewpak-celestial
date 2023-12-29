@@ -1,0 +1,233 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "adventure"
+	group: "5F3E2B4FBD216107"
+	icon: {
+		Count: 1b
+		id: "pickletweaks:emerald_sword"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "5120376173C4A0C0"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Everyone starts humbly. Before you get too excited to head off into the world, it's not a bad idea to find a Village and get your bearings."
+				""
+				"There are many signposts around the world that can show you the direction of a Village, and how far it is. "
+			]
+			id: "02DD4DD69CD98D10"
+			rewards: [{
+				count: 16
+				id: "2402AD90AD6914FA"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			subtitle: "Find a Village, and begin your journey."
+			tasks: [{
+				icon: "easy_villagers:villager"
+				id: "71CA73EE5EF5125C"
+				structure: "#minecraft:village"
+				title: "Find and step foot in a Village."
+				type: "structure"
+			}]
+			title: "It Takes a Village"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["02DD4DD69CD98D10"]
+			description: [
+				"Not every structure is hostile. This one is downright friendly!"
+				""
+				"Many villagers gather here to share in the tales of their travels. And every one of them is a seasoned worksman! "
+				""
+				"There's also some spare resources in chests around the pub. I'm sure they wouldn't mind if you took some..."
+			]
+			id: "33FDF2541D161D53"
+			rewards: [{
+				count: 5
+				id: "2ADE8638CACC3FD2"
+				item: "croptopia:beer"
+				type: "item"
+			}]
+			subtitle: "Find the Greenwood Pub in a Dark Oak Forest."
+			tasks: [{
+				icon: "croptopia:beer"
+				id: "65DB0E876ABD1673"
+				structure: "dungeons_arise:greenwood_pub"
+				title: "The Greenwood Pub"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"There are many hostile settlements out in the desert. "
+				""
+				"Undead raiders rattle their bones at passers-by. But for you? Their arrows are at the ready."
+				"Surely this bunch of brigands have some worthwhile loot for the taking."
+				""
+				"It's reccomended you only fight this dungeon once you've acquired full Iron equipment or better."
+			]
+			id: "0D6568D46996F9EE"
+			rewards: [{
+				id: "24E710F66864B39D"
+				item: {
+					Count: 1b
+					id: "minecraft:bow"
+					tag: {
+						AttributeModifiers: [{
+							Amount: 0.1d
+							AttributeName: "generic.movement_speed"
+							Name: "generic.movement_speed"
+							Operation: 1
+							Slot: "mainhand"
+							UUID: [I;
+								-2082620834
+								-484947485
+								-1094826430
+								213850398
+							]
+						}]
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 9s
+							}
+							{
+								id: "minecraft:power"
+								lvl: 4s
+							}
+							{
+								id: "minecraft:punch"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:infinity"
+								lvl: 1s
+							}
+						]
+						display: {
+							Lore: [
+								"{\"text\":\"You took this bow off a bandit's corpse.\"}"
+								"{\"text\":\"It was a corpse when you started too, but, y'know.\"}"
+								"{\"text\":\"Resilient\",\"color\":\"blue\",\"bold\":true,\"italic\":false}"
+							]
+							Name: "{\"text\":\"Bandit's Longarm\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Find a Bandit Towers, and attack their base of operations."
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "upgradednetherite:gold_upgraded_netherite_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "06691195AF157674"
+				structure: "dungeons_arise:bandit_towers"
+				title: "Bandits!"
+				type: "structure"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			description: ["It's comfy."]
+			id: "63A22EE28767B047"
+			rewards: [{
+				id: "34E4CAF918EB0288"
+				item: "farmersrespite:green_tea"
+				type: "item"
+			}]
+			subtitle: "Find a Hot Spring Bath House."
+			tasks: [{
+				icon: "inventorypets:cloud_block"
+				id: "758391E5E0ED0442"
+				structure: "dungeons_arise:bathhouse"
+				title: "Hot Spring Episode!"
+				type: "structure"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			description: ["Something about that tree you just passed isn't quite right."]
+			id: "3FE822AD2FAA40C0"
+			ignore_reward_blocking: true
+			invisible: true
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				description: ""
+				icon: "minecraft:oak_sapling"
+				id: "5404A63E0BD26733"
+				title: "Look up."
+				type: "toast"
+			}]
+			shape: "rsquare"
+			subtitle: "Find a... tree?"
+			tasks: [{
+				icon: "minecraft:oak_sapling"
+				id: "17EC3D6BDE320A7A"
+				structure: "inventorypets:code_structure_tree_top"
+				title: "Find a... tree?"
+				type: "structure"
+			}]
+			title: "Shadow Quest: Hidden Friends"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"Blazes only spawn from the barred cubes known as \"Mob Spawners\". You can find theirs in the Nether."
+				""
+				"Blazes drop Blaze rods, a potent fuel, important crafting material, and fairly nice looking decoration."
+			]
+			id: "424B0AC3D5189904"
+			rewards: [{
+				count: 16
+				id: "484973A09CC158EC"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			subtitle: "Find and kill a Blaze."
+			tasks: [{
+				entity: "minecraft:blaze"
+				icon: "handcrafted:blaze_trophy"
+				id: "230D2E4ADA4EDA1E"
+				title: "Find and Kill a Blaze."
+				type: "kill"
+				value: 1L
+			}]
+			title: "Sweltering Inferno"
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			id: "468583394299C7CB"
+			subtitle: "Slay a Wither and survive long enough to claim its Star"
+			tasks: [{
+				id: "5C139A160F9C0C20"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			title: "Whither Thither"
+			x: 0.0d
+			y: -5.5d
+		}
+	]
+	subtitle: ["It's a big world out there. Infinitely big."]
+	title: "&21c: Adventure!"
+}

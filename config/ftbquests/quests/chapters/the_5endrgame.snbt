@@ -1,0 +1,367 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_5endrgame"
+	group: "5621BE7BAC482CD1"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
+	icon: {
+		Count: 1b
+		id: "endrem:magical_eye"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "75598EC9E154C366"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"There is a dark force beyond this realm."
+				""
+				"Its purpose is entropy, and its name- the &5End.&r"
+				""
+				"War, in the name of creation, in the name of all you've built here. Fight the inevitable- combat the &5End&r."
+			]
+			id: "10EDCE663625A32A"
+			subtitle: "Find one of the Eyes of the &5End&r, beginning your inexorable march to the &5End&rgame."
+			tasks: [{
+				advancement: "endrem:main/root"
+				criterion: ""
+				icon: "minecraft:ender_eye"
+				id: "6B888FCFE74CD488"
+				title: "The Eyes of the &5End"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"19FA92D65EA5AFE5"
+				"10EDCE663625A32A"
+			]
+			description: [
+				"To make your way to the &5End&r, you'll need a great deal of Eyes of &5End&rer- especially if you've travelled a far distance to make your base already. Using an eye on the surface with Right Click will free the Eye, letting it begin its hunt. "
+				""
+				"From time to time, an Eye will shatter- while unfortunate, it's unavoidable. You are, essentially, on a clock to find the Stronghold once you begin- a clock that ticks down as each Eye breaks. With some smart movement and triangulation, the Stronghold can be found in as few as one Eye, but... don't do that."
+			]
+			id: "5F4022FF841E7ACC"
+			rewards: [{
+				count: 16
+				id: "2A8E17EF7A52ED25"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			subtitle: "Craft disposable Eyes of &5End&rer to find the Stronghold."
+			tasks: [{
+				count: 16L
+				id: "60A6AF458EA1A43D"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			title: "All Eyes On You"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5F4022FF841E7ACC"]
+			description: [
+				"Welcome to the Stronghold. I'd reccomend closing the quest you're reading immediately and finding somewhere safe- you're in immediate danger, here."
+				""
+				""
+				"Got yourself holed in somewhere? Nice and safe? Good. Allow me to explain."
+				""
+				"You've been led here by an elder force- or perhaps, one yet to be born in this realm. Wherever and whenever it's from, it's called the &5End&r. You've already met their denizens- the jet Endermen, anxious fellows with eyes of amethyst. Their existence is innumerable, their count inevitably bringing about the &5End&r times as they take from our realm, reducing it in entropy."
+				""
+				"But... you'll stop them, won't you? "
+				""
+				"This Stronghold is a gateway between our realm and theirs. But it won't be so easy..."
+			]
+			id: "2CA422E3878C4AD5"
+			invisible: true
+			rewards: [{
+				count: 8
+				id: "779017AEA5AE6A28"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			subtitle: "Follow your Eye of &5End&rer to its final destination."
+			tasks: [{
+				advancement: "minecraft:story/follow_ender_eye"
+				criterion: ""
+				id: "77C472593438AAF9"
+				type: "advancement"
+			}]
+			title: "The Stronghold Near The &5End&r of The Game"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2CA422E3878C4AD5"]
+			description: [
+				"The portal will not accept such common Eyes and grant you passage. Only those who have witnessed the &5End&r and its &0Void&r may even dream of entering."
+				""
+				"But the gateway can be decieved- by gathering 12 unique Eyes by exploring the world and slaying its horrors, and setting them within the &5End &0Portal&r, you may open this eldritch gate."
+				""
+				"You'd best prepare before you do so, and mark this place on your map. You won't be able to leave easily without a means of long-distance, interdimensional &bteleportation&r."
+			]
+			id: "0D8F83E14D290EE4"
+			invisible: true
+			rewards: [{
+				id: "71518A757615CD7D"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			subtitle: "Set your Eyes upon the portal, and learn the truth."
+			tasks: [{
+				icon: "minecraft:end_portal_frame"
+				id: "46578A007972EC66"
+				observe_type: 0
+				timer: 0L
+				title: "An Eye for an Eye"
+				to_observe: "minecraft:end_portal_frame"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0D8F83E14D290EE4"]
+			description: [
+				"If you step through this portal to the &5End&r, you will not be able to return until you have explored it and conquered its master- the &5End&rer dragon. Her starspawn- the &5End&rermen- Are agents of entropy, sent to bring about the &5End&r Times by tearing apart the infinite world block by block. And with an infinite amount of time- they will inevitably succeed."
+				""
+				"Or at least, they would have- until you came along."
+				""
+				"The &5End&rermen here aren't outwardly hostile as long as you don't look them in the eye- your existence here is such an anomaly that they can't comprehend your presence just as much as you don't comprehend their strange, alien realm. The moment you &cmake it clear you're a threat to them&r, though, you'll be turned on immediately."
+				""
+				"Unfortunately for you, that's &bwhy you're here.&r Go, halt the &5End&r Times, and slay the &5End&rer Dragon. Prepare for bloody battle, and show her that &bthe beginning&r is mightier than &5the end&r."
+			]
+			id: "53C503E7680F4EC8"
+			subtitle: "Step through that fell gateway with no intent to return."
+			tasks: [{
+				advancement: "minecraft:story/enter_the_end"
+				criterion: ""
+				id: "4D9C264C31B1CF9A"
+				title: "Welcome to the Beginning of the &5End"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["53C503E7680F4EC8"]
+			description: [
+				"Congratulations- you've halted the End's advance, and saved your world! Take this sword, a mark of how far you've come. Maybe keep it around, as a good luck charm."
+				""
+				"Now that you've slain the Dragon, there's a few things you can do from here..."
+			]
+			id: "42A8CCAD2FFC9C2F"
+			rewards: [{
+				id: "666DCB9F102F4604"
+				item: {
+					Count: 1b
+					id: "minecraft:wooden_sword"
+					tag: {
+						AttributeModifiers: [{
+							Amount: -4
+							AttributeName: "generic.attack_damage"
+							Name: "generic.attack_damage"
+							Operation: 0
+							Slot: "mainhand"
+							UUID: [I;
+								-1539308330
+								-1811005174
+								-1925498922
+								737968209
+							]
+						}]
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:looting"
+							lvl: 10s
+						}]
+						HideFlags: 7
+						Unbreakable: 1b
+						display: {
+							Lore: [
+								"{\"text\":\"It's just a normal sword, isn't it...?\"}"
+								"{\"text\":\"Unbreakable\",\"color\":\"white\",\"bold\":true,\"italic\":false}"
+								"{\"text\":\"Looting X\",\"color\":\"gold\",\"bold\":true,\"italic\":false}"
+								"{\"text\":\"Dull\",\"color\":\"dark_gray\",\"bold\":false,\"italic\":false}"
+							]
+							Name: "{\"text\":\"Beginner's Blade\",\"color\":\"rainbow\",\"bold\":true,\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "You've slain the Ender Dragon, and halted the inexorable tide of entropy."
+			tasks: [{
+				advancement: "minecraft:end/root"
+				criterion: ""
+				icon: "minecraft:dragon_head"
+				id: "339CD26E50F34E01"
+				title: "Defeat the Ender Dragon."
+				type: "advancement"
+			}]
+			title: "The End."
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["42A8CCAD2FFC9C2F"]
+			description: [
+				"Exploring the End is a strange and dangerous experience. "
+				""
+				"You probably noticed it the moment you warped in, but there's nothing below- only open &0Void.&r. The &0Void&r consumes all within it, and falling in is &ccertain death, even to the mightiest of the gods.&r You'll also lose everything on you, not even leaving a &bgrave&r if that happens, so do everything in your power not to. Fortunately, accidentally chucking an Ender Pearl into the void doesn't do anything, as it &ofalls forever, never breaking.&r"
+				""
+				"There is no way to reduce the damage caused by the &0Void&r. Even being in Creative mode is a pitiful defense against it."
+				"Beware those beasts that would use the &0Void&r in its attacks, as they are violent, immense beings- perhaps even surpassing the Dragon."
+				""
+				"You can venture to the Outer End by utilizing one of the &0Voidsent Gateways&r that popped up when the Dragon was slain- the severing of her lifeforce heralded a deeper, darker future to the End."
+				""
+				"Are we the baddies?"
+			]
+			id: "5F81F43D6E4DEBE3"
+			subtitle: "Chuck an Ender Pearl through a Voidsent Gateway."
+			tasks: [{
+				advancement: "minecraft:end/enter_end_gateway"
+				criterion: ""
+				icon: "minecraft:ender_pearl"
+				id: "24364B9CA6162ED0"
+				title: "A Strange Gateway"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["42A8CCAD2FFC9C2F"]
+			description: [
+				"Go home."
+				""
+				"Feel sunlight, once more."
+			]
+			id: "0A9A2F3E5AEECBBF"
+			rewards: [{
+				id: "0197DE3F155E3F17"
+				item: "pamhc2foodcore:potatosoupitem"
+				type: "item"
+			}]
+			subtitle: "Return Home through the End Portal."
+			tasks: [{
+				icon: "minecraft:oak_sapling"
+				id: "7ACCA3819D6FDD24"
+				observe_type: 0
+				timer: 0L
+				to_observe: "minecraft:end_portal"
+				type: "observation"
+			}]
+			title: "No Time Like The Present"
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["42A8CCAD2FFC9C2F"]
+			description: [
+				"And don't worry about your pet cat- Pet Mobs are excluded from the list."
+				""
+				"(Some mobs have been deliberately removed from this list due to general inaccessibility or inability to kill them, like spawnable Inventory Pets.)"
+			]
+			id: "67A64E2E2B5408DD"
+			rewards: [{
+				id: "3D6ADA5C4B384C68"
+				item: {
+					Count: 1b
+					id: "aiotbotania:livingrock_sword"
+					tag: {
+						AttributeModifiers: [
+							{
+								Amount: 12
+								AttributeName: "generic.attack_damage"
+								Name: "generic.attack_damage"
+								Operation: 0
+								Slot: "mainhand"
+								UUID: [I;
+									-406651272
+									1271548444
+									-1794594273
+									-1387462736
+								]
+							}
+							{
+								Amount: -1
+								AttributeName: "generic.luck"
+								Name: "generic.luck"
+								Operation: 0
+								Slot: "mainhand"
+								UUID: [I;
+									59931144
+									1496205672
+									-1578519459
+									1756066516
+								]
+							}
+						]
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:looting"
+								lvl: 5s
+							}
+						]
+						HideFlags: 5
+						Unbreakable: 1b
+						display: {
+							Lore: [
+								"{\"text\":\"Made of solid Dreamstone- a material lost to time- it's\"}"
+								"{\"text\":\"strong enough to cut through mountains.\"}"
+								"{\"text\":\"Unbreakable\",\"color\":\"white\",\"bold\":true,\"italic\":false}"
+								"{\"text\":\"Ancient\",\"color\":\"red\",\"bold\":true,\"italic\":false}"
+								"{\"text\":\"Blockbreaker\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}"
+								"{\"text\":\"Bane-of-All X\",\"color\":\"gold\",\"bold\":true,\"italic\":false}"
+								"{\"text\":\"Grandfather Paradox\",\"color\":\"dark_gray\",\"bold\":true,\"italic\":false}"
+							]
+							Name: "{\"text\":\"Mastermune\",\"color\":\"Rainbow\",\"bold\":true,\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Kill everything. Well, one of everything."
+			tasks: [{
+				advancement: "minecraft:adventure/kill_all_mobs"
+				criterion: ""
+				icon: {
+					Count: 1b
+					id: "minecraft:diamond_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "7C07C33505AB1364"
+				title: "Kill everything. Yes, &l&ceverything."
+				type: "advancement"
+			}]
+			title: "Challenge 5: &bSlayer of Seven Realms"
+			x: 2.0d
+			y: -9.0d
+		}
+	]
+	title: "The &5End&rgame"
+}

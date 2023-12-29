@@ -1,0 +1,941 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "05_mods_and_overviews"
+	group: "1CAB2E4826660B31"
+	icon: {
+		Count: 1b
+		id: "supplementaries:wrench"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "1CB3A680876D0525"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["So in this section, or \"chapter,\" we're going to be introducing all major mods, with the descriptions of those mods saying what they're about, giving out the mod's book (if they come with one), as that'll tell you more in-depth about the mod."]
+			id: "3A533123C16825A7"
+			rewards: [{
+				id: "25B77C3513949943"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7348B2DBA4282A19"
+				title: "how this section works"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Apotheosis is, for our purposes, a utility mod that adds unprecedented amounts of control to redstone, spawners, and even farming!"]
+			icon: "minecraft:spawner"
+			id: "4B58B4FBE5108D2D"
+			rewards: [{
+				id: "65F29BCA9CC152A7"
+				item: "minecraft:slime_spawn_egg"
+				type: "item"
+			}]
+			subtitle: "Ascend to new heights with Apotheosis!"
+			tasks: [{
+				id: "3DD0D666C034B029"
+				title: "Apotheosis"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["The Create mod is a mod of turning cogs and clockwork, moving blocks and massive, interwoven factories of belts and tubing. Many of Create's aspects are intuitive and fun, and lend well to a continued iteration and refinement. You'll never make something the same way twice!"]
+			icon: "create:wrench"
+			id: "17CFBE2C91CCDCDC"
+			subtitle: "&bCreate&r to your heart's content with Create!"
+			tasks: [{
+				id: "1904AB7F90C297EE"
+				title: "Create"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: [
+				"Quark does a lot of very, very small things. And that's all it needs to do. "
+				""
+				"It adds many blocks, items, and mechanics that feel otherwise missing from base minecraft, and has nice utilities like the Trowel, which lets you place random blocks from your hotbar."
+			]
+			icon: "quark:soul_bead"
+			id: "489BD8ADDE8497D0"
+			rewards: [{
+				id: "7705C936B53C0C32"
+				item: "quark:trowel"
+				type: "item"
+			}]
+			subtitle: "Appreciate the little things with Quark!"
+			tasks: [{
+				id: "57D9EC2F771494F4"
+				title: "Quark"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: [
+				"Ars Nouveau gives you bits and pieces of spells called Glyphs to put together a unique spell all on your own! "
+				""
+				"It also has many other features, like tying some mobs to you as Familiars that cannot truly perish."
+			]
+			icon: "ars_nouveau:archmage_spell_book"
+			id: "2C4486CA6EDD0637"
+			subtitle: "Make your own magic with Ars Nouveau!"
+			tasks: [{
+				id: "40A8375C5EF9EC61"
+				title: "Ars Neuveau"
+				type: "checkmark"
+			}]
+			title: "Ars Nouveau"
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: [
+				"Better Combat is the combat overhaul mod we like best. It adds a bunch of new classes of weapons, from polearms to greatswords to knives."
+				"It also changes basic combat from this weird timing thing that base Minecraft has to preventing the next swing until the full cooldown of the weapon"
+				"has been satisfied. On top of that, it makes it so you only need to hold down the attack button when using a weapon, as it will automatically swing"
+				"the weapon as soon as the previously mentioned cooldown has completed."
+			]
+			icon: {
+				Count: 1b
+				id: "simplyswords:diamond_greataxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "05B163D1E02EEABC"
+			subtitle: "Fight better with Better Combat!"
+			tasks: [{
+				id: "28450A1C71FD6430"
+				title: "Better Combat"
+				type: "checkmark"
+			}]
+			x: -11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Botania is a tech mod that looks a lot like a magic mod. Use the power of arcane flowers to perform impressive feats of mana!"]
+			icon: "botania:gaia_head"
+			id: "58A869C7663D4522"
+			rewards: [{
+				id: "65FA5088CD32035E"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+			subtitle: "Harvest the power of flowers with &aBotania!"
+			tasks: [{
+				id: "4E35A50D2E42BC45"
+				title: "Botania"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["The Mekanism mod adds many machines, every last one of them useful straight to the endgame. Master them all! The factory must grow!"]
+			icon: "mekanism:metallurgic_infuser"
+			id: "24FBC22C5757C233"
+			rewards: [{
+				count: 3
+				id: "32125986418E2EB2"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			subtitle: "Master technology and rise above the clockwork with the ultimate Mekanism!"
+			tasks: [{
+				id: "50B22CC8CC07510C"
+				title: "Mekanism"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Oh, The Biomes You'll Go! (or BYG, for short) adds many new biomes, wood types, rock types, some structures, mushrooms, flowers, plants... It's a general world expansion to give a fresh experience to even veteran players!"]
+			icon: "byg:man_o_war_bucket"
+			id: "434B42835B62F2E6"
+			subtitle: "Oh, the biomes you'll go! There is fun to be done!"
+			tasks: [{
+				id: "70792A546F3C291D"
+				title: "Biomes You'll Go"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Farmer's Delight is a mod that adds many crops and foods to the game, as well as some new tools for use in the pens and in the kitchen! "]
+			icon: {
+				Count: 1b
+				id: "farmersdelight:netherite_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "15F2DD247F994F3A"
+			subtitle: "Delighted to present, Farmer's Delight!"
+			tasks: [{
+				id: "47D88AB4E4208079"
+				title: "Farmer's Delight"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: [
+				"Bigger Reactors lets you generate large amounts of power with uranium, control rods, active \\& passive cooling, and more. "
+				""
+				"To add to that- they don't explode! At least, not anymore."
+			]
+			icon: "biggerreactors:reactor_glass"
+			id: "6F4A99DE175E66D4"
+			subtitle: "Need more power? Build a Bigger Reactor!"
+			tasks: [{
+				id: "699BD72DF514904D"
+				title: "Extreme Reactors 2"
+				type: "checkmark"
+			}]
+			title: "Bigger Reactors"
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Explore space, step on the moon, survive on Mars and more! Ad Astra lets you take to the stars and explore, as well as create orbital Stations to base at!"]
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_4_rocket"
+				tag: {
+					BotariumData: { }
+				}
+			}
+			id: "06C8B0192CB63CE5"
+			subtitle: "Shoot for the stars with Ad Astra!"
+			tasks: [{
+				id: "0D95434A168F2E17"
+				title: "Ad Astra"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			icon: {
+				Count: 1b
+				id: "chiselsandbits:chisel_netherite"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "268E55A7C5020CEA"
+			subtitle: "Cut to bits, Chisels \\& Bits!"
+			tasks: [{
+				id: "31194AD84F7E3177"
+				title: "Chisels and bits"
+				type: "checkmark"
+			}]
+			title: "Chisels \\& Bits"
+			x: -12.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["When Dungeons Arise adds many new structures to be challenged and looted at every stage of the game. "]
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "27F5717849B11DCE"
+			rewards: [{
+				id: "6986A12C39B476A9"
+				item: "minecraft:skeleton_skull"
+				type: "item"
+			}]
+			subtitle: "Turn tail and run When Dungeons Arise!"
+			tasks: [{
+				id: "06AA1798E3C8E649"
+				title: "when dungeons arise"
+				type: "checkmark"
+			}]
+			title: "When Dungeons Arise"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Valhelsia Structures adds many new dungeons and buildings, some outwardly hostile, others simply abandoned buildings from long ago. You'll never know until you explore!"]
+			icon: "valhelsia_structures:explorers_tent"
+			id: "68078F67DE0514DA"
+			subtitle: "Explore forgotten ruins from Valhelsia Structures!"
+			tasks: [{
+				id: "0C5E134788DEA86E"
+				title: "Valhelsia structures"
+				type: "checkmark"
+			}]
+			title: "Valhelsia Structures"
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Harvestcraft is a mod that adds many, many more items to farm from trees, bushes, crops, cacti... a lot of things. And they can all be cooked and combined into many interesting foods, from burgers to fries, roasts to bibimbap!"]
+			icon: "pamhc2foodextended:chipsandsalsaitem"
+			id: "43D18B878E7A538B"
+			subtitle: "Reap what you sow in Pam's Harvestcraft!"
+			tasks: [{
+				id: "3661497F308F4407"
+				title: "Pam's Harvestcraft"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Cooking For Blockheads provides a table and interface just for keeping all of those cooking materials neat and orderly. It'll let you store items in its cabinets, then use them without ever needing to open them back up!"]
+			icon: "cookingforblockheads:sink"
+			id: "001BB4176CAF05AB"
+			subtitle: "Keep it in the Kitchen with Cooking For Blockheads!"
+			tasks: [{
+				id: "0C3135D6F4EF9549"
+				title: "Cooking for Blockheads"
+				type: "checkmark"
+			}]
+			x: 17.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["This mod adds many drinks, like tea, to the list of items in Farmer's Delight. Sit back, take a sip, and enjoy that voxellized sunset."]
+			icon: "farmersrespite:green_tea"
+			id: "70C8514CC4E02446"
+			subtitle: "Sit back and drink some tea with Farmer's Respite!"
+			tasks: [{
+				id: "552A286DC324B951"
+				title: "Farmer's Respite"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Nether's Delight is an expansion that adds many Nether-based recipes to Farmer's Delight, like whole roast Hoglin!"]
+			icon: "nethersdelight:stuffed_hoglin"
+			id: "2CAC2EB7BBB9CA46"
+			subtitle: "Enter Hell's Kitchen with Nether's Delight!"
+			tasks: [{
+				id: "107B09E5AEF20055"
+				title: "Nether's Delight"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["End's Delight is another expansion mod, adding a large amount of content to the End for cooking and eating!"]
+			icon: "ends_delight:dragon_leg_with_sauce_block"
+			id: "2C4468A763B8D826"
+			subtitle: "Experience a taste out of this world with End's Delight!"
+			tasks: [{
+				id: "69E5F0691640E8A0"
+				title: "End's Delight"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Ars Creo adds many compatibilities between Ars Nouveau and Create, letting machines cast spells on the go!"]
+			icon: "ars_nouveau:spell_turret"
+			id: "06FDA0E82B790690"
+			rewards: [{
+				id: "7E2BD82090EC0DCD"
+				item: "ars_creo:starbuncle_wheel"
+				type: "item"
+			}]
+			subtitle: "&bCreate&r your own magic with Ars Creo!"
+			tasks: [{
+				id: "0731E16061333C43"
+				title: "Ars Creo"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Create Crafts \\& Additions adds alternators, engines, wires and more for cheap, early interaction with your power network."]
+			icon: "createaddition:tesla_coil"
+			id: "0F8F0F7D6524FB27"
+			subtitle: "Harness the power of the spiral with Create: Crafts and Additions!"
+			tasks: [{
+				id: "4E927910185BF9C6"
+				title: "Create: Crafts and Additions"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Create: Confectionery adds many interactions with sweets like chocolate, honey, sugar and more. Master the bakery and get cooking!"]
+			icon: "create_confectionery:gingerbread_man"
+			id: "4E1A38C1D9AB9E61"
+			subtitle: "Bite down on Create: Confectionery!"
+			tasks: [{
+				id: "194835C791EAFDB3"
+				title: "Create: Confectionary"
+				type: "checkmark"
+			}]
+			title: "Create: Confectionery"
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: [
+				"It's another farming mod! We have, SO many of these!"
+				""
+				"Croptopia adds even more plants and foods to cook with. Eat whatever you want, really."
+			]
+			icon: "croptopia:doughnut"
+			id: "3D48C566CBBB237A"
+			subtitle: "It's the cream of the crop, Croptopia!"
+			tasks: [{
+				id: "4D4951824DCD3A50"
+				title: "Croptopia"
+				type: "checkmark"
+			}]
+			x: 19.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Immersive Aircraft is a mod that adds gyrocopters, biplanes, and more! For this pack, it's been specifically edited and skinned to be more within Create's aesthetic scheming."]
+			icon: "immersive_aircraft:biplane"
+			id: "0F5CD603CC4CAE73"
+			subtitle: "Fly, you fool, with Immersive Aircraft!"
+			tasks: [{
+				id: "1D2D4C15EFDD4EF0"
+				title: "Immersive Aircraft"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			icon: {
+				Count: 1b
+				id: "hexerei:witch_hazel_broom"
+				tag: { }
+			}
+			id: "5B21E7093FFBEDF2"
+			tasks: [{
+				id: "1BE3D5F8686D88A1"
+				title: "Hexerei"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Forbidden and Arcanus lets you harness the powers of Experience, Blood, and the Souls of the dead to perform powerful magics."]
+			icon: {
+				Count: 1b
+				id: "forbidden_arcanus:eternal_stella"
+				tag: { }
+			}
+			id: "487BEF69B9FA43DF"
+			rewards: [{
+				id: "702945FEF1C3AB5D"
+				item: "forbidden_arcanus:soul"
+				type: "item"
+			}]
+			subtitle: "Harness the power of the soul with Forbidden and Arcanus!"
+			tasks: [{
+				id: "6A71ADFB33D5C560"
+				title: "Forbidden and Arcanus"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Gravestones is a mod that saves your inventory into a block when you die, so you're not on a 5 minute timer to recollect it. We chose this mod over others because this mod allows the crafting of said gravestones additionally, adding a bit of a decorational aspect to it as well."]
+			icon: "minecraft:skeleton_skull"
+			id: "3D2D7974A32E4509"
+			subtitle: "Take that secret to your grave- your Gravestone, that is!"
+			tasks: [{
+				id: "6936D082371B55F1"
+				title: "Gravestones"
+				type: "checkmark"
+			}]
+			x: -11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: [
+				"Lootr changes the way loot generates in chests and barrels to have instanced, per-player loot, so we don't have to worry about things like "
+				"\"first come first serve\""
+			]
+			icon: "lootr:trophy"
+			id: "6A996D110ADE74AB"
+			subtitle: "Be a loot goblin with Lootr!"
+			tasks: [{
+				id: "0A5D9FAC1C8B7F1B"
+				title: "Lootr"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: [
+				"Simply Swords is a combat addition mod designed to be compatable with Better Combat. It adds the ability to use those additional weapon types, along"
+				"with adding some neat Legendary weapons you can only find from exploring or killing bosses."
+			]
+			icon: {
+				Count: 1b
+				id: "simplyswords:awakened_lichblade"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0C85B6C541C45737"
+			subtitle: "It's nothing but simple- it's Simply Swords!"
+			tasks: [{
+				id: "4F8A6FA56B48FC25"
+				title: "Simply Swords"
+				type: "checkmark"
+			}]
+			x: -11.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Mekanism Generators adds a handful of useful generators- and the means to make a nuclear reactor, a fusion generator, and even an antimatter engine!"]
+			icon: "mekanismgenerators:wind_generator"
+			id: "75D12EBD904908F3"
+			rewards: [{
+				id: "31BA7E40B1C33164"
+				item: "mekanism:energy_tablet"
+				type: "item"
+			}]
+			subtitle: "You have the power with Mekanism Generators!"
+			tasks: [{
+				id: "679E037A5BDDB6AE"
+				title: "Mekanism Generators"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Mekanism Tools adds a bunch of useful tools, and the MekaSuit armor, perfect for your lategame entourage!"]
+			icon: "mekanism:atomic_disassembler"
+			id: "7EF2A641737E3317"
+			subtitle: "Shatter the earth with Mekanism Tools!"
+			tasks: [{
+				id: "2F6262FCAF0138DF"
+				title: "Mekanism tools"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Refined Storage is a 'digital storage' mod that lets you store thousands upon millions of items in a single disk! It also has many automation utilities and more!"]
+			icon: "refinedstorage:controller"
+			id: "2339BADCE72A14A7"
+			rewards: [{
+				id: "25D2EBBE7104A238"
+				item: "refinedstorage:quartz_enriched_iron"
+				type: "item"
+			}]
+			subtitle: "Master the digital with Refined Storage!"
+			tasks: [{
+				id: "4F966D62C3CF1D70"
+				title: "Refined Storage"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["This mod adds a portable crafter to connect to your storage systems!"]
+			icon: "refinedstorageaddons:wireless_crafting_grid"
+			id: "6A18C19A8F0F24AB"
+			subtitle: "Craft on the go!"
+			tasks: [{
+				id: "2C423050B8C09F89"
+				title: "Refined Storage Addons"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: [
+				"Silent Gear lets you make tools your way- piece by piece, ingot by ingot, until you find a mix of materials and parts that works for you!"
+				""
+				"You do so through various \"Blueprints\", and craft parts to click together afterwards."
+				""
+				"It also adds special properties to almost every material in the game. Iron never gets left behind for good!"
+			]
+			icon: "silentgear:starlight_charger"
+			id: "5C931104E327E1F7"
+			rewards: [{
+				id: "4B6429E4852DAFC5"
+				item: {
+					Count: 1b
+					id: "silentgear:blueprint_book"
+					tag: {
+						Inventory: { }
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Inquire within for information about \"Silent Gear\", the toolbuilding mod!"
+			tasks: [{
+				id: "10CF1F750212B33C"
+				title: "SilentGear"
+				type: "checkmark"
+			}]
+			x: -9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["As the title would suggest, this is a large train and rails expansion for Create! Move large quantities of items massive distances, or move yourself and friends across your trainline!"]
+			icon: "create:track"
+			id: "23D0590650A30559"
+			subtitle: "Get on track with Create: Steam and Rails!"
+			tasks: [{
+				id: "6B7DA237168DE2B4"
+				title: "Create: Steam and Rails"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			icon: "easy_villagers:villager"
+			id: "1646404B0F049431"
+			tasks: [{
+				id: "4F10E6747F997859"
+				title: "Towns and Towers"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: [
+				"So the mod developer Yung has put out a bunch of mods that all do similar things, so I'm going to condense them all into this one checkbox."
+				"They spice up the vanilla structures, and make them much more enjoyable to find, and to explore."
+			]
+			icon: "minecraft:diamond_block"
+			id: "75A974284FF61019"
+			rewards: [{
+				id: "090773DCBFA76A74"
+				type: "xp"
+				xp: 500
+			}]
+			subtitle: "Don't just get good, get better with Yung's Better Minecraft collection!"
+			tasks: [{
+				id: "48FF17EFB9C114FB"
+				title: "Yung's Better ......"
+				type: "checkmark"
+			}]
+			title: "Yung's Better Minecraft"
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Supplementaries adds many more blocks and items that generally improve the quality-of-life around your base. From chalk boards you can draw on to globes that store positions, many more utilities rest within."]
+			icon: "supplementaries:globe"
+			id: "4344813A86344915"
+			subtitle: "Use chalk boards, clip boards, globes and more with these useful Supplementaries!"
+			tasks: [{
+				id: "4BAAFF71208A1084"
+				title: "Supplementaries"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Sophisticated Storage adds upgrades to your traditional barrels and chests to expand their capacity and give them upgrades for crafting, smelting, and more!"]
+			icon: {
+				Count: 1b
+				id: "sophisticatedstorage:diamond_shulker_box"
+				tag: {
+					accentColor: 1908001
+					mainColor: 1908001
+				}
+			}
+			id: "62A3D0A860A8EE21"
+			rewards: [{
+				id: "19406ECAD8F55EEA"
+				item: "minecraft:barrel"
+				type: "item"
+			}]
+			subtitle: "Hoard it all in a box with Sophisticated Storage!"
+			tasks: [{
+				id: "12370B4EBFC4ABCB"
+				title: "Sophisticated Storage"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: [
+				"Sophisticated Backpacks adds upgradable, customizable backpacks for some portable storage. We suggest putting it in the \"back\" slot of the "
+				"curios tab, though you can also put it in the chestplate slot if you wish. You also don't need to put it in one of those slots at all, and just right "
+				"click the open air with your hand to open it."
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "28AF927FD6D91C58"
+			subtitle: "Pick it up and take it with you with Sophisticated Backpacks!"
+			tasks: [{
+				id: "63A06474A348F72B"
+				title: "Sophisticated Backpacks"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Serene Seasons adds a weather and season cycle to Minecraft, granting a whole new level of world interaction as time passes."]
+			icon: "sereneseasons:calendar"
+			id: "4AFCAB813D668D2F"
+			subtitle: "Bask in Summer's warm rays and run from Winter's bite with Serene Seasons!"
+			tasks: [{
+				id: "004A51AE224CDC18"
+				title: "Serene Seasons"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["RFTools adds many useful blocks for factories, bases, and everyday use. Between energy shields and interactive screens, RFTools is the tool for your utmost control of your factory."]
+			icon: "rftoolsbase:smartwrench"
+			id: "463DA6C139B3A3C2"
+			rewards: [{
+				id: "5AD03F9DBA3D1547"
+				item: "rftoolsbase:manual"
+				type: "item"
+			}]
+			subtitle: "At your disposal, it's RFTools!"
+			tasks: [{
+				id: "73A6E8CE890D5B6A"
+				title: "RFToolsBase"
+				type: "checkmark"
+			}]
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["RFToolsPower adds even more options for power generation, like using common mob drops as fuel!"]
+			icon: "rftoolspower:blazing_rod"
+			id: "0A292D8F94FA4DAC"
+			subtitle: "Powering through, it's RFToolsPower!"
+			tasks: [{
+				id: "642C68C2CB9268E2"
+				title: "RFToolsPower"
+				type: "checkmark"
+			}]
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			icon: "rftoolsutility:crafter1"
+			id: "0594BE4821E3938E"
+			tasks: [{
+				id: "15D8E872653D0FD1"
+				title: "RFToolsUtility"
+				type: "checkmark"
+			}]
+			x: 13.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Simple though it may be, Additional Structures adds many things, from decrepit windmills to just actual boulders to see on your adventures."]
+			icon: "minecraft:amethyst_cluster"
+			id: "1292C82CEDC27FA5"
+			subtitle: "Explore the world and turn every stone with Rex's Additional Structures!"
+			tasks: [{
+				id: "496842C8224931BE"
+				title: "Rex's Additional Structures"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Refined Cooking lets you cook straight from your RS system! Handy that."]
+			icon: "refinedcooking:kitchen_station"
+			id: "68B93C9FCFA204D0"
+			subtitle: "Master the kitchen with Refined Cooking!"
+			tasks: [{
+				id: "322A30E7E86630F1"
+				title: "Refined Cooking"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Productive Bees is a mod that adds many new species of bees to breed and harvest from, capable of generating wood, stone, iron, diamonds and more!"]
+			icon: {
+				Count: 1b
+				id: "productivebees:nest_locator"
+				tag: { }
+			}
+			id: "566D28C2894AA41C"
+			rewards: [{
+				id: "0E2525FE6898D09E"
+				item: "productivebees:sturdy_bee_cage"
+				type: "item"
+			}]
+			subtitle: "Get buzzier than ever with Productive Bees!"
+			tasks: [{
+				id: "19168850DBA77B3D"
+				title: "Productive Bees"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: [
+				"Cosmetic armor allows one to.....have armor in a cosmetic slot. It also lets you hide your armor, showing the skin someone worked so hard on."
+				"Access it with the little circle in the bottom right of that image of yourself in your inventory. Clicking on the buttons in the top left of the armor"
+				"slots that just appeared will hide the armor attached to that slot, while putting armor in the slot shows that armor. Simple, right?"
+			]
+			icon: {
+				Count: 1b
+				id: "hexerei:witch_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2AD88FCE95F2C193"
+			subtitle: "In your own skin, it's Cosmetic Armor: Reworked!"
+			tasks: [{
+				id: "6578552292463E53"
+				title: "Cosmetic Armor Reworked"
+				type: "checkmark"
+			}]
+			x: -14.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"So you know how you've been getting a bunch of books for looking at these? Want those books to be combined into one?"
+				"Now you can! With Akashic Tome, simply put this book into a crafting interface with another book, and Akashic will absorb it."
+				"This will make it so when using the Akashic tome, you can select what book you want to read. Handy, right?"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "akashictome:tome"
+			id: "25C868945D1A09FA"
+			rewards: [{
+				id: "628B1B588CCAF9F1"
+				item: "akashictome:tome"
+				type: "item"
+			}]
+			tasks: [{
+				id: "12CE760A64ED3873"
+				title: "Akashic Tome"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Extra Disks adds storage disks that are ordinates of value above the average storage disk. Store millions, hundreds of millions of items in a single disk!"]
+			icon: "extrastorage:storagepart_16384k"
+			id: "4A0A1AA4F29AA1BC"
+			subtitle: "Hoard and store like never before with Extra Disks!"
+			tasks: [{
+				id: "095F3C57C204C364"
+				title: "Extra Disks"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["25C868945D1A09FA"]
+			description: ["Extra Cables allows you to make higher tiers of crafter, requester, exporter, importer, and more to increase the speed at which your automation can operate."]
+			icon: "cabletiers:ultra_importer"
+			id: "5B65C57C4F7E32C4"
+			subtitle: "Experience maximum throughput with Extra Cables!"
+			tasks: [{
+				id: "5AEABF3B810DA150"
+				title: "Cable Tiers"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+	]
+	subtitle: ["While essentially an 'information chapter', the rewards here are very worth your time."]
+	title: "&60Φ: mods and overviews!"
+}

@@ -1,0 +1,1899 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "powering_ahead"
+	group: "5F3E2B4FBD216107"
+	hide_quest_until_deps_visible: true
+	icon: "alltheores:osmium_gear"
+	id: "2B0D221299F0B84F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["051EF673D399E30F"]
+			description: [
+				"Of course, we only reccomend you make the Heat Generator your first generator. That little green square you see is the side it outputs power from."
+				""
+				"This handy little machine takes heat from the environment and churns it into power. Surrounding &bor Lavalogging&f the block with Lava will generate power passively at all times. It's not a lot, but it's enough to get started. You can also pipe lava directly into it- which you'll learn about later."
+				""
+				"You can &bLavalog&f a block by using a Lava Bucket in the space it occupies. It'll fill the block itself with lava! Don't worry about its integrity, it's built for that sort of thing. You might want to watch you don't &cstart any fires in your home&f, though. &c&lLava is very hot!"
+			]
+			id: "7B71BD09EB719ADB"
+			rewards: [{
+				id: "402B658CDF2419D1"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			subtitle: "Craft your first RF Generator."
+			tasks: [{
+				id: "4E36F67D9A2902CC"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+			}]
+			title: "Turning Up the Heat"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B71BD09EB719ADB"]
+			description: [
+				"Wind Generators make power no matter where they are! And they'll work completely passively, without any need for fuel."
+				""
+				"The higher up you put them, however, the more power they generate. It can get as high as &c384rf/t&f in some altitudes!"
+				""
+				"The further up you put it, the more cables you'll need to reach it, though."
+			]
+			id: "205DA149B0F6C5B5"
+			rewards: [{
+				id: "7CCB4FAC9E8B388A"
+				item: "mekanism:energy_tablet"
+				type: "item"
+			}]
+			subtitle: "Craft a Wind Generator."
+			tasks: [{
+				id: "14B0303F4F34ACCE"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			title: "Blow You Away"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B71BD09EB719ADB"]
+			description: [
+				"Mechanical Infusers enrich metals to higher-quality alloys, such as Infused Alloy and Steel. You'll want to make a few of both of these before you move on."
+				""
+				"To use the machine, feed materials like Diamonds and Coal in the &eyellow 'Secondary Input'&f slot, and materials like Iron in the &cred 'Primary Input'&f slot. Then just wait for it to process your material!"
+				""
+				"If you didn't know this already, you can press 'R' on items in these quest windows to look at them in JEI. You might find that helpful here."
+			]
+			icon: "mekanism:metallurgic_infuser"
+			id: "606528C85AEB4485"
+			subtitle: "Craft a Metallurgic Infuser and put it to use."
+			tasks: [
+				{
+					id: "25A3C48676AFF6A7"
+					item: "mekanism:metallurgic_infuser"
+					type: "item"
+				}
+				{
+					id: "6C5FC808E143D0C6"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+			]
+			title: "Direct Infusion"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["606528C85AEB4485"]
+			description: [
+				"Universal Cables are your introduction to Mekanism Pipes. The Configurator can be used to operate all pipes- even ones from other mods- so don't worry about keeping 5 different wrenches around. You'll only need the two- Create and Mekanism. "
+				""
+				"When you place the correct Pipe or Cable next to a machine that can use them, they will &battach&f automatically. From there, you can use the Configurator on the space where it connects to the machine (It will be seperately highlighted) to configure it. While in the correct mode- changed by sneaking and scrolling your scrollwheel- you can change it to import, export, or detach completely. Handy for compact factories!"
+			]
+			icon: "mekanism:basic_universal_cable"
+			id: "2C7EE6568B324C7C"
+			rewards: [{
+				count: 16
+				id: "5573612F171D99EA"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			subtitle: "Make some Basic Universal Cables (And learn how to use them.)"
+			tasks: [
+				{
+					id: "50B0BA77B7E941F4"
+					item: "mekanism:basic_universal_cable"
+					type: "item"
+				}
+				{
+					id: "4251B850C8642740"
+					item: "mekanism:configurator"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Not Basic Anymore!"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["205DA149B0F6C5B5"]
+			description: [
+				"While Cables can hold a small buffer of power in themselves, sometimes you have need of a larger buffer than they can provide so you can run your machines for longer."
+				""
+				"&bEnergy Cubes&f can store large amounts of power for use later. You'll want to use these until you can make their big brothers, Induction Cells."
+				""
+				"To control the input and output sides of an Energy Cube (Or any &bMekanism&f machine, for that matter), use the I/O panel found on the left of the device's UI. There, you can control each face of the block's automatic input and output! You can also Configurate the cables attached to it for similar effect- as seen on the mirrored-side quest to this one."
+			]
+			id: "138EBFEA1C12BFDD"
+			rewards: [{
+				count: 16
+				id: "67060E85D28C5643"
+				item: "mekanism:advanced_universal_cable"
+				type: "item"
+			}]
+			subtitle: "Craft an Energy Cube."
+			tasks: [{
+				id: "4EAF7B18D10FD291"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			title: "Energetic Tesseracts"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C7EE6568B324C7C"]
+			description: [
+				"These handy little machines turn resources into their Enriched variants- Enriched Carbon, Enriched Redstone, and so on."
+				""
+				"These Enriched materials can no longer serve their original purposes, like burning in furnaces, but work &b8x&f as well in a Metallurgic Infuser."
+				""
+				"At a small cost in energy, you can save on a lot of resources!"
+			]
+			icon: "mekanism:enrichment_chamber"
+			id: "42574014EF96AEF2"
+			rewards: [{
+				count: 16
+				id: "2160F2F966FAFDFE"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			subtitle: "Craft an Enrichment Chamber and put it to use."
+			tasks: [
+				{
+					id: "5DBD7C1E0ECA7FBB"
+					item: "mekanism:enrichment_chamber"
+					type: "item"
+				}
+				{
+					id: "70609FEDE522603D"
+					item: "mekanism:enriched_carbon"
+					type: "item"
+				}
+			]
+			title: "Enrichment Facility"
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["138EBFEA1C12BFDD"]
+			description: [
+				"These little renewable marvels turn plantmatter into power! All you have to do is find a way to automatically harvest your crops, then crush them into biofuel!"
+				""
+				"They generate substantially more than their otherwise-passive Wind and Thermal friends, so it's a good idea to set up a small facility of these to power your base!"
+			]
+			icon: "mekanismgenerators:bio_generator"
+			id: "4FE28D2DAA7A2476"
+			subtitle: "Craft a Bio-Generator and fuel it."
+			tasks: [
+				{
+					id: "5E710E48EF46003B"
+					item: "mekanismgenerators:bio_generator"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "57C2822C768006F6"
+					item: "mekanism:bio_fuel"
+					type: "item"
+				}
+			]
+			title: "Potato Power!"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["606528C85AEB4485"]
+			description: [
+				"Crushers turn things like Iron into Crushed Iron."
+				""
+				"This doesn't seem particularly helpful at first, but the Crusher will &lalways&r output a bonus dust for each ore you crush, effectively doubling your ore output! "
+				""
+				"It's not very fast, but it can at least keep up with a basic furnace. If only there were some way to make them &cfaster...&f"
+			]
+			id: "3AF2DF2C70C2B7A7"
+			rewards: [{
+				count: 16
+				id: "37CA9C38E6C4DC1E"
+				item: "minecraft:raw_gold"
+				type: "item"
+			}]
+			subtitle: "Craft a Crusher (And try not to get too attached.)"
+			tasks: [{
+				id: "398B20401BA78119"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			title: "Your First Crush"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3AF2DF2C70C2B7A7"]
+			description: [
+				"Speed upgrade make a machine work significantly faster once installed, but causes them to consume more power while in use."
+				""
+				"The increase in speed mathematically outpaces the increase in power draw, so as long as your system can handle it, having the most Speed Upgrades you can put in a machine is always a good idea. "
+				""
+				"This isn't the end though... we can go further."
+			]
+			id: "5593D41C188FCB5A"
+			rewards: [{
+				count: 4
+				id: "2D226D921C128459"
+				item: "mekanism:upgrade_energy"
+				type: "item"
+			}]
+			subtitle: "Craft enough Speed Upgrades to &lmaximally upgrade any Machine."
+			tasks: [{
+				count: 8L
+				id: "56B7798DBC2C65D0"
+				item: "mekanism:upgrade_speed"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5593D41C188FCB5A"]
+			description: [
+				"Tier Installers upgrade most Machine Blocks, such as the Crusher, Infuser, and Enricher, to Factories. "
+				""
+				"Each tier of Factory adds more and more slots to the machine's inputs and outputs. Using the Auto-Sort feature will ensure that as many of them are in simultaneous use as possible at all times. Essentially- Automation in overdrive."
+				""
+				"This upgrade doesn't come for free- Each slot takes as much power as any slot in another machine would. This means that the Basic Tier factories have essentially triple the power draw. Upgrade wisely."
+			]
+			id: "6A3D2E77D48753F2"
+			rewards: [{
+				count: 4
+				id: "70232D6DA750F7B4"
+				item: "mekanism:upgrade_energy"
+				type: "item"
+			}]
+			subtitle: "Craft a Basic Tier Installer, and start the slippery slope."
+			tasks: [{
+				id: "6620CC09689A73EA"
+				item: "mekanism:basic_tier_installer"
+				type: "item"
+			}]
+			title: "Automate."
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A3D2E77D48753F2"]
+			description: [
+				"Higher Tiers, More Slots."
+				""
+				"Simple enough, right?"
+				""
+				"You'll need a machine to be Basic Tier before you can upgrade it to Advanced Tier, and so on. Skipping a tier of Factory isn't an option."
+				""
+				"You might have also noticed that you can't use Tiers or Upgrades on any kind of Generator. You may have to start dedicating a section of your base just to generate power."
+			]
+			id: "19209EE5FA479D17"
+			rewards: [
+				{
+					count: 32
+					id: "256388DEAF889FD5"
+					item: "mekanism:elite_universal_cable"
+					type: "item"
+				}
+				{
+					id: "4733DED1B41ACD38"
+					item: {
+						Count: 1b
+						id: "mekanism:energy_tablet"
+						tag: {
+							mekData: {
+								EnergyContainers: [{
+									Container: 0b
+									stored: "1000000"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Craft an Advanced Tier Installer, and embrace the path before you."
+			tasks: [{
+				id: "34E7B2E768AB0BBF"
+				item: "mekanism:advanced_tier_installer"
+				type: "item"
+			}]
+			title: "&cAutomate."
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["19209EE5FA479D17"]
+			description: [
+				"At this point, certain machines start to supercede their analog counterparts. They also start to consume a &llot of power.&r"
+				""
+				"A full generation grid may be necessitated now. Biofuel generators burning. Wind farms running at full speed. And still, the machines hunger."
+			]
+			id: "2F0D9821C29C27A5"
+			rewards: [
+				{
+					id: "7A56C47F90D77646"
+					item: "mekanismgenerators:wind_generator"
+					type: "item"
+				}
+				{
+					id: "614A2369D1BE484B"
+					item: "mekanismgenerators:wind_generator"
+					type: "item"
+				}
+				{
+					id: "2D9F5D0B940FBA53"
+					item: "mekanismgenerators:wind_generator"
+					type: "item"
+				}
+			]
+			subtitle: "Craft the Elite Tier Installer. You're almost there."
+			tasks: [{
+				id: "37667AC35A3FFED5"
+				item: "mekanism:elite_tier_installer"
+				type: "item"
+			}]
+			title: "&b&lAutomate."
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2F0D9821C29C27A5"
+				"44515DB2E33AFFAC"
+			]
+			description: [
+				"This is the final upgrade to any machine. Once a machine has one of these, 8 Speed Upgrades, and 8 Energy upgrades, it's done. It can't get any better."
+				""
+				"But... It can get more. In myriad, even. Crushers, Smelters, automatic, &lAutomate the world."
+			]
+			id: "69F5EFC20CCFFD54"
+			rewards: [{
+				count: 32
+				id: "3E233B8A37488169"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			subtitle: "Craft the Final, Ultimate Tier Installer, and take a deep breath."
+			tasks: [{
+				id: "020201D6DBA48A8E"
+				item: "mekanism:ultimate_tier_installer"
+				type: "item"
+			}]
+			title: "&5&lAutomate the World."
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"69F5EFC20CCFFD54"
+				"34A4A564F84925C7"
+			]
+			description: [
+				"...And then have all of the fruits of your labor in your inventory at once."
+				""
+				"It's no easy task, demanding many diamonds, a ton of redstone, a whole heap of steel, and more. But once it's finished, you'll be able to tackle almost any factory you set your mind to."
+				""
+				"Good luck."
+			]
+			id: "4D93AED879E21126"
+			rewards: [
+				{
+					id: "614CB89BF217BD3C"
+					item: {
+						Count: 1b
+						id: "mekanism:atomic_disassembler"
+						tag: {
+							AttributeModifiers: [
+								{
+									Amount: 6
+									AttributeName: "generic.attack_damage"
+									Name: "generic.attack_damage"
+									Operation: 0
+									Slot: "mainhand"
+									UUID: [I;
+										-1496561310
+										-1056095280
+										-1839805038
+										20667071
+									]
+								}
+								{
+									Amount: 4
+									AttributeName: "apotheosis:armor_pierce"
+									Name: "apotheosis:armor_pierce"
+									Operation: 0
+									Slot: "mainhand"
+									UUID: [I;
+										-151292403
+										1612333281
+										-1491973554
+										-121043789
+									]
+								}
+								{
+									Amount: 1
+									AttributeName: "apotheosis:crit_chance"
+									Name: "apotheosis:crit_chance"
+									Operation: 0
+									Slot: "mainhand"
+									UUID: [I;
+										-1826724987
+										-1231729769
+										-1729789463
+										1329035654
+									]
+								}
+							]
+							display: {
+								Lore: [
+									"{\"text\":\"Lost technology in the wrong hands could be devastating.\"}"
+									"{\"text\":\"And this has fallen into yours. What will you do?\"}"
+									"{\"text\":\"Power Breaker\",\"color\":\"red\",\"bold\":true,\"italic\":false}"
+									"[{\"text\":\"Armageddon:\",\"color\":\"green\",\"bold\":true,\"italic\":false,\"underlined\":true},{\"text\":\"While brandishing this tool, your strikes always\",\"color\":\"white\",\"bold\":false,\"italic\":false,\"underlined\":false}]"
+									"{\"text\":\" Crit, and ignore 4 points of armor.\",\"color\":\"white\",\"bold\":false,\"italic\":false,\"underlined\":false}"
+								]
+								Name: "{\"text\":\"The Arm of Geddon\",\"color\":\"aqua\",\"bold\":true,\"italic\":false,\"underlined\":true}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/say @p has finished Challenge 1: Sheer Scale!"
+					icon: "minecraft:firework_rocket"
+					id: "7805B7B9E7F64157"
+					ignore_reward_blocking: true
+					title: "A Public Celebration!"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			subtitle: "Craft a lot of Tier Installers, Upgrades, and Machines."
+			tasks: [
+				{
+					count: 16L
+					id: "2E96A797403FF9A2"
+					item: "mekanism:basic_tier_installer"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "70512D433B4EEDA0"
+					item: "mekanism:advanced_tier_installer"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7632C46F09966E40"
+					item: "mekanism:elite_tier_installer"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7EBA475D286DEDC5"
+					item: "mekanism:ultimate_tier_installer"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "405067715F7D85F8"
+					item: "mekanism:upgrade_speed"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "44718D42F32D3F6B"
+					item: "mekanism:upgrade_energy"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1FD8DF459D098283"
+					item: "mekanism:crusher"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3163B925716C251D"
+					item: "mekanism:energized_smelter"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2B82177A094E81D4"
+					item: "mekanism:metallurgic_infuser"
+					type: "item"
+				}
+			]
+			title: "Challenge 2: &lSheer Scale"
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4FE28D2DAA7A2476"]
+			description: [
+				"Solar Panels are passive generators that make up to 37rf/t at noon. They reduce in power as the sun rises and sets. "
+				""
+				"Solar Panels are individually pretty pitiful. But why stop there?"
+			]
+			id: "4124BEFF23E09ED7"
+			subtitle: "Craft a Solar Panel, and harvest power from the SUN!"
+			tasks: [{
+				id: "5A0B5A2FF2387442"
+				item: "mekanismgenerators:solar_generator"
+				type: "item"
+			}]
+			title: "The Sun Is a Deadly Laser"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4124BEFF23E09ED7"]
+			description: [
+				"Advanced Solar Generators are, essentially, four Solar Generators duct taped together. They acquire a bit more power than 4 Solar Generators on their own, though, and have a wider tolerance for when they generate power at peak efficiency."
+				""
+				"Sleeping regularly helps keep your Solars efficient! And it keeps the Phantoms at bay, as well."
+			]
+			id: "29ECA65A4358F786"
+			subtitle: "Craft an Advanced Solar Generator."
+			tasks: [{
+				id: "6F146611FD232312"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			title: "(Not Anymore, There's a Blanket.)"
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"This is a Shadow Quest. That means it doesn't show up until after you've completed its requirements."
+				""
+				"These exist either to reward you for going out on your own and doing difficult things, or finding items with strange uses that need explained."
+				""
+				"Carboard boxes let you pick up TileEntities like factories, chests, and other functional blocks, and move them somewhere else. The 'CarryOn' mod lets you sneak and pick up chests individually well enough, but you can store multiple in your inventory with this."
+				""
+				"Aside from that, they also help you move machine blocks around, which is helpful for rearranging factories without messing with your settings or upgrades."
+			]
+			hide: true
+			id: "51F45C9513EDDB91"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 3
+				id: "5B19234C8BC6D65B"
+				item: "mekanism:cardboard_box"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You made a Cardboard Box."
+			tasks: [{
+				id: "0B49783658DFDE8D"
+				item: "mekanism:cardboard_box"
+				type: "item"
+			}]
+			title: "Shadow Quest: Boxing Match"
+			x: -0.7551020408163254d
+			y: 2.9132653061224545d
+		}
+		{
+			dependencies: ["2C7EE6568B324C7C"]
+			description: [
+				"Yep. Straight to checking for Ultimate Tier. At this point, you should have the confidence to pick up mods yourself if you want to, and know how to research their recipes using JEI."
+				""
+				"If you don't know how to make Atomic Alloy yet, there may still be other quests to be fulfilled. Pick this one back up later."
+			]
+			id: "3FE820A4C63BD099"
+			rewards: [{
+				count: 48
+				id: "444E1EB0BB3F88EE"
+				item: "mekanism:ultimate_universal_cable"
+				type: "item"
+			}]
+			subtitle: "Make 16 Ultimate Cables."
+			tasks: [{
+				count: 16L
+				id: "752DFA29B0235267"
+				item: "mekanism:ultimate_universal_cable"
+				type: "item"
+			}]
+			title: "That Escalated Quickly"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["606528C85AEB4485"]
+			description: [
+				"Reinforced Alloy is made of whole diamonds! It's worth it, though."
+				""
+				"There's not a ton to say on these, as they're just a crafting material, but here's a fun few uses for them. "
+				""
+				"Did you know you can right-click on existing Mekanism pipes in the world with Alloy and upgrade them? It'll find the nearest pipes/cables in the network and upgrade them, too, so there's (almost) no waste! Right click a Basic tier pipe with Infused Alloy, Infused tier with Reinforced, and so on. You can't skip tiers."
+			]
+			id: "0030A9050E6C80C5"
+			rewards: [{
+				count: 3
+				id: "51173652BFAC331F"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			subtitle: "Produce some Reinforced Alloy."
+			tasks: [{
+				id: "25582948F1128811"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			title: "Not Exactly 'Crafting' Anymore, Is It?"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"0030A9050E6C80C5"
+				"5EB5E245E4E9D7C2"
+			]
+			description: [
+				"This is the highest tier of Alloy in Mekanism. It's used in making high tier cables, upgrades, machines, generators, pipes, tubes, tools..."
+				""
+				"You'll want a fair bit of this. Especially if you plan on chasing an Induction Battery."
+				""
+				"The quest to go make them is related to this one, but you don't have it yet as of completing this. Try investing more in your fluids research, if you're interested in advanced power storage."
+			]
+			id: "44515DB2E33AFFAC"
+			rewards: [{
+				count: 4
+				id: "306FF9C62698667E"
+				item: "mekanism:enriched_diamond"
+				type: "item"
+			}]
+			subtitle: "Produce some Atomic Alloy."
+			tasks: [{
+				count: 4L
+				id: "0AE2F125FA9716FD"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			title: "&5Ultimate Alloy"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["42574014EF96AEF2"]
+			description: [
+				"The sink is back, with a new role in your base: Infinite water! When using a Pipe (of any kind) to pull water from a sink, you'll find that it seems nearly boundless. That's because it is. If you find some way to literally pull an infinite amount of water from it each tick, it will gladly fulfill that task, without even complaining once. That's just how much of a cool dude the sink is. "
+				""
+				"What? Why would you want infinite water? I'm glad you asked..."
+			]
+			id: "4F8EAA64D60E5BA0"
+			rewards: [{
+				id: "4DC5BF03A37CE8D3"
+				item: "mekanism:electrolytic_core"
+				type: "item"
+			}]
+			subtitle: "Craft a Sink. Again, probably."
+			tasks: [{
+				id: "7F3C5A22EB4D3FA8"
+				item: "cookingforblockheads:sink"
+				type: "item"
+			}]
+			title: "Let That Sink In"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4F8EAA64D60E5BA0"]
+			description: [
+				"Electrolytic Seperators reduce liquids to their base (gaseous) components with sheer force of electrical impulse."
+				""
+				"Running them isn't particularly cheap, but the gaseous Oxygen and Hydrogen produced will be invaluable."
+			]
+			id: "749DCBD2873C0DF3"
+			subtitle: "Craft an Electrolytic Seperator."
+			tasks: [{
+				id: "5B8B5B259761132F"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			title: "Molecular Separation"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4F8EAA64D60E5BA0"]
+			description: [
+				"Straight to Ultimate tier with these. You can do it, I know you can."
+				""
+				"You've probably adjusted to Cables by now- the tubes that move power. These tubes, instead, move liquids. Large amounts of them at once- which is perfect for that infinite water block you've made."
+				""
+				"And in case you were wondering: Unlike Create's pipes, these can't filter liquids."
+			]
+			id: "6A1D6BED530A94B7"
+			subtitle: "Craft a good number of Ultimate Mechanical Pipes."
+			tasks: [{
+				count: 16L
+				id: "34D14143BA954C86"
+				item: "mekanism:ultimate_mechanical_pipe"
+				type: "item"
+			}]
+			title: "Pipe Up!"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["42574014EF96AEF2"]
+			description: [
+				"While you would ideally construct a factory out of nothing but I/O configured, perfectly adjacent, compact blocks, sometimes that won't just do. It can be hard to build with such limitations, and harder to make sense of them. These are here to put your organizational woes at ease."
+				""
+				"Like the Power Cables, these can be Wrenched with a Configurator to conrol their Input or Output state. Give them a try!"
+				""
+				"Also, I speak firsthand when I say Mekanism's developer regards these as \"Item Pipes\". So don't be afraid to just call them that."
+			]
+			id: "2063A89CC726712E"
+			rewards: [
+				{
+					id: "58EE101D2F2E7F17"
+					item: {
+						Count: 1b
+						id: "mekanism:energy_tablet"
+						tag: {
+							mekData: {
+								EnergyContainers: [{
+									Container: 0b
+									stored: "1000000"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "48BF5F6A4D00FC65"
+					item: "mekanism:ultimate_logistical_transporter"
+					type: "item"
+				}
+			]
+			subtitle: "Craft some Ultimate Logistical Transporters."
+			tasks: [{
+				count: 16L
+				id: "056C393773253D8E"
+				item: "mekanism:ultimate_logistical_transporter"
+				type: "item"
+			}]
+			title: "Quite a Mouthful. Call Them Item Pipes, Everyone Does."
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["749DCBD2873C0DF3"]
+			description: [
+				"Pressurized Tubes move gases, such as Hydrogen, Oxygen, and more, over long distances. They can be useful, but suffer from a problem shared by their liquid-moving cousins- A single pipe cannot move two different gases. Once a pipe has Hydrogen in it, that's all that entire pipe-path can move. So be careful not to mix and match."
+				""
+				"This also means that the Electrolytic Seperator will &lrequire&r two different output pipes and output points. "
+			]
+			id: "7FEEC29ABD06ADFC"
+			rewards: [{
+				id: "1ABD41967CB4CA3F"
+				item: "mekanism:ultimate_chemical_tank"
+				type: "item"
+			}]
+			subtitle: "Craft 16 Ultimate Pressurized Tubes, and master all the different pipes!"
+			tasks: [{
+				count: 16L
+				id: "02CF3809D7752D1A"
+				item: "mekanism:ultimate_pressurized_tube"
+				type: "item"
+			}]
+			title: "Pipe Dreams"
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7FEEC29ABD06ADFC"]
+			description: [
+				"These tanks hold various chemicals, like gases, but also impure liquids later down the line. They have a \"Dumping\" function that lets you (mostly) harmlessly dump the gases into the environment, giving you more space in the tank in case it gets close to full- or you can keep it empty, and treat is as a gas voider."
+				""
+				"Despite its appearances, it will actually accept gases from any side, even if the pipes don't visibly connect. They're weird like that. "
+				"It's generally reccomended to at least make some Basic ones to keep your factories running smoothly."
+				""
+				"Now that you understand how these work- have a cookie."
+			]
+			id: "42BE6E163DEE2D97"
+			rewards: [{
+				id: "190E81187BCAF38D"
+				item: "minecraft:cookie"
+				type: "item"
+			}]
+			subtitle: "Yes, yes I did. Here's an explanation."
+			tasks: [{
+				id: "15A72EB37D1A74EE"
+				item: "mekanism:ultimate_chemical_tank"
+				type: "item"
+			}]
+			title: "\"Wait, didn't you just give me this?\""
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6A1D6BED530A94B7"]
+			description: [
+				"Despite their appearances, you can fill these tanks from any side, even if the pipes don't visibly connect. They're just weird like that."
+				""
+				"Fluid Tanks can hold a large amount of (almost) any liquid! Even liquid from other mods! They're very useful for keeping a stockpile of valuable liquids, like lava. Probably not the easily infinite ones, like water, though. We have Sinks for that."
+			]
+			id: "55743BC23A708802"
+			rewards: [{
+				id: "055DFA94AE8ABF1C"
+				item: "cookingforblockheads:sink"
+				type: "item"
+			}]
+			subtitle: "Craft an Ultimate Tank. Then contemplate what you could possibly fill it with."
+			tasks: [{
+				id: "57A4DDBBB2529A20"
+				item: "mekanism:ultimate_fluid_tank"
+				type: "item"
+			}]
+			title: "Main Tank"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["29ECA65A4358F786"]
+			description: [
+				"This is a great leap from the solar devices of the past, so don't worry if you can't build these right away."
+				""
+				"Neutron Activators specialize in converting nuclear fuels. Particularly, it's capable of purifying Nuclear Waste into Polonium!"
+				""
+				"Polonium on its own is a safe material when packed into pellets, but it's pure poison when released into the atmosphere. If a block has any amount of Polonium or Nuclear Waste in it, breaking it will release the radioactive materials, and flood the entire place with hundreds of bequerels of radiation."
+				""
+				"If a place becomes irradiated, it's incredibly inhospitable, for entire real-life days at a time. You don't want to mess with this stuff."
+			]
+			id: "3175CD610FF66FED"
+			shape: "hexagon"
+			subtitle: "Craft a Solar Neutron Activator. Sheesh."
+			tasks: [{
+				id: "050F621265783D8C"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			title: "Atomic Sundering"
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["749DCBD2873C0DF3"]
+			description: [
+				"You can think of the Pressurized Reaction Chamber (or PRC) as an extension to the Enrichment Chamber. Like the Enrichment Chamber, it uses a material and a resource (Such as Water) to create a new material. The PRC uses liquids and gases in its operations, and usually has a byproduct of its crafting."
+				""
+				"Most of the time, this byproduct is waste, but sometimes it's actually something quite useful. Inquire beyond."
+			]
+			id: "29A695A446EE882A"
+			rewards: [{
+				count: 64
+				id: "0059E0FE0A942635"
+				item: "mekanism:bio_fuel"
+				type: "item"
+			}]
+			subtitle: "Craft a Pressurized Reaction Chamber."
+			tasks: [{
+				id: "606300BAD81C2360"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
+			title: "Under Pressure"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["29A695A446EE882A"]
+			description: [
+				"At least, not yet. You'll want it for later."
+				""
+				"As a 'byproduct' of the substrate production process, you'll have made a bit of Ethylene. This is a very important resource you'll want to automate as soon as possible."
+				""
+				"Ethylene can be stored as a Gas in a Chemical Tank. It's a very, very potent fuel, making it very useful for generating large amounts of RF."
+			]
+			id: "2E919AECF0AAEA5A"
+			subtitle: "Produce some Substrate using the PRC. The Substrate isn't why we're here, though."
+			tasks: [{
+				count: 16L
+				id: "236FC76F05951C6B"
+				item: "mekanism:substrate"
+				type: "item"
+			}]
+			title: "Refined Fuels I"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"29ECA65A4358F786"
+				"2E919AECF0AAEA5A"
+			]
+			description: [
+				"Using the Ethylene 'byproduct' from your substrate production, you can burn it to produce over &l30Krf/t&r. That's Kilo-RF. A large amount, by any measure, when each wind generator capped out at just over 300. "
+				""
+				"It's very efficient at using its fuel, too- just a single automated PRC might be enough to run two or three of these at once!"
+				""
+				"You'll need a farm for plants, a crusher for biomass, a sink for water, a seperator for hydrogen, a PRC for substrate/Ethylene... But you already have all those things. Link them all together, and automate the process!"
+			]
+			id: "4CD1A6F03859F182"
+			rewards: [{
+				id: "0A2B5EA9F6984A75"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			subtitle: "Craft a Gas-Burning generator, and crack the code to potent eco-fuels!"
+			tasks: [{
+				id: "379321994188ACC6"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["606528C85AEB4485"]
+			description: [
+				"Steel is a heavy industrial material. But you knew that already, didn't you? "
+				""
+				"With the creation of high-quality steels, more complicated machines, tubing, and more becomes possible. You can even use it as a very durable material in your equipment!"
+				""
+				"There are more materials to yet acquire, however..."
+			]
+			id: "7D5BDF7683E3906C"
+			rewards: [{
+				count: 8
+				id: "5FF64A73F280DAAC"
+				item: "mekanism:enriched_carbon"
+				type: "item"
+			}]
+			subtitle: "Make a couple of Steel Ingots."
+			tasks: [{
+				count: 2L
+				id: "31922F37C23726D4"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			title: "Industrial Age"
+			x: -2.224489795918366d
+			y: 1.1377551020408205d
+		}
+		{
+			dependencies: ["7D5BDF7683E3906C"]
+			description: [
+				"Osmium compressors take Osmium Ingots and other materials to turn them into supermaterials! "
+				""
+				"These materials- Refined Glowstone Ingots and Refined Obsidian Ingots- make far superior equipment, and enable higher-tier recipes to be made. "
+			]
+			id: "17F5C3DAF5955BF4"
+			rewards: [
+				{
+					count: 16
+					id: "256A8353180A13B5"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					id: "2160F2B2F5ADFF09"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2ACB698D9FA0A2A2"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+			]
+			subtitle: "Craft an Osmium Compressor (And don't fall in)"
+			tasks: [{
+				id: "7E9AF751CBFCFD91"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			title: "Help! I'm Being Compressed!"
+			x: -1.7142857142857153d
+			y: 2.709183673469397d
+		}
+		{
+			dependencies: [
+				"17F5C3DAF5955BF4"
+				"42574014EF96AEF2"
+			]
+			description: [
+				"This Refined Obsidian Dust is a necessary step in making Refined Obsidian Ingots. They're far from cheap, being an alloy of both diamonds and obsidian- then having to infuse that with many ingots of Osmium."
+				""
+				"They're very close to useful, though, enabling the creation of some truly powerful blocks and tools."
+				""
+				"You'll also need this dust to make Atomic Alloy in your Metallurgic Infuser, so why not take out two birds with one stone?"
+			]
+			id: "5EB5E245E4E9D7C2"
+			subtitle: "Make 8 Refined Obsidian Dust in your Enrichment Chamber."
+			tasks: [{
+				count: 8L
+				id: "67F30FC162B8CEED"
+				item: "mekanism:dust_refined_obsidian"
+				type: "item"
+			}]
+			title: "This Dust is a Must"
+			x: -0.6530612244897966d
+			y: 4.056122448979593d
+		}
+		{
+			dependencies: ["5EB5E245E4E9D7C2"]
+			description: [
+				"These ingots are the final ingot in Mekanism's lineup. Far from the final material, though. You'll see."
+				""
+				"Refined Obsidian Ingots are used in high-tier machines and tools, including the &lQuantum Entangloporter&r and the &lAtomic Disassembler&r. "
+				""
+				"Both of these things are incredibly useful to have, as I'm sure you'd imagine."
+			]
+			id: "085BA5DD1BCD4F93"
+			subtitle: "Make a pair of Refined Obsidian Ingots. They're heavy."
+			tasks: [{
+				count: 2L
+				id: "31561E81E1D9A952"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			title: "Heavy Metals"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"606528C85AEB4485"
+				"42574014EF96AEF2"
+			]
+			description: [
+				"Aside from making alloys out of iron, the Infuser can also make circuits out of Osmium!"
+				""
+				"These circuits are really only a crafting material, but they're used in practically every machine in Mekanism, so you'll be needing a lot of them."
+			]
+			id: "4396B051A0390CF8"
+			subtitle: "Make a Basic Control Circuit."
+			tasks: [{
+				id: "42AA909BB09189E1"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			title: "Circuitry Shock"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4396B051A0390CF8"
+				"5EB5E245E4E9D7C2"
+			]
+			description: [
+				"These are the final tier of Circuits. "
+				""
+				"They're less common than their lower-tier counterparts, but important all the same. They're used in the most powerful blocks and tools the mod has to offer. "
+				""
+				"The upgraded circuits require you to craft together the basic circuits with Alloys, meaning things rapidly start costing a lot of circuits at this high of a tier."
+			]
+			id: "2B912DA9A973FCA8"
+			subtitle: "Craft an Ultimate Control Circuit."
+			tasks: [{
+				id: "74E2A408F8C493E9"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
+			title: "Master Control"
+			x: 1.95918367346939d
+			y: 5.362244897959194d
+		}
+		{
+			dependencies: [
+				"44515DB2E33AFFAC"
+				"085BA5DD1BCD4F93"
+			]
+			description: [
+				"The Atomic Disassembler is a bit unique- it can break any block with a configurable speed. In fact, it can even be configured to sacrifice large amounts of power to &linstantly&r break any block, even obsidian."
+				""
+				"To add to that, it comes with a 'Veinmine' mode that lets it automatically veinmine ore blocks without consuming your hunger, and consumes power instead. It doesn't consume any more power than just breaking the block would've, so it's a nice bonus."
+				""
+				"As a powered item, it needs to be charged. You can charge it in an Energy Cube, or plug it right into the Generator of your choice."
+			]
+			id: "34A4A564F84925C7"
+			rewards: [{
+				id: "4C353FCC9E6188F4"
+				item: "sophisticatedbackpacks:battery_upgrade"
+				type: "item"
+			}]
+			subtitle: "Craft the Atomic Disassembler, and break anything you want."
+			tasks: [{
+				id: "36ED4B1A7F1FF309"
+				item: "mekanism:atomic_disassembler"
+				type: "item"
+			}]
+			title: "Omni-Multitool"
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["44515DB2E33AFFAC"]
+			description: [
+				"Teleportation Cores are used primarily in two blocks: Quantum Entangloporters, and Teleporters. "
+				""
+				"But for now, they're just a crafting material on the path to greatness."
+			]
+			id: "5409888E31C7B684"
+			rewards: [{
+				count: 4
+				id: "3FDDD38C5AF6F45E"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			subtitle: "Craft a pair of Teleportation Cores to link later."
+			tasks: [{
+				count: 2L
+				id: "4829FC81BA62B010"
+				item: "mekanism:teleportation_core"
+				type: "item"
+			}]
+			title: "Autoportality"
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"2B912DA9A973FCA8"
+				"5409888E31C7B684"
+				"085BA5DD1BCD4F93"
+			]
+			description: [
+				"Quantum Entangloportation Devices- or Q.E.D.s- can move large quantities (read:nearly infinite) of power, items, liquids, and gases, over impossibly large distances instantly- even from other dimensions of reality. The process, however, is a bit complicated."
+				""
+				"To set up a QED, one must first make a \"Channel\" for it to use. These Channels are free to make, and effectively serve as dial settings for a QED to connect to another (or group of QEDs) wirelessly. Only one QED on the network needs to be powered to function: The rest will accept the power as if they were the origin QED."
+				""
+				"Once both QEDs are configured to the same channel, they share their faces, imports, outputs, and even contents as if they were the very same block occupying the same space. With this, you can wirelessly move almost anything over impossibly large distances instantly. Up to 64 QEDs can occupy the same network, and a QED can only occupy one network at a time."
+			]
+			id: "4DF277E0D37E8E54"
+			rewards: [
+				{
+					count: 16
+					id: "3383E6D8783495CF"
+					item: "mekanism:ultimate_universal_cable"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "09A6AAA8F6E60519"
+					item: "mekanism:ultimate_mechanical_pipe"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1220E7C1E6010DC4"
+					item: "mekanism:ultimate_pressurized_tube"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2FDC74D269A2CAEC"
+					item: "mekanism:ultimate_logistical_transporter"
+					type: "item"
+				}
+			]
+			subtitle: "Craft a pair of Quantum Entangloporters. And then try to say their name five times fast."
+			tasks: [{
+				count: 2L
+				id: "01A3AE93ECAB6A5E"
+				item: "mekanism:quantum_entangloporter"
+				type: "item"
+			}]
+			title: "Importal/Exportal"
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3AF2DF2C70C2B7A7"]
+			description: [
+				"Energized Smelters are a bit like furnaces, but run on electricity. Right away, that's a big bonus for them, because most power sources are renewable passively- if you're running your generator on a Heat Generator or Wind Generator network, it's essentially free smelting."
+				""
+				"Unfortunately, it's rather slow. It actually starts off slightly slower than a vanilla furnace, even. But it can be upgraded to increase its speed, energy efficiency, and even number of input/output slots it can run at once. Eventually, it'll even outpace the most robust coal-burning furnaces."
+			]
+			id: "6AEF57133303AE94"
+			subtitle: "Craft an Energized Smelter."
+			tasks: [{
+				id: "4662208D1E9E1FCA"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			title: "They Who Smelt It"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5409888E31C7B684"]
+			description: [
+				"Perhaps the most apparently useful block in Mekanism, the teleporter's job is simple- move a player from one place to another instantly. Its usefulness runs a bit deeper than that though."
+				""
+				"Since the beginning, you've had to run, back and forth, from your home, to your mineshaft, out adventuring- and take the long trek back. With the Portable Teleporter, you can simply key into your Teleporter's frequency, and whisk yourself back home, provided you have the power to cover the task. This is useful for more than just avoiding a long walk- in a pinch, you can hit the panic button and simply leave, returning to the (relative) safety of your home once more."
+				""
+				"Teleporters have one more trick up their sleeve though, and it's rather useful."
+			]
+			icon: "mekanism:teleporter"
+			id: "606CA74651F8BDF3"
+			rewards: [{
+				count: 8
+				id: "3B77552216A5DBE0"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			subtitle: "Craft a pair of Teleporters. It wouldn't do you any good to have just one."
+			tasks: [
+				{
+					count: 2L
+					id: "4F9BA6700A14E4EB"
+					item: "mekanism:teleporter"
+					type: "item"
+				}
+				{
+					id: "7AC01343BF0436D1"
+					item: "mekanism:portable_teleporter"
+					type: "item"
+				}
+			]
+			title: "Normal Portation"
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["606CA74651F8BDF3"]
+			description: [
+				"These portal frames can be used with Teleporters to make a portal that links them, instead of needing to be dialed and warped to. "
+				""
+				"This can be handy for warp rooms, transportation centers, or even mob farms that need to move a large quantity of mobs."
+				""
+				"Don't let the required count fool you either- the portals can be significantly larger than this."
+			]
+			id: "25260882EA23B7B9"
+			rewards: [{
+				count: 16
+				id: "5EA62D82D5E13999"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			subtitle: "Make enough Teleporter Frames to link two Portals together."
+			tasks: [{
+				count: 18L
+				id: "3416A05562FDB262"
+				item: "mekanism:teleporter_frame"
+				type: "item"
+			}]
+			title: "Personal Portals"
+			x: -4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"24414AA1BDC4ABED"
+				"7B71BD09EB719ADB"
+			]
+			description: [
+				"The Thermal Evaporation Chamber lets different liquids- like water- boil off into their base components. Unlike electrolysis, which will come up later, condensation lets materials like &lLithium&r remain to be piped out for later use."
+				""
+				"These multiblocks are assembled with a controller, two valves, and some hull blocks. Take care to make sure that none of the corner or edge blocks of the multiblocks are occupied by valves or controllers- those structural points must be hulls. "
+				""
+				"Once it's assembled, you'll want to pump water in one valve and lithium out the other. It doesn't matter which- just configure the pipes for what direction you want to run them."
+			]
+			id: "460445094E888E23"
+			rewards: [{
+				id: "0B9086198B8DE611"
+				item: "mekanism:ultimate_fluid_tank"
+				type: "item"
+			}]
+			subtitle: "Make the components for a Thermal Evaporation Chamber multiblock."
+			tasks: [
+				{
+					id: "74B2C775406FD770"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0692CF290D38FCEE"
+					item: "mekanism:thermal_evaporation_valve"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "699191C03F9B7BEF"
+					item: "mekanism:thermal_evaporation_block"
+					type: "item"
+				}
+			]
+			title: "Hot Stuff"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["55743BC23A708802"]
+			description: [
+				"The Minecraft community has an old term for factories with messes of unmarked, disorganized, and terribly inefficient wiring- we call it \"DireWire\", affectionately, after Direwolf20, a veteran and active community member."
+				""
+				"While avoiding DireWire is a long learning process, there's a few things we can do to help keep things sane."
+				""
+				"Avoiding unnecessary distances is the first, and easiest. If you're making a bend of 10 wires when you could just as easily be making a curve of 3, it's usually the better option, both logistically and materialistically. Whenever you're about to place a wire between two machines, just ask yourself: \"Could I do this in fewer wires?\" This will immediately lead to denser, and better, cable management."
+				""
+				"While a bit more loose of a concept, wire unification also helps this to great extent. Take, for instance, the humble Sink; Instead of using 3 or 4 sinks in the same contraption, try to take one output from your sink and extend them to wherever they're needed. With fewer sources to manage, wires will fall into place much easier. This could add to the wiremass of the factory, but will make things much easier to manage on a macro level."
+				""
+				"Finally, there's routing and labelling. Planning out where your pipes could go before you turn on the machine will greatly help in routing- being able to go back and shift around wires where you can will gradually produce better results through iteration. Don't be afraid to rip them out- you'll get the items right back anyway! Aside from that, labelling your cableing will vastly improve its readablility, letting you come through with new routing plans and correcting existing lines very easily. "
+				""
+				"Now, don't mind me- I'm mostly using this explanation as an excuse to neatly reroute the cables of these quests to a quest further north..."
+			]
+			id: "24414AA1BDC4ABED"
+			rewards: [{
+				id: "5F51473A5CB5B172"
+				item: "minecraft:cookie"
+				type: "item"
+			}]
+			subtitle: "Learn about cable management, and how to keep your factories from looking horrendous. Or don't."
+			tasks: [{
+				id: "46357260BB1AD0A3"
+				title: "Well, that was a lot of information."
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["460445094E888E23"]
+			description: ["Now, you won't get Lithium out of water directly- the water needs to be reduced to Brine in a &osecond&r Evaporation Chamber. So it's a two-step process, but at least it's just some repitition."]
+			id: "05D0603C86490E39"
+			rewards: [{
+				count: 16
+				id: "40B4BE7858A64920"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			subtitle: "Make some Lithium in an Evaporation Chamber."
+			tasks: [{
+				count: 16L
+				id: "248ED1157973EDE7"
+				item: "mekanism:dust_lithium"
+				type: "item"
+			}]
+			title: "Lithium? Hardly knew 'em!"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["05D0603C86490E39"]
+			description: [
+				"A distant cousin to our Heat Generator, the Resistive Heater makes heat that can be piped into your thermal evaporation chambers. While certainly not required, doing so can help them operate far, far more quickly. "
+				""
+				"Like, seriously, this thing speeds up tenfold with just a couple of these. They do like drinking up power, though, so it'd be a good idea to hook them up to a Lever to turn them off when they're not needed. You can change this setting in the Heater's UI."
+				""
+				"Almost every Mekanism machine can be controlled by redstone in this way as well."
+			]
+			id: "51DB7D0A70E779BF"
+			rewards: [{
+				count: 16
+				id: "454B3D17F64305AC"
+				item: "mekanism:ultimate_thermodynamic_conductor"
+				type: "item"
+			}]
+			subtitle: "Craft a Resistive Heater, and turn power into heat."
+			tasks: [{
+				id: "7B37F1764CA9EAC6"
+				item: "mekanism:resistive_heater"
+				type: "item"
+			}]
+			title: "Turning Up the... wait a second"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["05D0603C86490E39"]
+			description: [
+				"&bInduction Batteries&r are multiblock structures that can store inordinate amounts of power. Where Ultimate Energy cubes fail, the Induction Cell reigns supreme. "
+				""
+				"You can make an &bInduction Battery&r by making a shell of Casings and placing Providers and Cells inside of it. Don't worry if there's extra air inside, the multiblock will work just fine. After that, place a Port on the cell somewhere, and it'll accept power! Providers influence how much power it can move at once, and Cells influence its maximum capacity."
+				""
+				"You'll probably want a second port so that you can actually get power back out mind you. Use your Configurator to control each port's I/O setting!"
+			]
+			icon: "mekanism:basic_induction_cell"
+			id: "6D0DECBA5FED19C3"
+			rewards: [{
+				count: 16
+				id: "2793DE6E31517CBF"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			subtitle: "Make a complete Induction Cell."
+			tasks: [
+				{
+					id: "5E1D28C387B9D6F0"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
+				{
+					id: "6B5865C77D060E6A"
+					item: "mekanism:basic_induction_provider"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "61358943543006CA"
+					item: "mekanism:induction_casing"
+					type: "item"
+				}
+				{
+					id: "0A9E8DDB05D0B033"
+					item: "mekanism:induction_port"
+					type: "item"
+				}
+			]
+			title: "&b1.21 Jigowatts!"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6D0DECBA5FED19C3"]
+			description: [
+				"The more expensive it is, the better it is, right? "
+				""
+				"With this much power storage, you should never need to worry about suddenly running out of power again! If only there were &csome way to display how much it's stored remotely..."
+			]
+			id: "7427C196F65FC25A"
+			rewards: [
+				{
+					id: "4487F42DAD2764B1"
+					item: "rftoolsutility:screen_controller"
+					type: "item"
+				}
+				{
+					id: "6D4BB4991046581C"
+					item: "rftoolsutility:screen"
+					type: "item"
+				}
+				{
+					id: "26CF6BFBBDD94119"
+					item: {
+						Count: 1b
+						id: "rftoolsutility:energyplus_module"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Make a massive Induction Battery, and stop worrying about your power capacity for a while."
+			tasks: [
+				{
+					consume_items: false
+					count: 16L
+					id: "689A3078B071166B"
+					item: "mekanism:ultimate_induction_cell"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "587CA4BD24A44F5A"
+					item: "mekanism:ultimate_induction_provider"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "37F026DEB451A4C8"
+					item: "mekanism:induction_casing"
+					type: "item"
+				}
+			]
+			title: "&c^4"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"4FE28D2DAA7A2476"
+				"29A695A446EE882A"
+			]
+			description: [
+				"You're making 3 of these because it's &cjust enough&r to get the full usefulness out of one Ethylene factory."
+				""
+				"By using a Pressurized Reaction Chamber, you can make Ethylene out of your biofuel from earlier- it's not obsolete! After some refinement and processing, your &dEthylene&r will produce TONS of RF! Just 3 of these is enough to power even a high-tier base, and it only gets &bbetter from here."
+				""
+				"Hey... What does it mean, &o&c'can be used as a moderator in a Bigger Reactor'&r...?"
+			]
+			icon: "mekanismgenerators:gas_burning_generator"
+			id: "323A1C1D5EB3E7E2"
+			rewards: [
+				{
+					id: "5E433417F5A097BB"
+					item: "botanypots:terracotta_hopper_botany_pot"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "390A02E1EEED2236"
+					item: "minecraft:melon_seeds"
+					type: "item"
+				}
+				{
+					id: "092E10BCA2C6A712"
+					item: "farmersdelight:rich_soil"
+					type: "item"
+				}
+			]
+			subtitle: "Make 3 Gas-Burning Generators, and prove you've made Ethylene with some Substrate."
+			tasks: [
+				{
+					count: 3L
+					id: "352B8A8CB89F0BD4"
+					item: "mekanismgenerators:gas_burning_generator"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "1D08F6D6E2B3C0F8"
+					item: "mekanism:substrate"
+					type: "item"
+				}
+			]
+			title: "Having a Gas"
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			description: ["The flamethrower uses gaseous fuel to make flame to fire at your enemies! It's not as good as a solid bow, but it can store a &cton&r of fuel."]
+			id: "1769708464EDF679"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "70A0FFB931CF3760"
+				item: "industrialforegoing:simple_black_hole_tank"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You crafted a Flamethrower. What on earth are you up to?"
+			tasks: [{
+				id: "344F082D69692423"
+				item: "mekanism:flamethrower"
+				type: "item"
+			}]
+			title: "Through the Fire and the Flames"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			id: "4FAFB6BE8B326C00"
+			invisible: true
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft the wrong Solar Panel. Not that it doesn't work, but... how did you even manage this? You have to go to space, first!"
+			tasks: [{
+				id: "73B374981D8258F6"
+				item: "ad_astra:solar_panel"
+				type: "item"
+			}]
+			title: "Shadow Quest: Oops II"
+			x: 3.551020408163268d
+			y: 2.0765306122448948d
+		}
+		{
+			description: ["Gas Upgrades improve the efficiency of some gas-using machines, like the &bChemical Dissolution Chamber&r and &bPurification Chamber&r. While not really necessary, they can help a factory run more smoothly."]
+			id: "40F9B40743120A94"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 7
+				id: "45988F93FC61C4D7"
+				item: "mekanism:upgrade_gas"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You made a Gas Upgrade!"
+			tasks: [{
+				id: "059006240D9A84B1"
+				item: "mekanism:upgrade_gas"
+				type: "item"
+			}]
+			title: "Shadow Quest: Gas, Gas, Gas"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"This stuff just... isn't as good as Refined Obsidian. So uh... have a consolation prize."
+				""
+				"Hey, at least it's shiny!"
+			]
+			id: "4B49437C85EEA913"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					count: 8
+					id: "6A52A7A58547BAB7"
+					item: "mekanism:block_osmium"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "23779160CE452A42"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "You made a not-insignificant amount of Refined Glowstone!"
+			tasks: [{
+				count: 16L
+				id: "7CBB492D8B6A4E43"
+				item: "mekanism:ingot_refined_glowstone"
+				type: "item"
+			}]
+			x: -2.367346938775512d
+			y: 3.7295918367346985d
+		}
+		{
+			description: [
+				"This lets you turn Coal into Fuel! If I knew this was an option, why didn't I tell it to you!?"
+				""
+				"Well, unlike all the other generators &cdetailed in this section&r, this generator doesn't really work &opassively.&r That means it demands a bit more active attention for you to get power out of it. Besides that, it's also &ra very inefficient use of your coal&r, which will be able to be used in a bigger passive generator later down the line- but you'll need a lot of coal."
+			]
+			id: "6A3196E33A68A6ED"
+			invisible: true
+			optional: true
+			shape: "rsquare"
+			subtitle: "You made an Iron Furnace Generator Augment. Huh, fancy that."
+			tasks: [{
+				id: "756B104F9DC8D178"
+				item: "ironfurnaces:augment_generator"
+				type: "item"
+			}]
+			title: "Shadow Quest: A Different Generator"
+			x: -0.04081632653061007d
+			y: -0.7397959183673493d
+		}
+		{
+			id: "7B80A7664BAA72A8"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 16
+				id: "44F42BEA64A1B5B0"
+				item: "mekanism:block_bronze"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You made a Bronze Ingot. Now, aren't you curious?"
+			tasks: [{
+				id: "445E844E10B3FDA2"
+				item: "mekanism:ingot_bronze"
+				type: "item"
+			}]
+			title: "Shadow Quest: Bronze Age"
+			x: -2.6122448979591866d
+			y: 2.1785714285714235d
+		}
+		{
+			description: [
+				"One thing that &ois&r noteworthy about the Electric Bow is that it actually deals more damage to players holding &bMekanism&r tools and weapons."
+				""
+				"Not really bound to come up often, but hey- it's a fun fact."
+			]
+			id: "00535DA5AE01E33C"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "7B0EAE0E4D950D5C"
+				item: "mekanism:energy_tablet"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You made an Electric Bow. It's not even as good as the real deal... But at least there's no ammo."
+			tasks: [{
+				id: "157D035F2E66AB7C"
+				item: "mekanism:electric_bow"
+				type: "item"
+			}]
+			title: "Shadow Quest: Jacked Overloaded Electrobow"
+			x: -4.408163265306122d
+			y: 2.647959183673464d
+		}
+		{
+			id: "51A9A71F19821786"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "6ABD69BFEA493132"
+				item: "mekanism:ultimate_chemical_tank"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You made some Scuba Gear. You could've used Create for this."
+			tasks: [
+				{
+					id: "41D362815E46CD72"
+					item: "mekanism:scuba_mask"
+					type: "item"
+				}
+				{
+					id: "24725727FB2BEA39"
+					item: "mekanism:scuba_tank"
+					type: "item"
+				}
+			]
+			title: "Shadow Quest: Blub"
+			x: -0.04081632653061007d
+			y: 5.096938775510203d
+		}
+		{
+			id: "2A278B74E0327246"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 8
+				id: "62210DCBE5CDC739"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You made a Security Desk! Nobody's getting past you."
+			tasks: [{
+				id: "5E2F6CFDE066715D"
+				item: "mekanism:security_desk"
+				type: "item"
+			}]
+			title: "Shadow Quest: Hey, Mister Freeman."
+			x: 0.20408163265306456d
+			y: 3.790816326530617d
+		}
+		{
+			description: [
+				"What? I mean, it's in the name. Why even make this? It sucks."
+				""
+				"Here, take this. It sucks so much, you'll need it."
+			]
+			id: "2CA1711F93F0A6F1"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 32
+				id: "204988351F0B0942"
+				item: "minecraft:coal_block"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You made a Pitiful Generator. "
+			tasks: [{
+				id: "7D3DD499AC1F514E"
+				item: "industrialforegoing:pitiful_generator"
+				type: "item"
+			}]
+			title: "Shadow Quest: Why?"
+			x: 5.26530612244899d
+			y: 3.341836734693871d
+		}
+		{
+			id: "4F8BBFEE4A60708B"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "16004B83FC821087"
+				item: "industrialforegoing:simple_black_hole_tank"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You put some Oxygen in a bucket. Put it back put it back put it ba--"
+			tasks: [{
+				id: "508AC9543FAF831E"
+				item: "mekanism:oxygen_bucket"
+				type: "item"
+			}]
+			title: "Shadow Quest: Ultra-Volatile"
+			x: 4.183673469387756d
+			y: 5.158163265306115d
+		}
+		{
+			description: [
+				"Jesus christ. What on earth are you even powering? And where are you getting these Nether Stars from?"
+				""
+				"I mean, it's... possible to factorialize Wither-killing. But... why?"
+				""
+				"At the very least, it generates just over &l9 million&r RF with each one, so it's pretty good."
+			]
+			id: "6FA9FC4CB5896681"
+			invisible: true
+			optional: true
+			shape: "rsquare"
+			subtitle: "You made a Generator that runs on pure Nether Stars. Jesus Christ."
+			tasks: [{
+				id: "0F3600D9651AA408"
+				item: "industrialforegoing:mycelial_netherstar"
+				type: "item"
+			}]
+			title: "Shadow Quest: Argent Energy"
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"Bins store items. Large amounts of them."
+				""
+				"Wait, but... you have that. You saw that back in &bBeginnings&r with the Limited Barrels. So... why? These aren't even upgradeable, really."
+			]
+			id: "349637A9E050C348"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 6
+				id: "29837DD680A6BC71"
+				item: "sophisticatedstorage:stack_upgrade_tier_4"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You made a Bin. Nobody asked you to- but here we are."
+			tasks: [{
+				id: "489DB0F42DCFABD8"
+				item: "mekanism:basic_bin"
+				type: "item"
+			}]
+			title: "Shadow Quest: Bin There, Done That"
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			description: ["Aside from obviously increasing your Movement Speed, Free Runners also increase your Step Height by .5, allowing you to ascend entire blocks like you would stairs. Handy!"]
+			id: "0BD094917D6733B6"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "06D27B2148CC4889"
+				item: "mekanism:chargepad"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You made a pair of Free Runners! They're actually pretty handy."
+			tasks: [{
+				id: "65C0763C53342258"
+				item: "mekanism:free_runners"
+				type: "item"
+			}]
+			title: "Shadow Quest: Step Up!"
+			x: -3.7551020408163254d
+			y: 3.872448979591823d
+		}
+	]
+	subtitle: ["Advanced Machinery clicks and whirrs as the automation grows..."]
+	title: "&41b: Powering Ahead"
+}

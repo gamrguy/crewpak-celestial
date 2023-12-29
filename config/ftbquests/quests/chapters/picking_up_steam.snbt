@@ -1,0 +1,910 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "picking_up_steam"
+	group: "5F3E2B4FBD216107"
+	hide_quest_until_deps_visible: true
+	icon: "create:large_cogwheel"
+	id: "2FFEFF26C62D8C9C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["24BFC4CB433280A0"]
+			description: [
+				"This will seem simple compared to your journey so far. but we're only getting started."
+				""
+				"Andesite can be found more easily in altitudes above y=16. And you'll want to keep an eye out for some iron, while you're there, as it's also the best place to go mining it."
+			]
+			id: "38050BF8C1ED561B"
+			subtitle: "Mine some Andesite."
+			tasks: [{
+				count: 16L
+				id: "47E17BDEFE5B1B6B"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			title: "Two Steps Back"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38050BF8C1ED561B"]
+			description: ["Andesite Alloy is a material required in practically every Create component. You'll be wanting large amounts of this."]
+			id: "14BC0ADB32BA837E"
+			rewards: [{
+				count: 32
+				id: "0B197670FB03F186"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "Aquire a large amount of Andesite Alloy."
+			tasks: [{
+				count: 32L
+				id: "54A99CA4EC242BCC"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "First Alloys"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["14BC0ADB32BA837E"]
+			description: ["Shafts are used to move rotational energy. They're very helpful, and you'll probably be using them right up to the late-game."]
+			id: "117B19DF94116702"
+			subtitle: "Craft Shafts."
+			tasks: [{
+				id: "085630A177A97BC0"
+				item: "create:shaft"
+				type: "item"
+			}]
+			title: "Shafted"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["117B19DF94116702"]
+			id: "6130C9063E6B045F"
+			rewards: [{
+				id: "40AFA432D319F37E"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			subtitle: "Craft a Water Wheel."
+			tasks: [{
+				id: "4F4CE1A35B90A663"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "Water Wheeeeeeee"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["117B19DF94116702"]
+			description: [
+				"Windmill Bearings generate power with Sails."
+				""
+				"Ponder the item to find out more!"
+			]
+			icon: "create:windmill_bearing"
+			id: "305A22104ACE18B4"
+			rewards: [{
+				count: 8
+				id: "3C8DBCB030F17812"
+				item: "create:radial_chassis"
+				type: "item"
+			}]
+			subtitle: "Craft a Windmill Bearing (And some Sails.)"
+			tasks: [
+				{
+					id: "0A3080EAA489482F"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "134884E0F46D2A79"
+					item: "create:white_sail"
+					type: "item"
+				}
+			]
+			title: "Bearing With Me"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["117B19DF94116702"]
+			description: [
+				"Something you might notice about Create items is they can be Pondered in your inventory by holding \"W\" over them."
+				""
+				"As such, most of these quests will avoid explaining the items, in favor of letting Pondering do the talking."
+				""
+				"The quests will still elaborate on crafting these things, and acquiring their materials."
+			]
+			id: "00BE25C0D8865AFE"
+			subtitle: "Make a Handcrank."
+			tasks: [{
+				id: "126991A309F8BCDE"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			title: "Feeling Cranky"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["516D7EBFA9103B3A"]
+			description: ["Mechanical Presses turn ingots into Sheets. Very simple."]
+			id: "74799D27BC2E1A60"
+			subtitle: "Craft a Mechanical Press."
+			tasks: [{
+				id: "21487F4223B22EBD"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "Pressing Matters"
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"305A22104ACE18B4"
+				"6130C9063E6B045F"
+			]
+			id: "516D7EBFA9103B3A"
+			subtitle: "Craft 8 Andesite Casings."
+			tasks: [{
+				count: 8L
+				id: "0682D5C1498507EF"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "Just In Casing"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"516D7EBFA9103B3A"
+				"305A22104ACE18B4"
+			]
+			description: [
+				"Bearings turn shaft-spinning into block-spinning."
+				""
+				"Ponder it to learn more!"
+			]
+			id: "7EF889E7EFDB128A"
+			subtitle: "Craft a Mechanical Bearing."
+			tasks: [{
+				id: "6CA7E451FE3BD473"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
+			title: "Bearing the Burden"
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["516D7EBFA9103B3A"]
+			icon: "create:radial_chassis"
+			id: "3C525ACAA2547072"
+			rewards: [{
+				id: "3F443EA17592FA5B"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			subtitle: "Make 16 Linear and Radial Chassis."
+			tasks: [
+				{
+					count: 16L
+					id: "4EBD449510A0F390"
+					item: "create:linear_chassis"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "3677C9AB4A0652D9"
+					item: "create:radial_chassis"
+					type: "item"
+				}
+			]
+			title: "Chassissassissassiss"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["74799D27BC2E1A60"]
+			description: ["The mixer requires a whisk, which needs iron sheets. You can get those from the press you made earlier."]
+			icon: "create:mechanical_mixer"
+			id: "63A0162C4B8B1238"
+			subtitle: "Craft a Mechanical Mixer (And Basin)."
+			tasks: [
+				{
+					id: "25AA3C20FA2521C1"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "41956E02D7C79FD0"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			title: "Basin? Based in what?"
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["516D7EBFA9103B3A"]
+			description: ["Gearboxes (And their cousin, the Vertical Gearbox) are used to rotate rotational force on an axis. They can only do so on one axis at a time."]
+			id: "3FB1666C3C027C5B"
+			rewards: [{
+				count: 8
+				id: "43DC522DA937042B"
+				item: "create:vertical_gearbox"
+				type: "item"
+			}]
+			subtitle: "Craft 8 Gearboxes."
+			tasks: [{
+				count: 8L
+				id: "6EFCECF62FAC2153"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			title: "Shifting Gears"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["74799D27BC2E1A60"]
+			id: "0853CF6615BA6EF7"
+			subtitle: "Craft a (Create) Wrench."
+			tasks: [{
+				id: "321135AFDD2BDC5E"
+				item: "create:wrench"
+				type: "item"
+			}]
+			title: "Wrenching Free"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["117B19DF94116702"]
+			description: [
+				"Cogs spin things! You can use a big cog to spin a small cog, and the laws of motion will ensure the smaller cog's speed is doubled!"
+				""
+				"The doubled speed isn't free energy though- it'll double the amount of Stress load on the system."
+			]
+			id: "73C107EA64995A87"
+			rewards: [{
+				count: 12
+				id: "0A2ECADB5FC915A4"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			subtitle: "Craft some Cogs, big and small."
+			tasks: [
+				{
+					count: 16L
+					id: "51961E96E7B0EC11"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "135610BD9A4876BD"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			title: "Shifting Gears"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3FB1666C3C027C5B"]
+			description: [
+				"Encased Chain Drives can easily move rotation horizontally or vertically, and can even rotate in the process."
+				""
+				"Ponder them to learn more."
+			]
+			id: "223E57C4A15C7070"
+			rewards: [{
+				count: 32
+				id: "37F643E6DC1C501B"
+				item: "create:encased_chain_drive"
+				type: "item"
+			}]
+			subtitle: "Craft some Encased Chain Drives."
+			tasks: [{
+				count: 16L
+				id: "7799F9B4655279E4"
+				item: "create:encased_chain_drive"
+				type: "item"
+			}]
+			title: "Chain-Combo"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"73C107EA64995A87"
+				"516D7EBFA9103B3A"
+			]
+			description: ["Millstones can crush items down into basic components. Wheat is crushed into flower, many plants crush into dyes, and coal even turns into the coveted Black Dye."]
+			id: "0A2CC83FE12F0628"
+			rewards: [{
+				count: 4
+				id: "196982220F66E14B"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			subtitle: "Craft a Millstone."
+			tasks: [{
+				id: "232C2333BFABE4DB"
+				item: "create:millstone"
+				type: "item"
+			}]
+			title: "One in a Mill-ion"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["117B19DF94116702"]
+			description: [
+				"Mechanical Belts can be used to move both rotational power and items across long distances easily."
+				""
+				"It's made of Dried Kelp, which can be made by Smelting/Smoking Kelp found in the ocean."
+				""
+				"Ponder the item to learn more!"
+			]
+			id: "03C8FCD5829B33F7"
+			subtitle: "Craft a Mechanical Belt."
+			tasks: [{
+				id: "304219CC8632B89E"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			title: "Belted Out"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"305A22104ACE18B4"
+				"74799D27BC2E1A60"
+			]
+			id: "5ACE73B0329A7349"
+			subtitle: "Craft some (Create) Tanks."
+			tasks: [{
+				count: 6L
+				id: "0FD3610126296820"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			title: "Tanked Up"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["03C8FCD5829B33F7"]
+			description: [
+				"Funnels are used to move items in and out of inventories, and vastly helped by belts!"
+				""
+				"Ponder the item to learn more."
+			]
+			id: "66288FC63A51FC12"
+			subtitle: "Craft an Andesite Funnel."
+			tasks: [{
+				id: "6A7CC59513A371EC"
+				item: "create:andesite_funnel"
+				type: "item"
+			}]
+			title: "Having Funnel"
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3C525ACAA2547072"]
+			description: [
+				"Mechanical harvesters, when pushed or rotated, harvest crops automatically, dropping them as items on the floor."
+				""
+				"Ponder the item to learn more!"
+			]
+			id: "2083F3E16DC8144D"
+			rewards: [{
+				count: 3
+				id: "6ECCE46921C806C1"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			subtitle: "Craft 3 Mechanical Harvesters"
+			tasks: [{
+				count: 3L
+				id: "52CF69895C66070E"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			title: "Ripe for the Harvest"
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2083F3E16DC8144D"]
+			description: [
+				"Drills break blocks while rotating, being pushed, or falling. They're very useful for automatically mining things."
+				""
+				"Ponder the item to find out more!"
+			]
+			id: "1FEAEB0F6791CD17"
+			rewards: [{
+				count: 3
+				id: "15B129D2CF9E7A7C"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			subtitle: "Craft a Mechanical Drill."
+			tasks: [{
+				id: "5AEA8F7A24758101"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			title: "NOT a Drill."
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7EF889E7EFDB128A"]
+			description: [
+				"Pistons need Extension Poles behind them to operate. Be mindful you have the correct amount so they don't push too far!"
+				""
+				"Ponder the item to learn more!"
+			]
+			id: "75734CAF7BFFAF2A"
+			rewards: [{
+				count: 16
+				id: "0A396D83ABA97082"
+				item: "create:piston_extension_pole"
+				type: "item"
+			}]
+			subtitle: "Craft a Mechanical Piston"
+			tasks: [{
+				id: "4B5138F9DF55C2E3"
+				item: "create:mechanical_piston"
+				type: "item"
+			}]
+			title: "Piston Away"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["75734CAF7BFFAF2A"]
+			description: [
+				"Sticky Pistons behave similarly to Pistons, but bring things back with them when they retract. "
+				""
+				"Ponder the item to learn more!"
+			]
+			id: "61660C2FB50FC6B4"
+			rewards: [{
+				count: 4
+				id: "3988FF116AB18A1A"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			subtitle: "Craft a Sticky Mechanical Piston."
+			tasks: [{
+				id: "27065DDB3BA96B34"
+				item: "create:sticky_mechanical_piston"
+				type: "item"
+			}]
+			title: "Piston it Back"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0853CF6615BA6EF7"]
+			description: [
+				"Super Glue lets you stick blocks on machines together to move them all as one contiguous object."
+				""
+				"Ponder the item to find out more!"
+			]
+			id: "3E4CF02A66138889"
+			rewards: [{
+				id: "24E6075329996A1A"
+				item: "industrialforegoing:pink_slime"
+				type: "item"
+			}]
+			subtitle: "Make a tube of Super Glue!"
+			tasks: [{
+				id: "59A9A06F1FC0840C"
+				item: {
+					Count: 1b
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sticky Situation"
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"5ACE73B0329A7349"
+				"63A0162C4B8B1238"
+			]
+			description: [
+				"This is the next big step in create! Acquiring a Blaze Burner will mean you can make Brass!"
+				""
+				"Ponder the item blah blah you get the idea by now, I'm sure."
+			]
+			icon: "create:blaze_burner"
+			id: "2F3B9557863D3C42"
+			rewards: [{
+				id: "4596A0C94DBCACFB"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			subtitle: "Craft and Fill a Blaze Burner."
+			tasks: [
+				{
+					id: "7BDF0BD2DD15D08B"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					id: "5E014D59A71E3C23"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "Burning Passion"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2F3B9557863D3C42"]
+			description: [
+				"Using a Straw on a Blaze Burner will cause it to use liquid fuels instead of solids."
+				""
+				"Ponder the Straw. Do it."
+			]
+			id: "2D8694EFBE1CFF53"
+			subtitle: "Make a Straw. Slurp."
+			tasks: [{
+				id: "75E9B438F7B5C769"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			title: "One hole, or two?"
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5ACE73B0329A7349"]
+			description: [
+				"Pipes and Pumps let you move fluid around with rotational power."
+				""
+				"Smart pipes are liquid filters that can be right-clicked with buckets."
+			]
+			icon: "create:mechanical_pump"
+			id: "051EF673D399E30F"
+			rewards: [{
+				id: "54FD044F0089DA95"
+				item: "create:smart_fluid_pipe"
+				type: "item"
+			}]
+			subtitle: "Make some Pipes and Pumps."
+			tasks: [
+				{
+					count: 16L
+					id: "2E5C2628F553A781"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "3C925AC435FFC02E"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			title: "Piping Hot"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2F3B9557863D3C42"]
+			id: "384F521CF8BDF4B9"
+			subtitle: "Craft a significant amount of Brass using a Mixer, Basin, and Blaze Burner."
+			tasks: [{
+				count: 16L
+				id: "7A8590AA53BD01C0"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "Pain in the Brass"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["051EF673D399E30F"]
+			description: [
+				"Steam engines let you generate power by making a boiler."
+				""
+				"This one's actually quite complicated- you'll want to &bPonder&f it closely."
+			]
+			id: "7B92B4E23AC2A7F7"
+			rewards: [{
+				count: 16
+				id: "3A2B83128AF9B576"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			subtitle: "Craft a Steam Engine"
+			tasks: [{
+				id: "43403E58809DC42F"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "Full Steam Ahead!"
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1FEAEB0F6791CD17"]
+			id: "697BDE1EFA72E6B2"
+			optional: true
+			shape: "octagon"
+			subtitle: "&bCreate&c a factory that produces iron."
+			tasks: [{
+				count: 128L
+				id: "01221E54518306E6"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			title: "The Ultimate Irony"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1FEAEB0F6791CD17"]
+			id: "4D856814550A5A06"
+			optional: true
+			shape: "hexagon"
+			subtitle: "&bCreate&c a factory that produces Glass."
+			tasks: [{
+				count: 640L
+				id: "08C1E2EF7CBF44A6"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			title: "An Absolute Glassic"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1FEAEB0F6791CD17"]
+			id: "1EB1AD0BF97EC660"
+			optional: true
+			shape: "octagon"
+			subtitle: "&bCreate&c a factory that produces Quartz."
+			tasks: [{
+				count: 640L
+				id: "5042798405D8DE7C"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			title: "The High Quartz"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1FEAEB0F6791CD17"]
+			id: "7190AFB65CB316B9"
+			optional: true
+			shape: "pentagon"
+			subtitle: "&bCreate&c a factory that produces large amounts of any Stone."
+			tasks: [{
+				count: 1280L
+				id: "0546A790228CCE04"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:stone"
+					}
+				}
+				title: "Any #forge:stone"
+				type: "item"
+			}]
+			title: "Rock Solid"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["051EF673D399E30F"]
+			description: [
+				"A special property of Pipes is that different liquids, in large amounts, can be drawn from infinitely. Water can be drawn from with as few as 3 blocks, but lava requires far more- an amount in the order of 10,000 blocks."
+				""
+				"There's only one place you can get lava like that..."
+			]
+			id: "016E7F7213716731"
+			rewards: [{
+				count: 3
+				id: "3DF759DF02661D39"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			subtitle: "Drain Lava from a large enough body of Lava for it to be considered Infinite."
+			tasks: [{
+				advancement: "create:hose_pulley_lava"
+				criterion: ""
+				icon: "minecraft:lava_bucket"
+				id: "544057F973A2B400"
+				title: "Tapping the Mantle"
+				type: "advancement"
+			}]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1FEAEB0F6791CD17"]
+			description: ["The more conk they crete, the more brutalismer it is."]
+			id: "76938DB403C39522"
+			optional: true
+			shape: "pentagon"
+			subtitle: "&bCreate&c a factory that produces inordinate amounts of Concrete."
+			tasks: [{
+				count: 1280L
+				id: "392880F72B4C2823"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:concrete"
+					}
+				}
+				title: "Any #forge:concrete"
+				type: "item"
+			}]
+			title: "More Brutalismer"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["74799D27BC2E1A60"]
+			description: [
+				"Fans blow on things, and can perform various operations with fire, water, lava, and the souls of the damned!"
+				""
+				"Go on, Ponder it."
+			]
+			id: "7DAB740DAA5A2E8E"
+			subtitle: "Craft 4 Encased Fans."
+			tasks: [{
+				count: 4L
+				id: "13F11778039713B6"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "A Huge Fan"
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1EB1AD0BF97EC660"
+				"697BDE1EFA72E6B2"
+				"76938DB403C39522"
+				"7190AFB65CB316B9"
+				"4D856814550A5A06"
+			]
+			description: [
+				"With this, you've proven your overall proficiency with create, and your ability to automate any material you set your mind to. "
+				""
+				"Congratulations! Here's your reward."
+			]
+			id: "47B2EBE104A58988"
+			optional: true
+			rewards: [{
+				id: "56E1ACB7B83DE3F9"
+				item: {
+					Count: 1b
+					id: "create:goggles"
+					tag: {
+						AttributeModifiers: [
+							{
+								Amount: 0.5d
+								AttributeName: "generic.max_health"
+								Name: "generic.max_health"
+								Operation: 1
+								Slot: "head"
+								UUID: [I;
+									174467858
+									-1704309174
+									-1497079182
+									-1397880519
+								]
+							}
+							{
+								Amount: 8
+								AttributeName: "generic.armor"
+								Name: "generic.armor"
+								Operation: 0
+								Slot: "head"
+								UUID: [I;
+									1271353985
+									-550481960
+									-1904907133
+									-1114328191
+								]
+							}
+							{
+								Amount: 4
+								AttributeName: "generic.attack_damage"
+								Name: "generic.attack_damage"
+								Operation: 0
+								Slot: "head"
+								UUID: [I;
+									959977096
+									1245466272
+									-1574242829
+									1895949468
+								]
+							}
+						]
+						HideFlags: 4
+						Unbreakable: 1b
+						display: {
+							Lore: [
+								"{\"text\":\"A proof over your mastery of Challenge 1.\"}"
+								"{\"text\":\"These Goggles hold multiple unique boons.\"}"
+								"{\"text\":\"Unbreakable\",\"color\":\"white\",\"bold\":true,\"italic\":false}"
+							]
+							Name: "{\"text\":\"Eyes of the Engineer\",\"color\":\"rainbow\",\"bold\":true,\"italic\":false,\"underlined\":true}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Complete the 5 &cCore Factories."
+			tasks: [{
+				id: "13DA822528A9F6AB"
+				title: "Challenge Complete!"
+				type: "checkmark"
+			}]
+			title: "Challenge 1: Automate the Basics"
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["081B2A5F255988F5"]
+			id: "75CA172992EC2B02"
+			tasks: [{
+				id: "2CE32EAD6357221A"
+				item: "create:clutch"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["223E57C4A15C7070"]
+			id: "081B2A5F255988F5"
+			tasks: [{
+				id: "693C2681497435BA"
+				item: "create:adjustable_chain_gearshift"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+	]
+	subtitle: ["Clockwork mechanisms swirl and turn as you master the art of rotation."]
+	title: "1a: Picking Up Steam"
+}

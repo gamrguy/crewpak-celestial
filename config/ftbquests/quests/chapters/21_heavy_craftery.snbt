@@ -1,0 +1,365 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "21_heavy_craftery"
+	group: "57B4864330183BF8"
+	icon: "create:mechanical_crafter"
+	id: "1F08F34E8BEF3679"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["384F521CF8BDF4B9"]
+			id: "65D463C4A57B4761"
+			tasks: [{
+				count: 27L
+				id: "62FB98FD261C43FA"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["65D463C4A57B4761"]
+			id: "7951132239BF458A"
+			tasks: [{
+				id: "2A8308077D7FBBA0"
+				item: "immersive_aircraft:biplane"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["65D463C4A57B4761"]
+			id: "48CA07B35E55EC30"
+			tasks: [{
+				id: "644D028F44C655B5"
+				item: "immersive_aircraft:airship"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["65D463C4A57B4761"]
+			id: "114EC8F7666E82A6"
+			tasks: [{
+				id: "4BA91E116AC1CA15"
+				item: "immersive_aircraft:gyrodyne"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["65D463C4A57B4761"]
+			id: "2E8705D1AD04C876"
+			tasks: [{
+				id: "5BBB8E3A63C3278E"
+				item: {
+					Count: 1b
+					id: "cgm:pistol"
+					tag: {
+						AmmoCount: 16
+					}
+				}
+				type: "item"
+			}]
+			title: "This thing is a lot more reliable than any person"
+			x: -7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["65D463C4A57B4761"]
+			id: "413D0A45921BD9D0"
+			tasks: [{
+				id: "22B05817EBF3082B"
+				item: {
+					Count: 1b
+					id: "cgm:machine_pistol"
+					tag: {
+						AmmoCount: 80
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E8705D1AD04C876"]
+			id: "0DA22719F448514A"
+			tasks: [{
+				id: "6CF814648BCEB100"
+				item: {
+					Count: 1b
+					id: "cgm:rifle"
+					tag: {
+						AmmoCount: 10
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["413D0A45921BD9D0"]
+			id: "3A7357967D116C08"
+			tasks: [{
+				id: "70692A789D6774DE"
+				item: {
+					Count: 1b
+					id: "cgm:assault_rifle"
+					tag: {
+						AmmoCount: 40
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0DA22719F448514A"]
+			id: "3832AE9DDC072415"
+			tasks: [{
+				id: "2CA5A16C9DD74590"
+				item: {
+					Count: 1b
+					id: "cgm:heavy_rifle"
+					tag: {
+						AmmoCount: 4
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3A7357967D116C08"]
+			id: "39BD792124CDC420"
+			tasks: [{
+				id: "3C74511AA212714E"
+				item: {
+					Count: 1b
+					id: "cgm:mini_gun"
+					tag: {
+						AmmoCount: 100
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0DA22719F448514A"]
+			id: "6643C289D892AE88"
+			tasks: [{
+				id: "405EEBE3BA646DF1"
+				item: {
+					Count: 1b
+					id: "cgm:shotgun"
+					tag: {
+						AmmoCount: 8
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3832AE9DDC072415"]
+			id: "76C27D3CB9726B56"
+			tasks: [{
+				id: "7DD5486A19BCA37C"
+				item: {
+					Count: 1b
+					id: "cgm:bazooka"
+					tag: {
+						AmmoCount: 1
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6643C289D892AE88"]
+			id: "36220DA75CAF92CE"
+			tasks: [{
+				id: "2A3F1B988DA0DFE3"
+				item: {
+					Count: 1b
+					id: "cgm:grenade_launcher"
+					tag: {
+						AmmoCount: 1
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["65D463C4A57B4761"]
+			id: "3B8616E058D19D7E"
+			tasks: [{
+				id: "6B27027EFD42480F"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "Crushing it"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3B8616E058D19D7E"]
+			id: "573CB522AB2CF32F"
+			tasks: [{
+				id: "076AF9F33EFFEADA"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3B8616E058D19D7E"]
+			id: "30D1046DD09DEF8B"
+			tasks: [{
+				id: "1F51C893723D2C6C"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["573CB522AB2CF32F"]
+			id: "4ADAA30D15942783"
+			tasks: [{
+				id: "43B49BC691FF8BF6"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["65D463C4A57B4761"]
+			id: "117572D1993D0110"
+			tasks: [{
+				id: "009DC69DFB2EF2E6"
+				item: {
+					Count: 1b
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			id: "2DBA64A9D3677E0D"
+			tasks: [
+				{
+					count: 3L
+					id: "2048E9775362619A"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3B0C363B913BC0A1"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7A94CD67971EC876"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2DBA64A9D3677E0D"]
+			id: "2523FBBBA214F07B"
+			tasks: [{
+				id: "487FEFA70E953006"
+				item: "cgm:basic_bullet"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2523FBBBA214F07B"]
+			id: "5F7DB35F0DE77D41"
+			tasks: [{
+				id: "107F98844599EB6A"
+				item: "cgm:advanced_bullet"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2523FBBBA214F07B"]
+			id: "43EC6D076BA9E9C8"
+			tasks: [{
+				id: "04AAC23C7628775C"
+				item: "cgm:shell"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["43EC6D076BA9E9C8"]
+			id: "6CF239CDA2A99A15"
+			tasks: [{
+				id: "0808F873A6B4AA04"
+				item: "cgm:grenade"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6CF239CDA2A99A15"]
+			id: "3BE5408086A5B041"
+			tasks: [{
+				id: "570DE80811614898"
+				item: "cgm:stun_grenade"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5F7DB35F0DE77D41"]
+			id: "204E1990731FEBF6"
+			tasks: [{
+				id: "56028581A05B33FB"
+				item: "cgm:missile"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+	]
+	title: "2b: Heavy craftery"
+}

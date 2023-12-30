@@ -17,6 +17,7 @@ mods
 config/spark
 config/observable.json
 config/voicechat/username-cache.json
+config/xaerominimap_entities.json
 
 minecraftinstance.json
 options.txt

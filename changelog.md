@@ -7,12 +7,14 @@ Forge 43.3.0 -> 43.3.5
 
 ### Content
 ```
-Removed Ender Storage recoloring recipes (JEI crash)
+Removed Ender Storage recoloring recipes (JEI crash w/ Create)
 
 Removed recipes for Cable Tiers' Creative tier blocks
 Added recipe for Pipez Infinity Upgrade
 
-Carry On Blacklist: FD and PHC2 Cutting Boards, Mekanism Cardboard Box
+Silent Gear: Fixed several broken KJS salvager recipes
+Carry On: Blacklist FD and PHC2 Cutting Boards, Mekanism Cardboard Box
+Dungeons Arise: Fix Infested Temple missing loot table
 ```
 
 ### Mods

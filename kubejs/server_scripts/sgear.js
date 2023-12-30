@@ -54,16 +54,16 @@ ServerEvents.recipes(event => {
 
     gen_salvage('botania', 'manasteel', 'botania:manasteel_ingot', 'botania:livingwood_twig')
     gen_salvage('botania', 'elementium', 'botania:elementium_ingot', 'botania:dreamwood_twig')
-    gen_salvage_tools('botania', 'livingwood', 'botania:livingwood', 'botania:livingwood_twig')
-    gen_salvage_tools('botania', 'livingwood', 'botania:livingrock', 'botania:livingwood_twig')
-    gen_salvage_armor('botania', 'manaweave', 'botania:manaweave')
+    // gen_salvage_tools('botania', 'livingwood', 'botania:livingwood', 'botania:livingwood_twig')
+    // gen_salvage_tools('botania', 'livingwood', 'botania:livingrock', 'botania:livingwood_twig')
+    gen_salvage_armor('botania', 'manaweave', 'botania:manaweave_cloth')
 
     gen_salvage('forbidden_arcanus', 'deorum', 'forbidden_arcanus:deorum_ingot')
 
     gen_salvage('pickletweaks', 'flint', 'minecraft:flint')
     gen_salvage('pickletweaks', 'emerald', 'minecraft:emerald')
 
-    gen_salvage('create_alloyed', 'steel', 'mekanism:ingot_steel')
+    gen_salvage('alloyed', 'steel', 'mekanism:ingot_steel')
 
     gen_salvage_armor('minecraft', 'chainmail', 'byg:chain_plating')
 })

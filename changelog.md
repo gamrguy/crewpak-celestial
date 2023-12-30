@@ -7,8 +7,12 @@ Forge 43.3.0 -> 43.3.5
 
 ### Content
 ```
+Removed Ender Storage recoloring recipes (JEI crash)
+
 Removed recipes for Cable Tiers' Creative tier blocks
 Added recipe for Pipez Infinity Upgrade
+
+Carry On Blacklist: FD and PHC2 Cutting Boards, Mekanism Cardboard Box
 ```
 
 ### Mods

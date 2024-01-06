@@ -18,6 +18,7 @@ config/spark
 config/observable.json
 config/voicechat/username-cache.json
 config/xaerominimap_entities.json
+config/forgeendertech/cached.dat
 
 minecraftinstance.json
 options.txt

@@ -1,5 +1,7 @@
 Celestial 0.3
 -------------
+This update is focused on updating mods and removing major problem factors.
+
 ### General
 ```
 Forge 43.3.0 -> 43.3.5
@@ -19,9 +21,10 @@ Dungeons Arise: Fix Infested Temple missing loot table
 
 ### Mods
 ```
-Removed Rubidium     (Multiple graphics compatibility issues)
-Removed Oculus       (Rubidium dependency)
-Removed AIOT Botania (Elementium Hoe crash w/ Botany Pots)
+Removed Rubidium            (Multiple graphics compatibility issues)
+Removed Oculus              (Rubidium dependency)
+Removed AIOT Botania        (Elementium Hoe crash w/ Botany Pots)
+Removed Swing Through Grass (Unnecessary)
 
 Updated Almost Unified 0.7.0 -> 0.7.2
 Updated Ars Nouveau 3.21.4 -> 3.22.2
@@ -40,10 +43,10 @@ Updated Cyclops Core 1.18.10 -> 1.18.11
 Updated Easy Villagers 1.0.14 -> 1.0.17
 Updated Enchantment Descriptions 13.0.16 -> 13.0.18
 Updated Every Compat 2.5.14 -> 2.5.15
-Updated Friends&Foes 1.8.10 -> 2.0.6
-Updated FTB Chunks 4.3b302 -> 4.3b321
+Updated Friends&Foes 1.8.10 -> 2.0.7
+Updated FTB Chunks 4.3b302 -> 4.4b326
 Updated FTB Quests 5.6b304 -> 4.3b326
-Updated Fusion 1.1.0a -> 1.1.0b
+Updated Fusion 1.1.0a -> 1.1.0c
 Updated GraveStone Mod 1.0.1 -> 1.0.10
 Updated Infinite Trading 4.1 -> 4.3
 Updated Inventory Pets 2.0.19 -> 2.0.20
@@ -58,9 +61,9 @@ Updated PolyLib 0.2b73 -> 0.3b100
 Updated RFTools Utility 5.1.8 -> 5.1.9
 Updated Rhino 2.2b280 -> 2.3b284
 Updated Simple Voice Chat 2.4.28 -> 2.4.32
-Updated Sophisticated Backpacks 3.18.64.940 -> 3.19.4.977
-Updated Sophisticated Core 0.5.103.484 -> 0.5.109.516
-Updated Sophisticated Storage 0.8.48.632 -> 0.8.54.670
+Updated Sophisticated Backpacks 3.18.64.940 -> 3.19.5.989
+Updated Sophisticated Core 0.5.103.484 -> 0.5.111.525
+Updated Sophisticated Storage 0.8.48.632 -> 0.8.56.681
 Updated Structure Essentials 3.1 -> 3.2
 Updated SuperMartijin642's Core Lib 1.1.15 -> 1.1.16
 Updated Supplementaries 2.4.11 -> 2.4.15

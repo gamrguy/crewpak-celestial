@@ -17,6 +17,8 @@ Added recipe for Pipez Infinity Upgrade
 Silent Gear: Fixed several broken KJS salvager recipes
 Carry On: Blacklist FD and PHC2 Cutting Boards, Mekanism Cardboard Box
 Dungeons Arise: Fix Infested Temple missing loot table
+Xaero's Minimap: Update popup disabled
+Default Options: Auto-jump disabled
 ```
 
 ### Mods
@@ -25,6 +27,8 @@ Removed Rubidium            (Multiple graphics compatibility issues)
 Removed Oculus              (Rubidium dependency)
 Removed AIOT Botania        (Elementium Hoe crash w/ Botany Pots)
 Removed Swing Through Grass (Unnecessary)
+
+Added Default Options 15.0.2
 
 Updated Almost Unified 0.7.0 -> 0.7.2
 Updated Ars Nouveau 3.21.4 -> 3.22.2

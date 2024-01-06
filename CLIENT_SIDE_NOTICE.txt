@@ -1,0 +1,5 @@
+These mods are CLIENT SIDE ONLY and must be removed to run servers:
+
+ReAuth
+NEAT
+LegendaryTooltips

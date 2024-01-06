@@ -20,8 +20,8 @@ config/voicechat/username-cache.json
 config/xaerominimap_entities.json
 config/forgeendertech/cached.dat
 
+/options.txt
 minecraftinstance.json
-options.txt
 patchouli_data.json
 reauth.toml
 servers.dat*
